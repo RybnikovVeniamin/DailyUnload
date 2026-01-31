@@ -87,6 +87,23 @@ async function generateDailyData() {
             
             // Также обновляем "последние данные" для главной страницы
             fs.writeFileSync(path.join(__dirname, 'latest.json'), JSON.stringify(result, null, 2));
+
+            // Обновляем общий список всех постеров (индекс архива)
+            const indexFile = path.join(archiveDir, 'index.json');
+            let archiveIndex = [];
+            if (fs.existsSync(indexFile)) {
+                archiveIndex = JSON.parse(fs.readFileSync(indexFile));
+            }
+            
+            // Добавляем новый постер в начало, если его еще нет
+            if (!archiveIndex.find(p => p.date === result.date)) {
+                archiveIndex.unshift({
+                    date: result.date,
+                    displayDate: result.displayDate,
+                    file: `poster-${result.date}.json`
+                });
+                fs.writeFileSync(indexFile, JSON.stringify(archiveIndex, null, 2));
+            }
             
         } else {
             console.error("❌ Новости не найдены или ошибка API");

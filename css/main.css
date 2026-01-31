@@ -1,0 +1,195 @@
+:root {
+    --bg-black: #000000;
+    --bg-dark: #08090c;
+    --text-white: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.5);
+    --text-dim: rgba(255, 255, 255, 0.3);
+    
+    --font-main: 'PP Neue Montreal', sans-serif;
+    --font-display: 'PP Neue Bit', serif;
+    --font-mono: 'PP Supply Mono', monospace;
+    --font-sans: 'PP Supply Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP Neue Montreal/PPNeueMontreal-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP Neue Montreal/PPNeueMontreal-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP Neue Montreal/PPNeueMontreal-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Bit';
+    src: url('../fonts/PPNeuebit/PPNeueBit-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Supply Mono';
+    src: url('../fonts/PP Supply/Mono/PPSupplyMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Supply Sans';
+    src: url('../fonts/PP Supply/Sans/PPSupplySans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Supply Sans';
+    src: url('../fonts/PP Supply/Sans/PPSupplySans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 120px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--font-main);
+    text-transform: none;
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 160px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-transform: none;
+    font-family: var(--font-main);
+}
+
+.hero p {
+    color: var(--text-white);
+    font-size: 18px;
+    font-family: var(--font-main);
+    max-width: none;
+    margin: 0 auto;
+}
+
+/* Poster Grid */
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.poster-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.poster-item:hover {
+    transform: translateY(-8px);
+}
+
+.poster-preview {
+    aspect-ratio: 3/4;
+    background: var(--bg-dark);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+.poster-placeholder {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    filter: blur(40px);
+    transform: scale(1.2);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.poster-item:hover .poster-placeholder {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+}
+
+.poster-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 0;
+}
+
+.poster-date {
+    font-family: var(--font-main);
+    font-size: 16px;
+    text-transform: none;
+    color: var(--text-white);
+}
+
+/* Typography Helpers */
+.font-mono { font-family: var(--font-mono); }
+.font-display { font-family: var(--font-display); }
