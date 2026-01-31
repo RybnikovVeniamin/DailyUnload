@@ -2,33 +2,42 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('poster-grid');
-    const posters = document.querySelectorAll('.poster-item');
-    
-    // Trigger poster animations with a stagger effect
-    posters.forEach((poster, index) => {
-        setTimeout(() => {
-            poster.classList.add('is-visible');
-        }, 600 + (index * 150)); // 600ms initial wait + 150ms per item
-    });
     
     // 1. Загружаем индекс всех постеров
     fetch('archive/index.json')
         .then(response => response.json())
         .then(posters => {
             if (posters && posters.length > 0) {
-                // Keep the static placeholders if they exist, or clear if you want only dynamic ones
-                // For now, let's just append dynamic ones to show we're loading
-                const dynamicContainer = document.createElement('div');
-                dynamicContainer.style.display = 'contents';
+                // Очищаем сетку перед добавлением реальных данных
+                grid.innerHTML = '';
                 
-                posters.forEach(poster => {
-                    // Check if this date already exists in static placeholders to avoid duplicates
-                    // For this design phase, we'll just let them coexist or you can comment out grid.innerHTML = ''
+                posters.forEach((poster, index) => {
+                    const item = document.createElement('a');
+                    item.href = `poster.html?date=${poster.date}`;
+                    item.className = 'poster-item';
+                    
+                    // Создаем красивое превью на основе даты
+                    item.innerHTML = `
+                        <div class="poster-preview">
+                            <div style="width:100%; height:100%; background: ${getStableGradient(poster.date)}; opacity: 0.6;"></div>
+                        </div>
+                        <div class="poster-info">
+                            <span class="poster-date">${formatDate(poster.date)}</span>
+                        </div>
+                    `;
+                    
+                    grid.appendChild(item);
+
+                    // Запускаем анимацию появления с задержкой
+                    setTimeout(() => {
+                        item.classList.add('is-visible');
+                    }, 100 + (index * 150));
                 });
             }
         })
         .catch(err => {
-            console.log('Archive index not found yet, showing placeholders');
+            console.error('Error loading posters:', err);
+            grid.innerHTML = '<p class="reveal reveal-1">No posters found in archive.</p>';
         });
 });
 
