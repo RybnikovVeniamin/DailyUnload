@@ -7,75 +7,165 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            background-color: var(--bg-black);
+            z-index: 1000;
+        }
+        .nav-container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 80px;
+            display: flex;
+            align-items: center;
+        }
         .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 100px;
-            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            margin-top: 120px;
+            width: 1242px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .about-section {
-            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(15px);
+            animation: none;
+            transition: opacity 1.8s cubic-bezier(0.19, 1, 0.22, 1), 
+                        transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .about-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .about-section h2, .about-section p {
+            max-width: 732px;
+            width: 100%;
+        }
+        .about-section.align-right h2, .about-section.align-right p {
+            align-self: flex-end;
+        }
+        .about-section.align-right {
+            align-self: flex-end;
+            text-align: right;
         }
         .about-section h2 {
-            font-size: 24px;
+            font-family: var(--font-display);
+            font-size: 48px;
             font-weight: 400;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
+            color: var(--text-white);
+            line-height: 1.1;
         }
         .about-section p {
-            color: var(--text-muted);
-            font-size: 18px;
-            max-width: 400px;
+            font-family: var(--font-accent);
+            font-size: 48px;
+            color: var(--text-gray);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
         }
         .about-section .highlight {
-            color: var(--text-white);
+            text-decoration: underline;
+            color: var(--text-gray);
         }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 40px;
-            color: var(--text-white);
-            text-decoration: none;
-            font-family: var(--font-mono);
-            font-size: 12px;
-            text-transform: uppercase;
+        
+        @media (max-width: 1280px) {
+            .about-content {
+                width: 100%;
+                padding: 0 40px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .about-section h2, .about-section p {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Back to home</a>
+        </div>
+    </header>
+
     <div class="container">
-        <header>
-            <a href="index.html" class="back-link">Back to the main</a>
-        </header>
-
         <div class="about-content">
-            <div class="left-col">
-                <div class="about-section">
-                    <h2>Who is a creator</h2>
-                    <p>Just <span class="highlight">a guy</span>, who tired of social media and news, but still want to be in touch</p>
-                </div>
-
-                <div class="about-section">
-                    <h2>And what's the point</h2>
-                    <p>Maybe someday instead of war, conflicts and disappointments we're going to see some news like about good things</p>
-                </div>
-
-                <div class="about-section">
-                    <h2>Special thanks</h2>
-                    <p>This block for links of open data which I using</p>
-                </div>
+            <div class="about-section">
+                <h2>The Creator</h2>
+                <p>Just <a href="https://www.linkedin.com/in/veniaminrybnikov/" target="_blank" class="highlight">a guy</a> who's tired of social media but still wants to stay informed</p>
             </div>
 
-            <div class="right-col">
-                <div class="about-section">
-                    <h2>What is this all about</h2>
-                    <p>Every day, just 3 the most popular news in the World</p>
-                </div>
+            <div class="about-section align-right">
+                <h2>The Concept</h2>
+                <p>Three of the world's most trending stories, delivered every day</p>
+            </div>
 
-                <div class="about-section">
-                    <h2>What is special about these posters</h2>
-                    <p>Every poster fully generated include design. The source of news is open data sources, and the inphfographics use open-librabrary and generate new pattern every day. The bigger circle means the bigger importance of news</p>
-                </div>
+            <div class="about-section">
+                <h2>The Goal</h2>
+                <p>Maybe one day, instead of conflict and disappointment, we'll see more of the good things</p>
+            </div>
+
+            <div class="about-section align-right">
+                <h2>The Process</h2>
+                <p>Each poster is fully automated, including the design. We use open data sources and libraries to generate a unique pattern every day. The larger the circle, the more significant the news</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Data Sources</h2>
+                <p>A dedicated space for the open data sources that make this project possible</p>
             </div>
         </div>
     </div>
+    <script>
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        let delayCounter = 0;
+        let lastTimestamp = 0;
+
+        const observer = new IntersectionObserver((entries) => {
+            // Сортируем элементы по их положению на странице, чтобы задержка шла сверху вниз
+            const sortedEntries = entries
+                .filter(entry => entry.isIntersecting)
+                .sort((a, b) => a.target.offsetTop - b.target.offsetTop);
+
+            sortedEntries.forEach((entry) => {
+                const target = entry.target;
+                
+                if (!target.classList.contains('is-visible')) {
+                    // Если несколько элементов появляются одновременно (например, при загрузке),
+                    // добавляем им нарастающую задержку
+                    const now = Date.now();
+                    if (now - lastTimestamp > 500) {
+                        delayCounter = 0; // Сбрасываем счетчик, если скроллим медленно
+                    }
+                    
+                    target.style.transitionDelay = `${delayCounter * 0.2}s`;
+                    target.classList.add('is-visible');
+                    
+                    delayCounter++;
+                    lastTimestamp = now;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.about-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>

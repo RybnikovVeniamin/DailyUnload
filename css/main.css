@@ -10,6 +10,7 @@
     --font-accent: 'PP Object Sans', sans-serif;
     --font-mono: 'PP Supply Mono', monospace;
     --font-sans: 'PP Supply Sans', sans-serif;
+    --text-gray: #575757;
 }
 
 @font-face {
