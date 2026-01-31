@@ -2,30 +2,28 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('poster-grid');
+    const posters = document.querySelectorAll('.poster-item');
+    
+    // Trigger poster animations with a stagger effect
+    posters.forEach((poster, index) => {
+        setTimeout(() => {
+            poster.classList.add('is-visible');
+        }, 600 + (index * 150)); // 600ms initial wait + 150ms per item
+    });
     
     // 1. Загружаем индекс всех постеров
     fetch('archive/index.json')
         .then(response => response.json())
         .then(posters => {
             if (posters && posters.length > 0) {
-                // Очищаем заглушки
-                grid.innerHTML = '';
+                // Keep the static placeholders if they exist, or clear if you want only dynamic ones
+                // For now, let's just append dynamic ones to show we're loading
+                const dynamicContainer = document.createElement('div');
+                dynamicContainer.style.display = 'contents';
                 
                 posters.forEach(poster => {
-                    const item = document.createElement('a');
-                    item.href = `poster.html?date=${poster.date}`;
-                    item.className = 'poster-item';
-                    
-                    // Создаем красивое превью (пока градиент, позже можно мини-канвас)
-                    item.innerHTML = `
-                        <div class="poster-preview">
-                            <div class="poster-placeholder" style="background: ${getStableGradient(poster.date)}"></div>
-                        </div>
-                        <div class="poster-info">
-                            <span class="poster-date">${formatDate(poster.date)}</span>
-                        </div>
-                    `;
-                    grid.appendChild(item);
+                    // Check if this date already exists in static placeholders to avoid duplicates
+                    // For this design phase, we'll just let them coexist or you can comment out grid.innerHTML = ''
                 });
             }
         })
