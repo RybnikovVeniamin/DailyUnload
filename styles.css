@@ -50,7 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .poster-container {
@@ -97,7 +97,7 @@ body {
     font-family: var(--font-display);
     font-size: 42px;
     line-height: 1.1;
-    margin-bottom: 10px;
+    margin-bottom: 30px; /* Увеличили отступ между заголовками */
     text-transform: uppercase;
 }
 
