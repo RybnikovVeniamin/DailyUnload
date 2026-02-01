@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('poster-grid');
     
     // 1. Загружаем индекс всех постеров
-    fetch('archive/index.json')
+    fetch('archive/index.json?v=' + Date.now())
         .then(response => response.json())
         .then(posters => {
             if (posters && posters.length > 0) {

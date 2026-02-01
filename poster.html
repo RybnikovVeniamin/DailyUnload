@@ -104,7 +104,7 @@
             // Переопределяем функцию загрузки данных в sketch.js
             window.fetchRealData = async function() {
                 try {
-                    const response = await fetch(`archive/poster-${date}.json`);
+                    const response = await fetch(`archive/poster-${date}.json?v=${Date.now()}`);
                     const data = await response.json();
                     if (data && data.stories) {
                         topStories = data.stories;

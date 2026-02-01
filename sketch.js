@@ -67,9 +67,22 @@ function exportPosterData() {
 
 async function fetchRealData() {
     console.log("📡 Запрос самых важных мировых новостей...");
+    
+    // Сначала пробуем загрузить данные, сгенерированные роботом
     try {
-        const query = 'war OR election OR economy OR crisis OR "breaking news" OR politics';
-        const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=en&sortBy=relevancy&pageSize=15&apiKey=${NEWS_API_KEY}`;
+        const response = await fetch('latest.json?v=' + Date.now());
+        const data = await response.json();
+        if (data && data.stories) {
+            console.log("✅ Загружены свежие данные от робота");
+            topStories = data.stories;
+            return;
+        }
+    } catch (e) {
+        console.log("ℹ️ Файл latest.json не найден или пуст, пробуем NewsAPI");
+    }
+
+    try {
+        const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent('war OR election OR economy OR crisis OR "breaking news" OR politics')}&language=en&sortBy=relevancy&pageSize=15&apiKey=${NEWS_API_KEY}`;
         
         const response = await fetch(url);
         const data = await response.json();
