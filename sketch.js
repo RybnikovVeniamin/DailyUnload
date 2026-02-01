@@ -6,7 +6,7 @@ let canvas;
 let topStories = [];
 const CANVAS_WIDTH = 600;
 const CANVAS_HEIGHT = 800;
-const NEWS_API_KEY = 'e995fc4497af487f887bf84cd5f679e8';
+const NEWS_API_KEY = ''; // Ключ удален для безопасности. Для локальной работы используйте переменные окружения.
 
 async function setup() {
     canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);

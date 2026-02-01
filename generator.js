@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Используем ключ из переменных окружения (для безопасности на GitHub)
-const NEWS_API_KEY = process.env.NEWS_API_KEY || 'e995fc4497af487f887bf84cd5f679e8';
+const NEWS_API_KEY = process.env.NEWS_API_KEY;
 
 async function generateDailyData() {
     console.log("📡 Робот запускает сбор новостей...");
