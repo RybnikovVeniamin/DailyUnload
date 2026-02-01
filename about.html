@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
+        body {
+            overflow-y: auto !important;
+            height: auto !important;
+        }
         header {
-            position: sticky;
+            position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
             height: 80px;
             display: flex;
@@ -23,6 +28,7 @@
             margin: 0 auto;
             padding: 0 80px;
             display: flex;
+            justify-content: flex-start !important;
             align-items: center;
         }
         .about-content {
@@ -124,7 +130,7 @@
 
             <div class="about-section">
                 <h2>Data Sources</h2>
-                <p>A dedicated space for the open data sources that make this project possible</p>
+                <p>This project is built using open-source tools and libraries. I use <a href="https://p5js.org/" target="_blank" class="highlight">p5.js</a> for generative visualization, <a href="https://nodejs.org/" target="_blank" class="highlight">Node.js</a> for the automated news-gathering bot, and <a href="https://newsapi.org/" target="_blank" class="highlight">NewsAPI</a> to fetch the most significant global news every day.</p>
             </div>
         </div>
     </div>

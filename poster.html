@@ -8,7 +8,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
 </head>
 <body>
-    <div class="poster-container">
+    <header class="reveal reveal-1">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Back to home</a>
+        </div>
+    </header>
+
+    <div class="poster-container reveal reveal-2">
+        <div class="poster-dim-overlay"></div>
+        <div class="poster-date-sidebar">TODAY</div>
         <div id="canvas-container"></div>
         
         <div class="top-blocks">
@@ -27,6 +35,19 @@
             <h1 class="news-title" id="title-1"></h1>
             <h1 class="news-title" id="title-2"></h1>
             <h1 class="news-title" id="title-3"></h1>
+        </div>
+
+        <!-- News Card Tooltip -->
+        <div id="news-card" class="news-card">
+            <div class="news-card-content">
+                <div class="news-card-image-container">
+                    <img id="news-card-image" src="" alt="News image">
+                </div>
+                <div class="news-card-text">
+                    <p id="news-card-description"></p>
+                    <a id="news-card-link" href="#" target="_blank">link</a>
+                </div>
+            </div>
         </div>
 
         <div class="bottom-content">

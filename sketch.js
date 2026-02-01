@@ -8,7 +8,6 @@ let currentBottomWord = "";
 let headerBounds = []; // Будем хранить границы заголовков
 const CANVAS_WIDTH = 600;
 const CANVAS_HEIGHT = 800;
-const NEWS_API_KEY = 'e995fc4497af487f887bf84cd5f679e8';
 
 async function setup() {
     canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
@@ -31,6 +30,72 @@ async function setup() {
 
     // 4. Export data for the website
     exportPosterData();
+
+    // 5. Setup hover listeners for titles
+    setupTitleHovers();
+}
+
+function setupTitleHovers() {
+    const card = document.getElementById('news-card');
+    const cardImg = document.getElementById('news-card-image');
+    const cardDesc = document.getElementById('news-card-description');
+    const cardLink = document.getElementById('news-card-link');
+    const container = document.querySelector('.poster-container');
+    const titles = [1, 2, 3].map(id => document.getElementById(`title-${id}`));
+
+    titles.forEach((titleEl, i) => {
+        if (titleEl) {
+            titleEl.style.pointerEvents = 'auto';
+            titleEl.style.cursor = 'pointer';
+
+            titleEl.addEventListener('mouseenter', (e) => {
+                const story = topStories[i];
+                // Показываем карточку только если есть и описание, и картинка
+                if (story && story.description && story.imageUrl) {
+                    cardDesc.innerText = story.description;
+                    cardLink.href = story.url || '#';
+                    cardImg.src = story.imageUrl;
+                    cardImg.parentElement.style.display = 'block';
+                    
+                    card.classList.add('active');
+                    
+                    // Эффект затемнения
+                    container.classList.add('is-dimmed');
+                    // Снимаем активность со всех и ставим только текущему
+                    titles.forEach(t => t.classList.remove('is-active'));
+                    titleEl.classList.add('is-active');
+
+                    // Делаем заголовок кликабельным
+                    titleEl.onclick = () => {
+                        window.open(story.url || '#', '_blank');
+                    };
+                }
+            });
+
+            titleEl.addEventListener('mousemove', (e) => {
+                const containerRect = container.getBoundingClientRect();
+                const x = e.clientX - containerRect.left;
+                const y = e.clientY - containerRect.top + 15;
+                
+                // Всегда справа от курсора: x + небольшой отступ
+                const finalX = x + 15;
+
+                card.style.left = `${finalX}px`;
+                card.style.top = `${y}px`;
+            });
+        }
+    });
+
+    // Слушатель на весь контейнер, чтобы убирать эффект только когда мышь ушла совсем
+    container.addEventListener('mouseleave', (e) => {
+        // Проверяем, что мышь действительно ушла за пределы контейнера, 
+        // а не просто на дочерний элемент
+        if (!e.relatedTarget || !container.contains(e.relatedTarget)) {
+            card.classList.remove('active');
+            container.classList.remove('is-dimmed');
+            titles.forEach(t => t.classList.remove('is-active'));
+        }
+    });
 }
 
 function calculateHeaderBounds() {
@@ -92,8 +157,7 @@ async function fetchLatestData() {
             console.log("✅ Данные загружены:", topStories, "Слово дня:", currentBottomWord);
         }
     } catch (e) {
-        console.error("❌ Ошибка загрузки latest.json, пробуем NewsAPI:", e);
-        await fetchRealData();
+        console.error("❌ Ошибка загрузки latest.json:", e);
     }
 }
 
@@ -106,106 +170,6 @@ function exportPosterData() {
     };
     
     console.log("💾 Данные для сайта подготовлены:", dataToExport);
-}
-
-async function fetchRealData() {
-    console.log("📡 Запрос самых важных мировых новостей...");
-    try {
-        const query = 'war OR election OR economy OR crisis OR "breaking news" OR politics';
-        const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=en&sortBy=relevancy&pageSize=15&apiKey=${NEWS_API_KEY}`;
-        
-        const response = await fetch(url);
-        const data = await response.json();
-        
-        if (data && data.status === "ok" && data.articles.length > 0) {
-            const colors = shuffle(["#ff2d55", "#ff6b35", "#ffb800", "#34c759", "#5ac8fa"]);
-            
-            const cityDatabase = {
-                'USA': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'WASHINGTON': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'TRUMP': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'BIDEN': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'IRAN': { name: 'TEHRAN', lat: 35.6, lng: 51.3 },
-                'TEHRAN': { name: 'TEHRAN', lat: 35.6, lng: 51.3 },
-                'UKRAINE': { name: 'KYIV', lat: 50.4, lng: 30.5 },
-                'RUSSIA': { name: 'MOSCOW', lat: 55.7, lng: 37.6 },
-                'CHINA': { name: 'BEIJING', lat: 39.9, lng: 116.4 },
-                'UK': { name: 'LONDON', lat: 51.5, lng: -0.1 },
-                'ISRAEL': { name: 'TEL AVIV', lat: 32.1, lng: 34.8 },
-                'GAZA': { name: 'GAZA CITY', lat: 31.5, lng: 34.4 },
-                'GERMANY': { name: 'BERLIN', lat: 52.5, lng: 13.4 },
-                'FRANCE': { name: 'PARIS', lat: 48.8, lng: 2.3 },
-                'JAPAN': { name: 'TOKYO', lat: 35.7, lng: 139.7 },
-                'INDIA': { name: 'NEW DELHI', lat: 28.6, lng: 77.2 },
-                'AI': { name: 'SILICON VALLEY', lat: 37.4, lng: -122.0 }
-            };
-
-            const defaultCities = [
-                { name: 'NEW YORK', lat: 40.7, lng: -74.0 },
-                { name: 'LONDON', lat: 51.5, lng: -0.1 },
-                { name: 'SINGAPORE', lat: 1.3, lng: 103.8 },
-                { name: 'DUBAI', lat: 25.2, lng: 55.3 }
-            ];
-
-            const filteredArticles = data.articles.filter(art => 
-                art.title && 
-                art.title.length > 30 && 
-                !art.title.includes("Warhammer") &&
-                !art.title.includes("Deal of the day")
-            );
-
-            topStories = filteredArticles.slice(0, 5).map((art, i) => {
-                let cleanTitle = art.title.split(' - ')[0];
-                let content = art.description || art.content || "";
-                let shortDesc = content.length > 120 ? content.substring(0, 120) + "..." : content;
-                
-                let textWeight = content.length;
-                let calculatedIntensity = map(textWeight, 0, 500, 40, 100);
-                calculatedIntensity = constrain(calculatedIntensity, 40, 100);
-                
-                let city = null;
-                const upperTitle = cleanTitle.toUpperCase();
-                const upperContent = content.toUpperCase();
-                
-                for (let key in cityDatabase) {
-                    if (upperTitle.includes(key) || upperContent.includes(key)) {
-                        city = cityDatabase[key];
-                        break;
-                    }
-                }
-
-                if (!city) {
-                    city = defaultCities[i % defaultCities.length];
-                }
-                
-                return {
-                    id: i + 1,
-                    rank: i + 1,
-                    headline: cleanTitle,
-                    description: shortDesc,
-                    mainLocation: city,
-                    intensity: calculatedIntensity,
-                    color: colors[i % colors.length],
-                    url: art.url,
-                    imageUrl: art.urlToImage
-                };
-            });
-        }
-    } catch (e) {
-        console.error("❌ Ошибка:", e);
-        topStories = TRENDING_STORIES.slice(0, 3);
-    }
-}
-
-// Вспомогательная функция для перемешивания массива (Fisher-Yates shuffle)
-function shuffle(array) {
-    let currentIndex = array.length, randomIndex;
-    while (currentIndex != 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-    }
-    return array;
 }
 
 // Функция для выбора ключевого слова на основе настроения новостей
@@ -263,6 +227,19 @@ function updateUI() {
         }
     }
     
+    // Обновляем дату в сайдбаре
+    const dateSidebar = document.querySelector('.poster-date-sidebar');
+    if (dateSidebar) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const dateParam = urlParams.get('date');
+        
+        if (dateParam) {
+            dateSidebar.innerText = formatDateSidebar(dateParam);
+        } else {
+            dateSidebar.innerText = 'TODAY';
+        }
+    }
+    
     const today = getTodayFormatted();
     const oldDate = document.querySelector('.today-date');
     if (oldDate) oldDate.remove();
@@ -288,6 +265,18 @@ function updateUI() {
             bottomWordEl.innerText = getSentimentWord(topStories);
         }
     }
+}
+
+function formatDateSidebar(dateStr) {
+    const date = new Date(dateStr);
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    const targetDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    
+    if (targetDate.getTime() === today.getTime()) return 'TODAY';
+    
+    return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
 }
 
 function drawPoster() {
