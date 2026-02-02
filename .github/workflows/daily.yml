@@ -30,6 +30,8 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git fetch origin main
+        git reset --soft origin/main
         git add archive/*.json latest.json
-        git commit -m "Add daily news data: $(date +%Y-%m-%d)" || echo "No changes to commit"
+        git diff --cached --quiet || git commit -m "Add daily news data: $(date +%Y-%m-%d)"
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
