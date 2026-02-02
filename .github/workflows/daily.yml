@@ -2,7 +2,7 @@ name: Daily News Poster Generator
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Запуск каждый день в полночь
+    - cron: '0 10 * * *' # Запуск каждый день в 10:00 UTC
   workflow_dispatch: # Позволяет запускать вручную
 
 jobs:
