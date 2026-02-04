@@ -16,8 +16,8 @@ async function setup() {
     pixelDensity(2);
     noLoop();
     
-    // 1. Fetch real data from latest.json
-    await fetchLatestData();
+    // 1. Fetch real data (from specific archive file if date param exists, otherwise latest.json)
+    await fetchPosterData();
     
     // 2. Update HTML elements (Titles + Top Text + Bottom Word)
     updateUI();
@@ -28,8 +28,11 @@ async function setup() {
         drawPoster();
     }, 100);
 
-    // 4. Export data for the website
-    exportPosterData();
+    // 4. Export data for the website (only if we're on the latest poster)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (!urlParams.get('date')) {
+        exportPosterData();
+    }
 
     // 5. Setup hover listeners for titles
     setupTitleHovers();
@@ -145,10 +148,14 @@ function calculateHeaderBounds() {
     }
 }
 
-async function fetchLatestData() {
-    console.log("📡 Загрузка последних данных из latest.json...");
+async function fetchPosterData() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dataFile = dateParam ? `archive/poster-${dateParam}.json` : 'latest.json';
+
+    console.log(`📡 Загрузка данных из ${dataFile}...`);
     try {
-        const response = await fetch('latest.json');
+        const response = await fetch(dataFile);
         const data = await response.json();
         
         if (data && data.stories) {
@@ -157,7 +164,7 @@ async function fetchLatestData() {
             console.log("✅ Данные загружены:", topStories, "Слово дня:", currentBottomWord);
         }
     } catch (e) {
-        console.error("❌ Ошибка загрузки latest.json:", e);
+        console.error(`❌ Ошибка загрузки ${dataFile}:`, e);
     }
 }
 
@@ -349,8 +356,11 @@ function drawHeatmap() {
     const centerY = height * 0.45;
     
     // Используем тот же seed, что и в drawMarkers, чтобы пятна совпадали с точками
-    let dateSeed = day() + month() * 31 + year() * 365;
-    randomSeed(dateSeed);
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dateStr = dateParam || new Date().toISOString().split('T')[0];
+    const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
+    randomSeed(seed);
     
     // Сначала рассчитываем позиции, как в drawMarkers
     const storyPositions = [];
@@ -394,9 +404,12 @@ function drawMarkers() {
     const centerY = height * 0.45;
     
     // Генерируем случайные X для каждой истории, чтобы каждый день было по-разному
-    // Используем seed на основе даты, чтобы в течение дня X был одинаковым, но разным между днями
-    let dateSeed = day() + month() * 31 + year() * 365;
-    randomSeed(dateSeed);
+    // Используем seed на основе даты из данных, чтобы в течение дня X был одинаковым, но разным между днями
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dateStr = dateParam || new Date().toISOString().split('T')[0];
+    const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
+    randomSeed(seed);
 
     const storyPositions = [];
     for (let i = 0; i < Math.min(topStories.length, 3); i++) {
