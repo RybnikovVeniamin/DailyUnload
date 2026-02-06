@@ -1,0 +1,341 @@
+:root {
+    --bg-black: #000000;
+    --bg-dark: #08090c;
+    --text-white: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.5);
+    --text-dim: rgba(255, 255, 255, 0.3);
+    
+    --font-main: 'PP Neue Montreal', sans-serif;
+    --font-display: 'PP Woodland', serif;
+    --font-accent: 'PP Object Sans', sans-serif;
+    --font-mono: 'PP Supply Mono', monospace;
+    --font-sans: 'PP Supply Sans', sans-serif;
+    --text-gray: #575757;
+}
+
+@font-face {
+    font-family: 'PP Object Sans';
+    src: url('../fonts/PP Object Sans/PPObjectSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Object Sans';
+    src: url('../fonts/PP Object Sans/PPObjectSans-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Woodland';
+    src: url('../fonts/PP Woodland/PPWoodland-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Woodland';
+    src: url('../fonts/PP Woodland/PPWoodland-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP Neue Montreal/PPNeueMontreal-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP Neue Montreal/PPNeueMontreal-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PP Neue Montreal/PPNeueMontreal-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Bit';
+    src: url('../fonts/PPNeuebit/PPNeueBit-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Supply Mono';
+    src: url('../fonts/PP Supply/Mono/PPSupplyMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Supply Sans';
+    src: url('../fonts/PP Supply/Sans/PPSupplySans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Supply Sans';
+    src: url('../fonts/PP Supply/Sans/PPSupplySans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 64px 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-black);
+    z-index: 1000;
+}
+
+        header .nav-container {
+            width: 100%;
+            max-width: 1440px;
+            padding: 0 80px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--font-accent);
+    text-transform: none;
+    letter-spacing: -0.01em;
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 240px;
+    margin-bottom: 300px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+    line-height: 1.0;
+    text-transform: none;
+    font-family: var(--font-display);
+}
+
+.hero p {
+    color: var(--text-white);
+    font-size: 24px;
+    font-family: var(--font-accent);
+    max-width: none;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+/* Poster Grid */
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 296px);
+    justify-content: space-between;
+    gap: 40px 20px;
+    margin-top: 40px;
+}
+
+.poster-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 
+        opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+        transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.poster-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.poster-item:hover {
+    transform: translateY(-8px);
+}
+
+.poster-preview {
+    width: 296px;
+    height: 358px;
+    background: var(--bg-dark);
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+/* Эффект в стиле monopo.vn - анимированный Mesh-градиент */
+.poster-preview::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #08090c;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(223, 17%, 10%, 1) 0, transparent 50%), 
+        radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%), 
+        radial-gradient(at 100% 0%, hsla(223, 17%, 10%, 1) 0, transparent 50%), 
+        radial-gradient(at 0% 50%, hsla(225, 39%, 30%, 1) 0, transparent 50%), 
+        radial-gradient(at 50% 50%, hsla(223, 17%, 10%, 1) 0, transparent 50%), 
+        radial-gradient(at 100% 50%, hsla(225, 39%, 30%, 1) 0, transparent 50%), 
+        radial-gradient(at 0% 100%, hsla(223, 17%, 10%, 1) 0, transparent 50%), 
+        radial-gradient(at 50% 100%, hsla(225, 39%, 30%, 1) 0, transparent 50%), 
+        radial-gradient(at 100% 100%, hsla(223, 17%, 10%, 1) 0, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: 0;
+}
+
+@keyframes meshAnimation {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    33% { transform: translate(2%, 3%) scale(1.1) rotate(1deg); }
+    66% { transform: translate(-2%, 1%) scale(0.95) rotate(-1deg); }
+    100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
+.poster-item:hover .poster-preview::before {
+    opacity: 1;
+    animation: meshAnimation 15s ease-in-out infinite alternate;
+}
+
+/* Текстура шума (Grain) - всегда видна для глубины */
+.poster-preview::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.poster-placeholder {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    filter: blur(40px);
+    transform: scale(1.1);
+    transition: 
+        opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+        filter 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+        transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+    position: relative;
+    mix-blend-mode: screen;
+}
+
+.poster-item:hover .poster-placeholder {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+}
+
+.poster-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 0;
+}
+
+.poster-date {
+    font-family: var(--font-accent);
+    font-size: 18px;
+    text-transform: none;
+    letter-spacing: -0.01em;
+    color: var(--text-white);
+}
+
+/* Typography Helpers */
+.font-mono { font-family: var(--font-mono); }
+.font-display { font-family: var(--font-display); }
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(var(--travel-y, 15px));
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    animation: fadeInUp 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.reveal-1 { animation-delay: 0.2s; }
+.reveal-2 { 
+    animation-delay: 0.4s; 
+    --travel-y: 8px;
+}
+.reveal-3 { animation-delay: 0.6s; }
+
+/* Exit animations for poster grid items */
+body.is-leaving .poster-item.is-visible {
+    opacity: 0 !important;
+    transform: translateY(-15px) !important;
+    transition-duration: 0.5s !important;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1) !important;
+}

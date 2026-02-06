@@ -1,0 +1,73 @@
+{
+  "date": "2026-02-04",
+  "displayDate": "FEB 4, 2026",
+  "bottomWord": "UNCERTAINTY",
+  "stories": [
+    {
+      "id": 2,
+      "headline": "Gold and silver prices soared, then plummeted. What’s going on?",
+      "description": "Analysts see various factors at play for price swings, from Trump’s unpredictability to distrust in economic systems.",
+      "mainLocation": null,
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/economy/2026/2/3/gold-and-silver-prices-soared-then-plummeted-whats-going-on",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-01-28T135228Z_1432587036_RC2CAJA9GI69_RTRMADP_3_GLOBAL-PRECIOUS-GERMANY-GOLD-1770089177_96cd39-1770100107.jpg?resize=1200%2C630&quality=80"
+    },
+    {
+      "id": 3,
+      "headline": "Russia renews attacks on frozen Ukrainian cities",
+      "description": "Hundreds of drones and missiles struck Kyiv and Kharkiv overnight, leaving thousands of homes without heat.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 75,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/2/3/russia-renews-attacks-on-frozen-ukrainian-cities",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AFP__20260203__94WE9NW__v2__HighRes__TopshotUkraineRussiaConflictWar-1770101276.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Trump announces plan to sue Harvard for $1bn damages",
+      "description": "The US president writes on Truth Social that he wants ‘nothing further to do, into the future’ with the university.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., USA",
+        "lat": 38.8950368,
+        "lng": -77.0365427
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/2/3/trump-announces-plan-to-sue-harvard-for-1bn",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/03/2023-10-14T211935Z_1559279656_RC2IS3A3K92A_RTRMADP_3_ISRAEL-PALESTINIANS-PROTESTS-USA-1743220785.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 6,
+      "headline": "China bans hidden car door handles over safety concerns",
+      "description": "It makes China the first country to stop the use of designs first made popular by Elon Musk's Tesla.",
+      "mainLocation": {
+        "name": "BEIJING, CHINA",
+        "lat": 40.190632,
+        "lng": 116.412144
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/cp37g5nxe3lo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/49e5/live/b9e22840-00d0-11f1-a266-e3d9153f08c1.jpg"
+    },
+    {
+      "id": 8,
+      "headline": "Rape trial begins for son of Norway's crown princess in tense moment for royal family",
+      "description": "Royal's son faces rape charges in Norway's biggest case in years.",
+      "mainLocation": {
+        "name": "OSLO, NORWAY",
+        "lat": 59.9133301,
+        "lng": 10.7389701
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.bbc.co.uk/news/articles/ckgn8dnxjgwo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0581/live/cb17b6c0-0062-11f1-a8b8-bdd2c5f9bcad.jpg"
+    }
+  ]
+}

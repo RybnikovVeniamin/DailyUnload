@@ -1,0 +1,77 @@
+{
+  "date": "2026-02-03",
+  "displayDate": "FEB 3, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 2,
+      "headline": "Cuba denies security threat accusations as US raises pressure",
+      "description": "Havana says it is ready for ‘constructive engagement’ with Washington as White House moves to choke off oil supplies.",
+      "mainLocation": {
+        "name": "HAVANA, CUBA",
+        "lat": 23.135305,
+        "lng": -82.3589631
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/2/2/cuba-denies-security-threat-accusations-as-us-raises-pressure",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-01-17T015251Z_443481867_RC2D2JARUV0B_RTRMADP_3_USA-VENEZUELA-CUBA-1770013666.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "India's snakebite crisis is killing tens of thousands every year",
+      "description": "A new report has found that 99% of healthcare workers in India face challenges administering antivenom.",
+      "mainLocation": {
+        "name": "NEW DELHI, INDIA",
+        "lat": 28.6138954,
+        "lng": 77.2090057
+      },
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.bbc.co.uk/news/articles/cy8p27vmyvmo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a301/live/1fe034d0-fdc4-11f0-9fd1-b16cd887f03f.jpg"
+    },
+    {
+      "id": 4,
+      "headline": "A year after Hezbollah-Israel ceasefire, over 64,000 Lebanese displaced",
+      "description": "Many say they have received little support from government or Hezbollah, not enough to rebuild lives or homes destroyed.",
+      "mainLocation": {
+        "name": "BEIRUT, LEBANON",
+        "lat": 33.8892265,
+        "lng": 35.5025585
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/features/2026/2/2/a-year-after-hezbollah-israel-ceasefire-over-64000-lebanese-displaced",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/01/AFP__20260121__93JP3WE__v2__MP41920x1080__IsraeliStrikeHitsBuildingInSouthernLebanes-1769022181.jpg?resize=1920%2C1080&quality=80"
+    },
+    {
+      "id": 5,
+      "headline": "Gaza’s Rafah crossing reopens for limited traffic",
+      "description": "Reopening of the link between the enclave and Egypt is stipulated under the second phase of the US-brokered ‘ceasefire’.",
+      "mainLocation": {
+        "name": "RAFAH, EGYPT",
+        "lat": 31.2877055,
+        "lng": 34.2363417
+      },
+      "intensity": 55,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/2/2/gazas-rafah-crossing-reopens-for-limited-traffic",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/afp_69803d0192b5-1770011905.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 6,
+      "headline": "Iran summons EU ambassadors to protest Revolutionary Guard being listed as terror group",
+      "description": "Iran summons EU ambassadors to protest the bloc's terror group listing.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 55,
+      "color": "#ff2d55",
+      "url": "https://apnews.com/article/iran-eu-protests-revolutionary-guard-d38bc397f1bb54d7352879401449b50b",
+      "imageUrl": "https://dims.apnews.com/dims4/default/a86f059/2147483647/strip/true/crop/8640x5757+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F3a%2F77%2Fdf7eea9a4578933bd693207b7f07%2Fea5a975fd6894af482d240d95cdebc47"
+    }
+  ]
+}

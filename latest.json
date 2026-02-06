@@ -1,0 +1,77 @@
+{
+  "date": "2026-02-06",
+  "displayDate": "FEB 6, 2026",
+  "bottomWord": "UNCERTAINTY",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Gaza patients head to Rafah crossing as people return amid Israeli attacks",
+      "description": "Twenty-five more Palestinians arrive in Gaza as 13 patients in need of treatment to begin evacuations through Rafah.",
+      "mainLocation": {
+        "name": "RAFAH, EGYPT",
+        "lat": 31.2877055,
+        "lng": 34.2363417
+      },
+      "intensity": 68,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/2/5/gaza-patients-head-to-rafah-crossing-as-people-return-amid-israeli-attacks",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-02-05T010052Z_1211130499_RC2DFJAJ6H07_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-1770276814.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Epstein’s help sought in bid to meet Chuck Schumer, files reveal",
+      "description": "Email exchange shows Epstein sought to arrange meeting between top Democrat and US Virgin Islands representative.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., USA",
+        "lat": 38.8950368,
+        "lng": -77.0365427
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/2/5/epsteins-help-sought-in-bid-to-meet-chuck-schumer-files-reveal",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2023-02-09T220600Z_795956172_RC2U7Z9Z1P3W_RTRMADP_3_USA-CONGRESS-1770258995_76ab62-1770274815.jpg?resize=1200%2C630&quality=80"
+    },
+    {
+      "id": 5,
+      "headline": "Boycotting India at T20 World Cup to support Bangladesh: Pakistan PM Sharif",
+      "description": "‘There should be no politics in sport,’ Sharif says, referring to the recent India-Bangladesh cricket crisis.",
+      "mainLocation": {
+        "name": "ISLAMABAD, PAKISTAN",
+        "lat": 33.6938118,
+        "lng": 73.0651511
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/sports/2026/2/5/boycotting-india-at-t20-world-cup-to-support-bangladesh-pakistan-pm-sharif",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AFP__20250601__48TR3G3__v1__MidRes__CricketPakBanT20-1770277463.jpg?resize=1799%2C1080"
+    },
+    {
+      "id": 6,
+      "headline": "Fears of a new arms race after the last US-Russia nuclear pact expires",
+      "description": "Nuclear arms pact between Russia and US ends, raising fears of a new arms race.",
+      "mainLocation": {
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
+      },
+      "intensity": 75,
+      "color": "#ff2d55",
+      "url": "https://apnews.com/article/russia-us-putin-trump-nuclear-weapons-treaty-0e82c7fb5e5feca89a9c3f45d6f4feae",
+      "imageUrl": "https://dims.apnews.com/dims4/default/de37dbc/2147483647/strip/true/crop/3530x2352+324+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa5%2F55%2F0d059b88749b61c47ed1aad3998d%2Fbb5137930b604a6a83df222cbdfbcc36"
+    },
+    {
+      "id": 7,
+      "headline": "What to know about the attacks in Nigeria that killed over 160 people",
+      "description": "Gunmen killed at least 162 in Nigeria village attacks on Tuesday.",
+      "mainLocation": {
+        "name": "ABUJA, NIGERIA",
+        "lat": 9.0643305,
+        "lng": 7.4892974
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://apnews.com/article/nigeria-attack-kwara-what-to-know-7d4371e36d8f0504017b6c692c58ddc2",
+      "imageUrl": "https://dims.apnews.com/dims4/default/153fbbe/2147483647/strip/true/crop/960x640+0+320/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fd8%2Fb6%2Ff77ec9b470bfe9079b00de8be3d1%2F895f79aa77fe4d58a21ae3e911c55e7b"
+    }
+  ]
+}

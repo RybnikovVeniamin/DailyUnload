@@ -1,0 +1,69 @@
+{
+  "date": "2026-02-02",
+  "displayDate": "FEB 2, 2026",
+  "bottomWord": "UNCERTAINTY",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Boxing results: Shakur dominates Lopez; Carrington wins title",
+      "description": "Shakur Stevenson outpointed Teofimo Lopez Jr. to win the WBO junior welterweight world title.",
+      "mainLocation": null,
+      "intensity": 40,
+      "color": "#ff2d55",
+      "url": "https://www.espn.com/boxing/story/_/id/47757588/teofimo-lopez-jr-shakur-stevenson-live-boxing-updates-results-analysis",
+      "imageUrl": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0201%2Fr1608702_1296x729_16%2D9.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "Highway 99 in Tulare County reopens after 59-vehicle pileup, CHP says",
+      "description": "Highway 99 reopens after a 59-vehicle pileup near Earlimart.",
+      "mainLocation": {
+        "name": "EARLIMART, USA",
+        "lat": 35.8799715,
+        "lng": -119.2725961
+      },
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://abc30.com/post/150-vehicle-pileup-forces-total-closure-highway-99-tulare-county-officials-say/18516483/",
+      "imageUrl": "https://cdn.abcotvs.com/dip/images/18516555_013126-kfsn-tulareco-hwy99-pileup.jpg?w=1600"
+    },
+    {
+      "id": 3,
+      "headline": "Donald Trump’s unprecedented political war chest got even bigger in 2025",
+      "description": "Trump's fundraising dominance continues, campaign finance details revealed.",
+      "mainLocation": null,
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.politico.com/news/2026/02/01/donald-trump-fundraising-midterms-00759005",
+      "imageUrl": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2Fb1%2Fb3%2F56f121c8465b8717682ed2a2177a%2Ftrump-19434.jpg"
+    },
+    {
+      "id": 4,
+      "headline": "Virginia woman was strangled with her child sleeping nearby, authorities say. Who was behind the deadly attack?",
+      "description": "Virginia woman strangled in her sleep while her child slept nearby.",
+      "mainLocation": {
+        "name": "VIRGINIA, USA",
+        "lat": 37.1232245,
+        "lng": -78.4927721
+      },
+      "intensity": 40,
+      "color": "#34c759",
+      "url": "https://www.cbsnews.com/news/katlyn-lyon-montgomery-virginia-trenton-frye-north-carolina-deadly-attack-48-hours/",
+      "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/01/28/dbbc6f85-ae0a-4ac3-b9dd-29f05c6c7ac9/thumbnail/1200x630/049a593aa109f8a9210cc5eddda11489/montgomery-full.jpg"
+    },
+    {
+      "id": 5,
+      "headline": "Iran’s Gen Z Helped Propel the Protests. They Paid With Their Lives.",
+      "description": "A generation who grew up in a more connected world rebelled against a failing economy and strict social rules",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 68,
+      "color": "#5ac8fa",
+      "url": "https://www.wsj.com/world/middle-east/irans-gen-z-helped-propel-the-protests-they-paid-with-their-lives-80675ef3",
+      "imageUrl": "https://images.wsj.net/im-52115067/social"
+    }
+  ]
+}

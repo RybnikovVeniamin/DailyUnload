@@ -1,0 +1,37 @@
+name: Daily News Poster Generator
+
+on:
+  schedule:
+    - cron: '0 10 * * *' # Запуск каждый день в 10:00 UTC
+  workflow_dispatch: # Позволяет запускать вручную
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run generator
+      run: node generator.js
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git fetch origin main
+        git reset --soft origin/main
+        git add archive/*.json latest.json
+        git diff --cached --quiet || git commit -m "Add daily news data: $(date +%Y-%m-%d)"
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main

@@ -1,0 +1,77 @@
+{
+  "date": "2026-02-05",
+  "displayDate": "FEB 5, 2026",
+  "bottomWord": "DESPAIR",
+  "stories": [
+    {
+      "id": 2,
+      "headline": "How Israel destroyed Gaza’s health system ‘deliberately and methodically’",
+      "description": "Despite ‘ceasefire’, the health sector in Gaza continues to suffer from shortages, destruction and lack of equipment.",
+      "mainLocation": {
+        "name": "GAZA, PALESTINE",
+        "lat": 31.4698868,
+        "lng": 34.3978915
+      },
+      "intensity": 75,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/2/4/how-israel-destroyed-gazas-health-system-deliberately-and-methodically",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AP25326738139448-1770185963.jpg?resize=1200%2C675"
+    },
+    {
+      "id": 3,
+      "headline": "The cold, hungry reality of displacement in war-torn Sudan’s Tawila",
+      "description": "Displaced families who fled el-Fasher face dire conditions with no blankets, food shortages, and few medical supplies.",
+      "mainLocation": {
+        "name": "TAWILA, SUDAN",
+        "lat": 13.513868,
+        "lng": 24.8612293
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/2/4/the-cold-hungry-reality-of-displacement-in-war-torn-sudans-tawila",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/12/2025-04-18T180041Z_49408371_RC27YDA5JBQY_RTRMADP_3_SUDAN-POLITICS-ZAMZAM-1766571843.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Fears loom for a new arms race as the last nuclear pact between the US and Russia expires",
+      "description": "Nuclear pact expires, raising fears of a new arms race between Russia and the US.",
+      "mainLocation": {
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
+      },
+      "intensity": 75,
+      "color": "#5ac8fa",
+      "url": "https://apnews.com/article/russia-us-nuclear-weapons-treaty-putin-trump-5b1af24b0b3e65a8acb6ca7153018beb",
+      "imageUrl": "https://dims.apnews.com/dims4/default/32030c1/2147483647/strip/true/crop/3255x2169+0+84/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fd5%2F66%2Ff4fa8f047a346ed1c6c7e4b424bd%2Fb562f51339324c3da1c63a3109b3d97d"
+    },
+    {
+      "id": 7,
+      "headline": "‘No expectations’: Bangladesh election means little to 1m Rohingya refugees",
+      "description": "The two main parties say they will push for repatriation to Myanmar. But that’s unrealistic, say experts.",
+      "mainLocation": {
+        "name": "DHAKA, BANGLADESH",
+        "lat": 23.7643863,
+        "lng": 90.3890144
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/features/2026/2/4/no-expectations-bangladesh-election-means-little-to-1m-rohingya-refugees",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/DSC3299-1770189376.jpeg?resize=1920%2C1440"
+    },
+    {
+      "id": 8,
+      "headline": "Russia-Ukraine war: Second round of peace talks set to begin in Abu Dhabi",
+      "description": "The main sticking point in the negotiations continues to be the long-term fate of territory in eastern Ukraine.",
+      "mainLocation": {
+        "name": "ABU DHABI, UNITED ARAB EMIRATES",
+        "lat": 24.4538352,
+        "lng": 54.3774014
+      },
+      "intensity": 68,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/2/4/russia-ukraine-war-second-round-of-peace-talks-set-to-begin-in-abu-dhabi",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/01/epa_6973ded12f33-1769201361.jpg?resize=1920%2C1440"
+    }
+  ]
+}

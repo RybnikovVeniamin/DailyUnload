@@ -1,0 +1,12 @@
+{
+  "name": "global-pulse-generator",
+  "version": "1.0.0",
+  "description": "Daily news poster generator",
+  "main": "generator.js",
+  "scripts": {
+    "generate": "node generator.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
