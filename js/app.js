@@ -28,10 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     grid.appendChild(item);
 
-                    // Запускаем анимацию появления с задержкой (один за другим)
-                    setTimeout(() => {
-                        item.classList.add('is-visible');
-                    }, 200 + (index * 250));
+                    // Setup the "Scroll Watcher" (Intersection Observer)
+                    // This creates a small delay for each item in a batch so they cascade nicely
+                    observer.observe(item);
                 });
             }
         })
@@ -40,6 +39,28 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.innerHTML = '<p class="reveal reveal-1">No posters found in archive.</p>';
         });
 });
+
+// The Scroll Watcher configuration
+const observerOptions = {
+    root: null,   // use the viewport
+    rootMargin: '0px',
+    threshold: 0.1 // trigger when 10% of the item is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            // Add a tiny delay based on index to create a "wave" effect 
+            // if multiple items appear at once (like on page load)
+            setTimeout(() => {
+                entry.target.classList.add('is-visible');
+            }, index * 100); // 100ms stagger between items
+            
+            // Stop watching this item once it's visible
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
 
 function formatDate(dateStr) {
     const date = new Date(dateStr);
