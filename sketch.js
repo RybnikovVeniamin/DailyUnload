@@ -295,8 +295,25 @@ function drawPoster() {
     drawHeatmap();
     drawMarkers();
     
+    // Добавляем эффект зернистости (шум)
+    addGrain(15); 
+    
     // После отрисовки всего на канвасе, проверяем яркость под текстом
     applyAdaptiveTextColor();
+}
+
+function addGrain(strength) {
+    loadPixels();
+    for (let i = 0; i < pixels.length; i += 4) {
+        // Генерируем случайный шум
+        let noiseVal = random(-strength, strength);
+        
+        // Применяем к каналам R, G, B
+        pixels[i] = constrain(pixels[i] + noiseVal, 0, 255);
+        pixels[i+1] = constrain(pixels[i+1] + noiseVal, 0, 255);
+        pixels[i+2] = constrain(pixels[i+2] + noiseVal, 0, 255);
+    }
+    updatePixels();
 }
 
 function applyAdaptiveTextColor() {
