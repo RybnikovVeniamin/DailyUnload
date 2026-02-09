@@ -6,6 +6,64 @@ let canvas;
 let topStories = [];
 let currentBottomWord = "";
 let headerBounds = []; // Будем хранить границы заголовков
+let bottomWordBlotter = null;
+let bottomWordMaterial = null;
+
+function initBlotter(text) {
+    const bottomWordEl = document.getElementById('bottom-word');
+    if (!bottomWordEl) return;
+
+    // Clear existing content
+    bottomWordEl.innerHTML = '';
+    
+    // Use date-based seed so parameters are stable throughout the day
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dateStr = dateParam || new Date().toISOString().split('T')[0];
+    const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
+    
+    randomSeed(seed);
+    
+    // Generate daily random values
+    let dailyOffset = random(0, 0.059);
+    let dailyRotation = random(0, 360);
+    
+    // Create material
+    // Check if Blotter and ChannelSplitMaterial are available
+    if (typeof Blotter !== 'undefined' && Blotter.ChannelSplitMaterial) {
+        bottomWordMaterial = new Blotter.ChannelSplitMaterial();
+        bottomWordMaterial.uniforms.uOffset.value = dailyOffset;
+        bottomWordMaterial.uniforms.uRotation.value = dailyRotation;
+        bottomWordMaterial.uniforms.uApplyBlur.value = 1.0;
+        bottomWordMaterial.uniforms.uAnimateNoise.value = 1.0;
+        
+        // Create text
+        const textObj = new Blotter.Text(text, {
+            family: "'PP Neue Bit', serif",
+            size: 80,
+            fill: "#e8e9eb",
+            weight: 700,
+            paddingLeft: 40,
+            paddingRight: 40,
+            paddingTop: 40,
+            paddingBottom: 40
+        });
+        
+        // Create Blotter instance
+        bottomWordBlotter = new Blotter(bottomWordMaterial, {
+            texts: textObj
+        });
+        
+        // Append to element
+        const scope = bottomWordBlotter.forText(textObj);
+        scope.appendTo(bottomWordEl);
+    } else {
+        // Fallback if Blotter not loaded
+        console.warn("Blotter.js not loaded, using standard text");
+        bottomWordEl.innerText = text;
+    }
+}
+
 const CANVAS_WIDTH = 600;
 const CANVAS_HEIGHT = 800;
 
@@ -264,13 +322,15 @@ function updateUI() {
     // ОБНОВЛЕННАЯ ЛОГИКА: Сначала проверяем, есть ли слово от ИИ в данных
     const bottomWordEl = document.getElementById('bottom-word');
     if (bottomWordEl) {
-        // Если мы загрузили данные из latest.json и там есть bottomWord, используем его
-        // В противном случае рассчитываем по старинке (как запасной вариант)
+        let textToShow = "PULSE"; // Default
+        
         if (typeof currentBottomWord !== 'undefined' && currentBottomWord) {
-            bottomWordEl.innerText = currentBottomWord;
+            textToShow = currentBottomWord;
         } else if (topStories.length > 0) {
-            bottomWordEl.innerText = getSentimentWord(topStories);
+            textToShow = getSentimentWord(topStories);
         }
+        
+        initBlotter(textToShow.toUpperCase());
     }
 }
 
@@ -363,8 +423,16 @@ function applyAdaptiveTextColor() {
             const expBlocks = document.querySelectorAll('.explanation-block');
             if (expBlocks[bound.id]) expBlocks[bound.id].style.color = targetColor === '#ffffff' ? '#ffffff' : '#8b8d93';
         } else if (bound.type === 'bottom') {
-            const el = document.getElementById('bottom-word');
-            if (el) el.style.color = targetColor;
+            if (bottomWordBlotter && bottomWordBlotter.texts && bottomWordBlotter.texts.length > 0) {
+                const textObj = bottomWordBlotter.texts[0];
+                if (textObj.properties.fill !== targetColor) {
+                    textObj.properties.fill = targetColor;
+                    textObj.needsUpdate = true;
+                }
+            } else {
+                const el = document.getElementById('bottom-word');
+                if (el) el.style.color = targetColor;
+            }
         }
     });
 }
