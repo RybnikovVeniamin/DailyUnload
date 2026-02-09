@@ -209,20 +209,35 @@ function calculateHeaderBounds() {
 async function fetchPosterData() {
     const urlParams = new URLSearchParams(window.location.search);
     const dateParam = urlParams.get('date');
-    const dataFile = dateParam ? `archive/poster-${dateParam}.json` : 'latest.json';
+    // Add cache buster to ensure we don't see old data
+    const cacheBuster = `?v=${Date.now()}`;
+    const dataFile = dateParam ? `archive/poster-${dateParam}.json${cacheBuster}` : `latest.json${cacheBuster}`;
 
-    console.log(`📡 Загрузка данных из ${dataFile}...`);
+    console.log(`📡 Loading data from ${dataFile}...`);
     try {
         const response = await fetch(dataFile);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
         
         if (data && data.stories) {
             topStories = data.stories;
             currentBottomWord = data.bottomWord || "";
-            console.log("✅ Данные загружены:", topStories, "Слово дня:", currentBottomWord);
+            console.log("✅ Data loaded:", topStories, "Word of the day:", currentBottomWord);
         }
     } catch (e) {
-        console.error(`❌ Ошибка загрузки ${dataFile}:`, e);
+        console.error(`❌ Error loading ${dataFile}:`, e);
+        // Fallback to latest.json if archive fails
+        if (dateParam) {
+            console.log("🔄 Falling back to latest.json...");
+            try {
+                const fallbackResponse = await fetch(`latest.json?v=${Date.now()}`);
+                const fallbackData = await fallbackResponse.json();
+                topStories = fallbackData.stories;
+                currentBottomWord = fallbackData.bottomWord || "";
+            } catch (fallbackErr) {
+                console.error("❌ Fallback also failed");
+            }
+        }
     }
 }
 

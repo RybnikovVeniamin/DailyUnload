@@ -139,7 +139,7 @@ header .nav-container {
     align-items: center;
     text-align: center;
     z-index: 60; /* Higher than dim overlay to allow titles to be above */
-    pointer-events: none;
+    /* pointer-events: none; REMOVED to allow hover */
 }
 
 .news-title {
@@ -150,6 +150,8 @@ header .nav-container {
     text-transform: uppercase;
     position: relative;
     transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease, color 0.4s ease;
+    pointer-events: auto; /* Ensure titles capture mouse events */
+    cursor: pointer;
 }
 
 .poster-container.is-dimmed .news-title:not(.is-active) {
