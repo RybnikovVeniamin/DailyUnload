@@ -6,17 +6,18 @@
     <title>Global Pulse Redesign</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-    
-    <!-- Blotter.js Dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script> <!-- Using r100 for compatibility -->
-    
-    <!-- Blotter.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/blotter.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/channelSplitMaterial.min.js"></script>
 </head>
 <body>
-    <div class="poster-container">
+    <div class="page-transition"></div>
+    <header class="reveal reveal-1">
+        <div class="nav-container">
+            <a href="/" class="nav-link">Back to home</a>
+        </div>
+    </header>
+
+    <div class="poster-container reveal reveal-2">
+        <div class="poster-dim-overlay"></div>
+        <div class="poster-date-sidebar">TODAY</div>
         <div id="canvas-container"></div>
         
         <div class="top-blocks">
@@ -37,12 +38,28 @@
             <h1 class="news-title" id="title-3"></h1>
         </div>
 
+        <!-- News Card Tooltip -->
+        <div id="news-card" class="news-card">
+            <div class="news-card-content">
+                <div class="news-card-image-container">
+                    <img id="news-card-image" src="" alt="News image">
+                </div>
+                <div class="news-card-text">
+                    <p id="news-card-description"></p>
+                    <a id="news-card-link" href="#" target="_blank">link</a>
+                </div>
+            </div>
+        </div>
+
         <div class="bottom-content">
             <div class="big-word" id="bottom-word">PULSE</div>
         </div>
     </div>
 
+    <script src="js/transitions.js"></script>
     <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/blotter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/channelSplitMaterial.min.js"></script>
     <script src="sketch.js"></script>
 </body>
 </html>

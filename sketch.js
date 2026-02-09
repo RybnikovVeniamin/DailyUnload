@@ -5,7 +5,7 @@
 let canvas;
 let topStories = [];
 let currentBottomWord = "";
-let headerBounds = []; // We will store header boundaries
+let headerBounds = []; // Будем хранить границы заголовков
 let bottomWordBlotter = null;
 let bottomWordMaterial = null;
 
@@ -17,8 +17,12 @@ function initBlotter(text) {
     bottomWordEl.innerHTML = '';
     
     // Use date-based seed so parameters are stable throughout the day
-    let dateSeed = day() + month() * 31 + year() * 365;
-    randomSeed(dateSeed);
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dateStr = dateParam || new Date().toISOString().split('T')[0];
+    const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
+    
+    randomSeed(seed);
     
     // Generate daily random values
     let dailyOffset = random(0, 0.059);
@@ -62,7 +66,6 @@ function initBlotter(text) {
 
 const CANVAS_WIDTH = 600;
 const CANVAS_HEIGHT = 800;
-const NEWS_API_KEY = 'e995fc4497af487f887bf84cd5f679e8';
 
 async function setup() {
     canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
@@ -71,25 +74,94 @@ async function setup() {
     pixelDensity(2);
     noLoop();
     
-    // 1. Fetch real data from latest.json
-    await fetchLatestData();
+    // 1. Fetch real data (from specific archive file if date param exists, otherwise latest.json)
+    await fetchPosterData();
     
     // 2. Update HTML elements (Titles + Top Text + Bottom Word)
     updateUI();
     
-    // Give the browser time to render HTML to get header sizes
+    // Даем браузеру время отрисовать HTML, чтобы получить размеры заголовков
     setTimeout(() => {
         calculateHeaderBounds();
         drawPoster();
     }, 100);
 
-    // 4. Export data for the website
-    exportPosterData();
+    // 4. Export data for the website (only if we're on the latest poster)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (!urlParams.get('date')) {
+        exportPosterData();
+    }
+
+    // 5. Setup hover listeners for titles
+    setupTitleHovers();
+}
+
+function setupTitleHovers() {
+    const card = document.getElementById('news-card');
+    const cardImg = document.getElementById('news-card-image');
+    const cardDesc = document.getElementById('news-card-description');
+    const cardLink = document.getElementById('news-card-link');
+    const container = document.querySelector('.poster-container');
+    const titles = [1, 2, 3].map(id => document.getElementById(`title-${id}`));
+
+    titles.forEach((titleEl, i) => {
+        if (titleEl) {
+            titleEl.style.pointerEvents = 'auto';
+            titleEl.style.cursor = 'pointer';
+
+            titleEl.addEventListener('mouseenter', (e) => {
+                const story = topStories[i];
+                // Показываем карточку только если есть и описание, и картинка
+                if (story && story.description && story.imageUrl) {
+                    cardDesc.innerText = story.description;
+                    cardLink.href = story.url || '#';
+                    cardImg.src = story.imageUrl;
+                    cardImg.parentElement.style.display = 'block';
+                    
+                    card.classList.add('active');
+                    
+                    // Эффект затемнения
+                    container.classList.add('is-dimmed');
+                    // Снимаем активность со всех и ставим только текущему
+                    titles.forEach(t => t.classList.remove('is-active'));
+                    titleEl.classList.add('is-active');
+
+                    // Делаем заголовок кликабельным
+                    titleEl.onclick = () => {
+                        window.open(story.url || '#', '_blank');
+                    };
+                }
+            });
+
+            titleEl.addEventListener('mousemove', (e) => {
+                const containerRect = container.getBoundingClientRect();
+                const x = e.clientX - containerRect.left;
+                const y = e.clientY - containerRect.top + 15;
+                
+                // Всегда справа от курсора: x + небольшой отступ
+                const finalX = x + 15;
+
+                card.style.left = `${finalX}px`;
+                card.style.top = `${y}px`;
+            });
+        }
+    });
+
+    // Слушатель на весь контейнер, чтобы убирать эффект только когда мышь ушла совсем
+    container.addEventListener('mouseleave', (e) => {
+        // Проверяем, что мышь действительно ушла за пределы контейнера, 
+        // а не просто на дочерний элемент
+        if (!e.relatedTarget || !container.contains(e.relatedTarget)) {
+            card.classList.remove('active');
+            container.classList.remove('is-dimmed');
+            titles.forEach(t => t.classList.remove('is-active'));
+        }
+    });
 }
 
 function calculateHeaderBounds() {
     headerBounds = [];
-    // Headers
+    // Заголовки
     for (let i = 1; i <= 3; i++) {
         const el = document.getElementById(`title-${i}`);
         if (el && el.innerText.trim() !== "") {
@@ -105,21 +177,21 @@ function calculateHeaderBounds() {
             });
         }
     }
-    // Top description blocks
+    // Блоки описания сверху
     const expBlocks = document.querySelectorAll('.explanation-block');
     expBlocks.forEach((el, i) => {
         const rect = el.getBoundingClientRect();
         const containerRect = document.querySelector('.poster-container').getBoundingClientRect();
         headerBounds.push({
             type: 'exp',
-            id: i, // Add ID for precise identification
+            id: i, // Добавляем ID для точной идентификации
             top: rect.top - containerRect.top,
             bottom: rect.bottom - containerRect.top,
             left: rect.left - containerRect.left,
             right: rect.right - containerRect.left
         });
     });
-    // Large word at the bottom
+    // Большое слово внизу
     const bottomWord = document.getElementById('bottom-word');
     if (bottomWord) {
         const rect = bottomWord.getBoundingClientRect();
@@ -134,20 +206,23 @@ function calculateHeaderBounds() {
     }
 }
 
-async function fetchLatestData() {
-    console.log("📡 Loading latest data from latest.json...");
+async function fetchPosterData() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dataFile = dateParam ? `archive/poster-${dateParam}.json` : 'latest.json';
+
+    console.log(`📡 Загрузка данных из ${dataFile}...`);
     try {
-        const response = await fetch('latest.json');
+        const response = await fetch(dataFile);
         const data = await response.json();
         
         if (data && data.stories) {
             topStories = data.stories;
             currentBottomWord = data.bottomWord || "";
-            console.log("✅ Data loaded:", topStories, "Word of the day:", currentBottomWord);
+            console.log("✅ Данные загружены:", topStories, "Слово дня:", currentBottomWord);
         }
     } catch (e) {
-        console.error("❌ Error loading latest.json, trying NewsAPI:", e);
-        await fetchRealData();
+        console.error(`❌ Ошибка загрузки ${dataFile}:`, e);
     }
 }
 
@@ -159,114 +234,14 @@ function exportPosterData() {
         stories: topStories
     };
     
-    console.log("💾 Data prepared for website:", dataToExport);
+    console.log("💾 Данные для сайта подготовлены:", dataToExport);
 }
 
-async function fetchRealData() {
-    console.log("📡 Requesting top world news...");
-    try {
-        const query = 'war OR election OR economy OR crisis OR "breaking news" OR politics';
-        const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=en&sortBy=relevancy&pageSize=15&apiKey=${NEWS_API_KEY}`;
-        
-        const response = await fetch(url);
-        const data = await response.json();
-        
-        if (data && data.status === "ok" && data.articles.length > 0) {
-            const colors = shuffle(["#ff2d55", "#ff6b35", "#ffb800", "#34c759", "#5ac8fa"]);
-            
-            const cityDatabase = {
-                'USA': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'WASHINGTON': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'TRUMP': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'BIDEN': { name: 'WASHINGTON DC', lat: 38.9, lng: -77.0 },
-                'IRAN': { name: 'TEHRAN', lat: 35.6, lng: 51.3 },
-                'TEHRAN': { name: 'TEHRAN', lat: 35.6, lng: 51.3 },
-                'UKRAINE': { name: 'KYIV', lat: 50.4, lng: 30.5 },
-                'RUSSIA': { name: 'MOSCOW', lat: 55.7, lng: 37.6 },
-                'CHINA': { name: 'BEIJING', lat: 39.9, lng: 116.4 },
-                'UK': { name: 'LONDON', lat: 51.5, lng: -0.1 },
-                'ISRAEL': { name: 'TEL AVIV', lat: 32.1, lng: 34.8 },
-                'GAZA': { name: 'GAZA CITY', lat: 31.5, lng: 34.4 },
-                'GERMANY': { name: 'BERLIN', lat: 52.5, lng: 13.4 },
-                'FRANCE': { name: 'PARIS', lat: 48.8, lng: 2.3 },
-                'JAPAN': { name: 'TOKYO', lat: 35.7, lng: 139.7 },
-                'INDIA': { name: 'NEW DELHI', lat: 28.6, lng: 77.2 },
-                'AI': { name: 'SILICON VALLEY', lat: 37.4, lng: -122.0 }
-            };
-
-            const defaultCities = [
-                { name: 'NEW YORK', lat: 40.7, lng: -74.0 },
-                { name: 'LONDON', lat: 51.5, lng: -0.1 },
-                { name: 'SINGAPORE', lat: 1.3, lng: 103.8 },
-                { name: 'DUBAI', lat: 25.2, lng: 55.3 }
-            ];
-
-            const filteredArticles = data.articles.filter(art => 
-                art.title && 
-                art.title.length > 30 && 
-                !art.title.includes("Warhammer") &&
-                !art.title.includes("Deal of the day")
-            );
-
-            topStories = filteredArticles.slice(0, 5).map((art, i) => {
-                let cleanTitle = art.title.split(' - ')[0];
-                let content = art.description || art.content || "";
-                let shortDesc = content.length > 120 ? content.substring(0, 120) + "..." : content;
-                
-                let textWeight = content.length;
-                let calculatedIntensity = map(textWeight, 0, 500, 40, 100);
-                calculatedIntensity = constrain(calculatedIntensity, 40, 100);
-                
-                let city = null;
-                const upperTitle = cleanTitle.toUpperCase();
-                const upperContent = content.toUpperCase();
-                
-                for (let key in cityDatabase) {
-                    if (upperTitle.includes(key) || upperContent.includes(key)) {
-                        city = cityDatabase[key];
-                        break;
-                    }
-                }
-
-                if (!city) {
-                    city = defaultCities[i % defaultCities.length];
-                }
-                
-                return {
-                    id: i + 1,
-                    rank: i + 1,
-                    headline: cleanTitle,
-                    description: shortDesc,
-                    mainLocation: city,
-                    intensity: calculatedIntensity,
-                    color: colors[i % colors.length],
-                    url: art.url,
-                    imageUrl: art.urlToImage
-                };
-            });
-        }
-    } catch (e) {
-        console.error("❌ Error:", e);
-        topStories = TRENDING_STORIES.slice(0, 3);
-    }
-}
-
-// Helper function to shuffle array (Fisher-Yates shuffle)
-function shuffle(array) {
-    let currentIndex = array.length, randomIndex;
-    while (currentIndex != 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-    }
-    return array;
-}
-
-// Function to select keyword based on news sentiment
+// Функция для выбора ключевого слова на основе настроения новостей
 function getSentimentWord(stories) {
     const text = stories.map(s => (s.headline + " " + s.description).toUpperCase()).join(" ");
     
-    // Dictionaries for analysis
+    // Словари для анализа
     const tensionWords = ["WAR", "CONFLICT", "CRISIS", "DEAD", "ATTACK", "PROTEST", "TENSION", "FIGHT"];
     const powerWords = ["ELECTION", "TRUMP", "BIDEN", "GOVERNMENT", "POLICY", "POWER", "LEADER"];
     const economyWords = ["ECONOMY", "MARKET", "FINANCIAL", "PRICE", "BANK", "TRADE", "OIL"];
@@ -275,23 +250,23 @@ function getSentimentWord(stories) {
     let scores = {
         TENSION: 0,
         POWER: 0,
-        VOLUME: 0, // Default
+        VOLUME: 0, // По умолчанию
         IMPACT: 0,
         VOICE: 0
     };
 
-    // Scoring
+    // Подсчет очков
     tensionWords.forEach(w => { if (text.includes(w)) scores.TENSION += 2; });
     powerWords.forEach(w => { if (text.includes(w)) scores.POWER += 1.5; });
     economyWords.forEach(w => { if (text.includes(w)) scores.IMPACT += 1.2; });
     techWords.forEach(w => { if (text.includes(w)) scores.VOICE += 1; });
 
-    // Add some randomness to base words
+    // Добавляем немного случайности к базовым словам
     scores.VOLUME += Math.random();
     scores.IMPACT += Math.random();
     scores.VOICE += Math.random();
 
-    // Find word with maximum score
+    // Находим слово с максимальным баллом
     let maxScore = -1;
     let selectedWord = "GLOBAL";
 
@@ -317,6 +292,19 @@ function updateUI() {
         }
     }
     
+    // Обновляем дату в сайдбаре
+    const dateSidebar = document.querySelector('.poster-date-sidebar');
+    if (dateSidebar) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const dateParam = urlParams.get('date');
+        
+        if (dateParam) {
+            dateSidebar.innerText = formatDateSidebar(dateParam);
+        } else {
+            dateSidebar.innerText = 'TODAY';
+        }
+    }
+    
     const today = getTodayFormatted();
     const oldDate = document.querySelector('.today-date');
     if (oldDate) oldDate.remove();
@@ -331,7 +319,7 @@ function updateUI() {
     dateEl.style.fontSize = '10px';
     document.querySelector('.poster-container').appendChild(dateEl);
     
-    // UPDATED LOGIC: First check if there is an AI word in the data
+    // ОБНОВЛЕННАЯ ЛОГИКА: Сначала проверяем, есть ли слово от ИИ в данных
     const bottomWordEl = document.getElementById('bottom-word');
     if (bottomWordEl) {
         let textToShow = "PULSE"; // Default
@@ -346,6 +334,18 @@ function updateUI() {
     }
 }
 
+function formatDateSidebar(dateStr) {
+    const date = new Date(dateStr);
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    const targetDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    
+    if (targetDate.getTime() === today.getTime()) return 'TODAY';
+    
+    return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
+}
+
 function drawPoster() {
     background(8, 9, 12);
     stroke(255, 12);
@@ -355,20 +355,20 @@ function drawPoster() {
     drawHeatmap();
     drawMarkers();
     
-    // Add grainy noise effect
-    addGrain(15); // You can adjust this number (strength)
+    // Добавляем эффект зернистости (шум)
+    addGrain(15); 
     
-    // After drawing everything on canvas, check brightness under text
+    // После отрисовки всего на канвасе, проверяем яркость под текстом
     applyAdaptiveTextColor();
 }
 
 function addGrain(strength) {
     loadPixels();
     for (let i = 0; i < pixels.length; i += 4) {
-        // Generate random noise
+        // Генерируем случайный шум
         let noiseVal = random(-strength, strength);
         
-        // Apply to R, G, B channels
+        // Применяем к каналам R, G, B
         pixels[i] = constrain(pixels[i] + noiseVal, 0, 255);
         pixels[i+1] = constrain(pixels[i+1] + noiseVal, 0, 255);
         pixels[i+2] = constrain(pixels[i+2] + noiseVal, 0, 255);
@@ -379,13 +379,13 @@ function addGrain(strength) {
 function applyAdaptiveTextColor() {
     loadPixels();
     
-    // Iterate through all registered text blocks
+    // Проходим по всем зарегистрированным текстовым блокам
     headerBounds.forEach((bound, index) => {
         let totalBrightness = 0;
         let count = 0;
         
-        // Calculate average background brightness under this block
-        // Take a few points inside the rectangle for speed
+        // Вычисляем среднюю яркость фона под этим блоком
+        // Берем несколько точек внутри прямоугольника для скорости
         for (let x = Math.floor(bound.left); x < bound.right; x += 10) {
             for (let y = Math.floor(bound.top); y < bound.bottom; y += 10) {
                 let pixIndex = 4 * (Math.floor(y * pixelDensity()) * width * pixelDensity() + Math.floor(x * pixelDensity()));
@@ -401,21 +401,21 @@ function applyAdaptiveTextColor() {
         
         let avgBrightness = count > 0 ? totalBrightness / count : 0;
         
-        // If background is bright (over 100 of 255), make text darker or more contrasting
-        // In our case, if background is bright, text should be white (max contrast), 
-        // and if background is dark, it is already white. 
-        // But user asked for "white/gray depending on contrast".
+        // Если фон яркий (больше 100 из 255), делаем текст темнее или контрастнее
+        // В нашем случае, если фон яркий, текст должен быть белым (макс контраст), 
+        // а если фон темный, он и так белый. 
+        // Но пользователь просил "белый/серый в зависимости от контраста".
         
-        let targetColor = '#e8e9eb'; // Default (light gray)
+        let targetColor = '#e8e9eb'; // По умолчанию (светло-серый)
         if (avgBrightness > 120) {
-            targetColor = '#ffffff'; // On bright background make pure white for clarity
+            targetColor = '#ffffff'; // На ярком фоне делаем чисто белым для четкости
         } else if (avgBrightness > 50) {
-            targetColor = '#ffffff'; // Also white
+            targetColor = '#ffffff'; // Тоже белый
         } else {
-            targetColor = '#e8e9eb'; // On dark background keep muted
+            targetColor = '#e8e9eb'; // На темном фоне оставляем приглушенным
         }
 
-        // Apply color to HTML element
+        // Применяем цвет к HTML элементу
         if (bound.type === 'title') {
             const el = document.getElementById(`title-${index + 1}`);
             if (el) el.style.color = targetColor;
@@ -438,26 +438,36 @@ function applyAdaptiveTextColor() {
 }
 
 function drawHeatmap() {
-    // Use date-based seed so positions are stable throughout the day
-    let dateSeed = day() + month() * 31 + year() * 365;
-    randomSeed(dateSeed);
+    const centerY = height * 0.45;
     
-    // Calculate circle positions — randomly across the poster
+    // Используем тот же seed, что и в drawMarkers, чтобы пятна совпадали с точками
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dateStr = dateParam || new Date().toISOString().split('T')[0];
+    const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
+    randomSeed(seed);
+    
+    // Сначала рассчитываем позиции, как в drawMarkers
     const storyPositions = [];
-    const padding = 100; // Padding from edges so circles aren't cut off
-    
     for (let i = 0; i < Math.min(topStories.length, 3); i++) {
-        let rx = padding + random(width - padding * 2);
-        let ry = padding + random(height - padding * 2);
+        let rx = width * (0.2 + random(0.6));
+        let ry;
+        if (headerBounds.length >= 3) {
+            if (i === 0) ry = random(headerBounds[0].top - 60, headerBounds[0].top - 30);
+            else if (i === 1) ry = random(headerBounds[0].bottom + 20, headerBounds[1].top - 20);
+            else ry = random(headerBounds[1].bottom + 20, headerBounds[2].top - 20);
+        } else {
+            ry = centerY + (i - 1) * 120 + random(-10, 10);
+            if (i === 1) ry -= 40;
+        }
         storyPositions.push({ x: rx, y: ry });
     }
-    
-    // Save positions globally for use in drawMarkers
-    window.circlePositions = storyPositions;
 
     for (let i = 0; i < Math.min(topStories.length, 3); i++) {
         const story = topStories[i];
         const pos = storyPositions[i];
+        
+        if (!story.mainLocation) continue;
         
         const maxRadius = map(story.intensity, 40, 100, 200, 500);
         
@@ -470,22 +480,50 @@ function drawHeatmap() {
             let noiseVal = noise(r * 0.008, i * 10) * 30; 
             ellipse(pos.x, pos.y, r + noiseVal);
         }
-
-        // Draw white dot in center only if there is a real location
-        if (story.mainLocation) {
-            fill(255, 180);
-            ellipse(pos.x, pos.y, 8);
-        }
+        fill(255, 180);
+        ellipse(pos.x, pos.y, 8);
     }
 }
 
 function drawMarkers() {
-    // Use positions from drawHeatmap (they are already calculated)
-    const storyPositions = window.circlePositions || [];
+    const centerY = height * 0.45;
     
-    if (storyPositions.length === 0) return;
+    // Генерируем случайные X для каждой истории, чтобы каждый день было по-разному
+    // Используем seed на основе даты из данных, чтобы в течение дня X был одинаковым, но разным между днями
+    const urlParams = new URLSearchParams(window.location.search);
+    const dateParam = urlParams.get('date');
+    const dateStr = dateParam || new Date().toISOString().split('T')[0];
+    const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
+    randomSeed(seed);
+
+    const storyPositions = [];
+    for (let i = 0; i < Math.min(topStories.length, 3); i++) {
+        // Случайный X в пределах 20% - 80% ширины
+        let rx = width * (0.2 + random(0.6));
+        
+        // Логика поиска безопасного Y между строками текста
+        let ry;
+        if (headerBounds.length >= 3) {
+            if (i === 0) {
+                // ПЕРВАЯ ТОЧКА: выше первого заголовка
+                ry = random(headerBounds[0].top - 60, headerBounds[0].top - 30);
+            } else if (i === 1) {
+                // ВТОРАЯ ТОЧКА: между первым и вторым заголовком
+                ry = random(headerBounds[0].bottom + 20, headerBounds[1].top - 20);
+            } else {
+                // ТРЕТЬЯ ТОЧКА: между вторым и третьим заголовком
+                ry = random(headerBounds[1].bottom + 20, headerBounds[2].top - 20);
+            }
+        } else {
+            // Запасной вариант, если границы не определились
+            ry = centerY + (i - 1) * 120 + random(-10, 10);
+            if (i === 1) ry -= 40;
+        }
+        
+        storyPositions.push({ x: rx, y: ry });
+    }
     
-    // Draw chain of lines between points (1 -> 2 -> 3)
+    // Рисуем цепочку линий между точками (1 -> 2 -> 3)
     stroke(255, 30);
     strokeWeight(1);
     noFill();
@@ -499,15 +537,15 @@ function drawMarkers() {
         const story = topStories[i];
         const pos = storyPositions[i];
         
-        // Labels (city and coordinates) are drawn only if there is a location
-        if (story.mainLocation) {
-            drawStoryMarker(pos.x, pos.y, story, i);
+        if (!story.mainLocation) continue;
 
-            // Main point
-            fill(255, 200);
-            noStroke();
-            ellipse(pos.x, pos.y, 6);
-        }
+        // Рисуем маркер и подпись в зависимости от индекса (0-верх, 1-середина, 2-низ)
+        drawStoryMarker(pos.x, pos.y, story, i);
+
+        // Основная точка
+        fill(255, 200);
+        noStroke();
+        ellipse(pos.x, pos.y, 6);
     }
 }
 
@@ -520,71 +558,115 @@ function drawStoryMarker(x, y, story, index) {
     noFill();
     
     textFont('PP Supply Mono');
-    textSize(10);
+    textSize(10); // Устанавливаем базовый размер
     
     let lineLen = 30;
+    let labelOffset = 5;
+    let textH = 25; // Примерная высота блока текста
     
-    // Determine line direction depending on position on poster
-    // If point is in upper half — line goes down, otherwise up
-    // If point is on left — line can go right, and vice versa
-    
-    let lineEndX = x;
-    let lineEndY;
-    let textAlignH = CENTER;
-    let textAlignV;
-    
-    if (y < height * 0.4) {
-        // Upper part of poster — line down
-        lineEndY = y + lineLen;
-        textAlignV = TOP;
-    } else if (y > height * 0.6) {
-        // Lower part of poster — line up
-        lineEndY = y - lineLen;
-        textAlignV = BOTTOM;
-    } else {
-        // Middle — line sideways
+    if (index === 0) {
+        // ВЕРХНЯЯ ТОЧКА: линия идет вверх
+        let lineTopY = y - lineLen;
+        
+        // Проверяем столкновения с любыми текстовыми блоками
+        for (let bound of headerBounds) {
+            // Если текст находится над точкой и по горизонтали пересекается
+            if (x > bound.left - 40 && x < bound.right + 40) {
+                // Если линия или текст подписи заходят на блок
+                if (lineTopY - textH < bound.bottom + 10 && y > bound.top) {
+                    // Пробуем инвертировать направление линии вниз, если там свободно
+                    lineTopY = y + lineLen; 
+                }
+            }
+        }
+        
+        line(x, y, x, lineTopY);
+        
+        noStroke();
+        fill(255, 200);
+        textSize(10); // Явно задаем размер перед выводом названия города
+        if (lineTopY < y) {
+            textAlign(CENTER, BOTTOM);
+            text(cityName, x, lineTopY - 15);
+            fill(255, 100);
+            textSize(8); // Координаты чуть меньше
+            text(coords, x, lineTopY - 5);
+        } else {
+            textAlign(CENTER, TOP);
+            text(cityName, x, lineTopY + 5);
+            fill(255, 100);
+            textSize(8); // Координаты чуть меньше
+            text(coords, x, lineTopY + 17);
+        }
+        
+    } else if (index === 1) {
+        // СРЕДНЯЯ ТОЧКА: линия идет вбок
         let sideDir = x > width / 2 ? -1 : 1;
-        lineEndX = x + sideDir * 50;
-        lineEndY = y;
-        textAlignH = sideDir === 1 ? LEFT : RIGHT;
-        textAlignV = CENTER;
-    }
-    
-    line(x, y, lineEndX, lineEndY);
-    
-    noStroke();
-    fill(255, 200);
-    textAlign(textAlignH, textAlignV);
-    
-    if (textAlignV === TOP) {
-        text(cityName, lineEndX, lineEndY + 5);
+        let endX = x + sideDir * 60;
+        let endY = y - 20;
+        
+        // Проверка столкновений для боковой линии
+        for (let bound of headerBounds) {
+            if (endY < bound.bottom + 10 && endY > bound.top - 10) {
+                if ((sideDir === 1 && endX + 50 > bound.left) || (sideDir === -1 && endX - 50 < bound.right)) {
+                    // Если мешает, пробуем направить в другую сторону или изменить наклон
+                    endY = y + 20;
+                }
+            }
+        }
+        
+        line(x, y, endX, endY);
+        
+        noStroke();
+        fill(255, 200);
+        textAlign(sideDir === 1 ? LEFT : RIGHT, CENTER);
+        textSize(10);
+        text(cityName, endX + sideDir * 10, endY - 5);
         fill(255, 100);
         textSize(8);
-        text(coords, lineEndX, lineEndY + 17);
-    } else if (textAlignV === BOTTOM) {
-        text(cityName, lineEndX, lineEndY - 15);
-        fill(255, 100);
-        textSize(8);
-        text(coords, lineEndX, lineEndY - 5);
-    } else {
-        // CENTER (side line)
-        let offset = lineEndX > x ? 10 : -10;
-        text(cityName, lineEndX + offset, lineEndY - 5);
-        fill(255, 100);
-        textSize(8);
-        text(coords, lineEndX + offset, lineEndY + 7);
+        text(coords, endX + sideDir * 10, endY + 7);
+        
+    } else if (index === 2) {
+        // НИЖНЯЯ ТОЧКА: линия идет вниз
+        let lineBottomY = y + lineLen;
+        
+        for (let bound of headerBounds) {
+            if (x > bound.left - 40 && x < bound.right + 40) {
+                if (lineBottomY + textH > bound.top - 10 && y < bound.bottom) {
+                    lineBottomY = y - lineLen;
+                }
+            }
+        }
+        
+        line(x, y, x, lineBottomY);
+        
+        noStroke();
+        fill(255, 200);
+        if (lineBottomY > y) {
+            textAlign(CENTER, TOP);
+            text(cityName, x, lineBottomY + 5);
+            fill(255, 100);
+            textSize(8);
+            text(coords, x, lineBottomY + 17);
+        } else {
+            textAlign(CENTER, BOTTOM);
+            text(cityName, x, lineBottomY - 15);
+            fill(255, 100);
+            textSize(8);
+            text(coords, x, lineBottomY - 5);
+        }
     }
 }
 
 function drawDashedCurve(x1, y1, x2, y2) {
-    let steps = 30; // Increased number of steps for smoothness
+    let steps = 30; // Увеличили количество шагов для плавности
     
-    // Generate random offset for curve "control point"
-    // This will create a unique curve for each line
+    // Генерируем случайное смещение для "контрольной точки" кривой
+    // Это создаст уникальный изгиб для каждой линии
     let midX = lerp(x1, x2, 0.5);
     let midY = lerp(y1, y2, 0.5);
     
-    // Add random "flyout" to the side
+    // Добавляем случайный "вылет" в сторону
     let offsetX = random(-50, 50);
     let offsetY = random(-30, 30);
     
@@ -595,7 +677,7 @@ function drawDashedCurve(x1, y1, x2, y2) {
         let t1 = i / steps;
         let t2 = (i + 1) / steps;
         
-        // Use quadratic Bezier curve for smooth bend
+        // Используем квадратичную кривую Безье для плавного изгиба
         let cx1 = (1 - t1) * (1 - t1) * x1 + 2 * (1 - t1) * t1 * cpX + t1 * t1 * x2;
         let cy1 = (1 - t1) * (1 - t1) * y1 + 2 * (1 - t1) * t1 * cpY + t1 * t1 * y2;
         
