@@ -118,6 +118,7 @@ header .nav-container {
     justify-content: space-between;
     gap: 20px;
     z-index: 10;
+    margin-bottom: 80px;
 }
 
 .explanation-block {
