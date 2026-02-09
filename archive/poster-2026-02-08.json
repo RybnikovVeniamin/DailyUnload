@@ -1,0 +1,77 @@
+{
+  "date": "2026-02-08",
+  "displayDate": "FEB 8, 2026",
+  "bottomWord": "DISTURBANCE",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Zelenskyy says U.S. gave Ukraine and Russia a June deadline to reach agreement to end war",
+      "description": "Zelenskyy says Ukraine and Russia have a June deadline for a peace agreement.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 75,
+      "color": "#ff2d55",
+      "url": "https://apnews.com/article/russia-ukraine-war-zelenskyy-june-deadline-98da4e17de8ab377363ae9c3ff308001",
+      "imageUrl": "https://dims.apnews.com/dims4/default/7a6e82b/2147483647/strip/true/crop/5584x3721+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F01%2F17%2F890d53bd9225f48539907b6f1e3b%2Fb0c5c959afb44e8f9ca9da6053652836"
+    },
+    {
+      "id": 3,
+      "headline": "Reporter’s Notebook: Portugal’s far right surges in presidential election",
+      "description": "In the tourist haven of the Algarve, disaffected locals are embracing the far right as the cost of living rises.",
+      "mainLocation": {
+        "name": "ALGARVE, PORTUGAL",
+        "lat": 37.2449218,
+        "lng": -8.1959563
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/features/2026/2/7/portugal-far-right-presidential-election-historic-victory",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/afp_6986dfa31e03-1770446755.jpg?resize=1200%2C675"
+    },
+    {
+      "id": 4,
+      "headline": "Thousands mourn 32 victims of Islamabad Shia mosque bombing in Pakistan",
+      "description": "Pakistan blames ‘Indian-backed proxies’ for the attack; New Delhi rejected the accusation as ‘baseless and pointless’.",
+      "mainLocation": {
+        "name": "ISLAMABAD, PAKISTAN",
+        "lat": 33.6938118,
+        "lng": 73.0651511
+      },
+      "intensity": 65,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/2/7/thousands-mourn-32-victims-of-islamabad-shia-mosque-bombing-in-pakistan",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/afp_6986f01b28a3-1770450971.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Epstein emails raise questions over role of Andrew's palace aide",
+      "description": "Emails suggest a trusted royal insider invited Epstein to a dinner at Windsor Castle in 2017.",
+      "mainLocation": {
+        "name": "WINDSOR, UK",
+        "lat": 51.4837886,
+        "lng": -0.6040419
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/cx2w2ywe9e0o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/54e9/live/59b60420-0394-11f1-b7e1-afb6d0884c18.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "Norway's crown princess apologises after pressure over Epstein friendship",
+      "description": "Mette-Marit says she is sorry to Norwegians for not realising what kind of person the late sex offender was.",
+      "mainLocation": {
+        "name": "OSLO, NORWAY",
+        "lat": 59.9133301,
+        "lng": 10.7389701
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/c78v8wx6jjxo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c1e7/live/9de81cb0-038e-11f1-a36d-4dc7f32cefeb.jpg"
+    }
+  ]
+}

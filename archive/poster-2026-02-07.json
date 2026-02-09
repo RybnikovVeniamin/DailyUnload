@@ -1,0 +1,73 @@
+{
+  "date": "2026-02-07",
+  "displayDate": "FEB 7, 2026",
+  "bottomWord": "INSTABILITY",
+  "stories": [
+    {
+      "id": 2,
+      "headline": "Senior Russian officer shot in Moscow in apparent assassination attempt",
+      "description": "An unidentified individual has shot Lieutenant General Alekseyev before fleeing the scene, authorities say.",
+      "mainLocation": {
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
+      },
+      "intensity": 68,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/2/6/senior-russian-officer-shot-in-moscow-in-apparent-assassination-attempt",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AFP__20250509__46334RA__v1__HighRes__RussiaHistoryWwiiAnniversaryParade-1770284982.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Settler violence stokes peak West Bank displacement since October 2023: UN",
+      "description": "January’s data is particularly high after removal of an entire herding community in the Jordan Valley, OCHA says.",
+      "mainLocation": null,
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/2/6/settler-violence-stokes-peak-west-bank-displacement-since-october-2023-un",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/01/AP26016437176338-1768997461.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "‘Magical atmosphere’: Kite fever lights up Lahore as Basant boosts economy",
+      "description": "Spring festival comeback injects millions of dollars into local economy as businesses cash in on Basant frenzy.",
+      "mainLocation": {
+        "name": "LAHORE, PAKISTAN",
+        "lat": 31.5656822,
+        "lng": 74.3141829
+      },
+      "intensity": 40,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/features/2026/2/6/magical-atmosphere-kite-fever-lights-up-lahore-as-basant-boosts-economy",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/PXL_20260204_103856214-1770344723.jpg?resize=1200%2C675"
+    },
+    {
+      "id": 5,
+      "headline": "Mexico’s tariffs on India are a double whammy after US tariffs",
+      "description": "The steep hikes by Mexico have devastated several Indian industries already reeling under crushing US tariffs.",
+      "mainLocation": {
+        "name": "NEW DELHI, INDIA",
+        "lat": 28.6138954,
+        "lng": 77.2090057
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/economy/2026/2/6/mexicos-tariffs-on-india-are-a-double-whammy-after-us-tariffs",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-02-03T100240Z_1864287471_RC29EJACCUGC_RTRMADP_3_APSEZ-RESULTS-1770315150.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 6,
+      "headline": "Armed militia members are serving as Israeli agents in Gaza: Investigation",
+      "description": "Al Jazeera documentary identifies Gaza armed groups working with Israeli forces.",
+      "mainLocation": {
+        "name": "GAZA, PALESTINE",
+        "lat": 31.4698868,
+        "lng": 34.3978915
+      },
+      "intensity": 65,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/2/6/armed-militia-members-are-serving-as-israeli-agents-in-gaza-investigation",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/12/Yasser-Abu-Shabab-1764857719.jpg?resize=1200%2C675"
+    }
+  ]
+}

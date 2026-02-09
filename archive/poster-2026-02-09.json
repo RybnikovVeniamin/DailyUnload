@@ -1,0 +1,77 @@
+{
+  "date": "2026-02-09",
+  "displayDate": "FEB 9, 2026",
+  "bottomWord": "UNCERTAINTY",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Polls open in second round of Portugal presidential election",
+      "description": "The far right’s score will be watched closely, with the vote being held as heavy storms continue to lash the country.",
+      "mainLocation": {
+        "name": "LISBON, PORTUGAL",
+        "lat": 38.7077507,
+        "lng": -9.1365919
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/2/8/polls-open-in-second-round-of-portugal-presidential-election",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/afp_69884aa5bc6e-1770539685.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Japan elections live: PM Takaichi’s LDP hopes to secure big win",
+      "description": "The election outcome is expected shortly after polls close at 11:00 GMT.",
+      "mainLocation": {
+        "name": "TOKYO, JAPAN",
+        "lat": 35.6768601,
+        "lng": 139.7638947
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/2/8/japan-elections-live",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/reuters_69882b13-1770531603_79131c-1770531965.jpg?resize=1200%2C630&quality=80"
+    },
+    {
+      "id": 4,
+      "headline": "Families ‘inconsolable’ in Gaza as Israel returns more unidentified bodies",
+      "description": "Palestinian medics say several of the 54 bodies were found to be mutilated and showed extensive signs of abuse.",
+      "mainLocation": {
+        "name": "GAZA, PALESTINE",
+        "lat": 31.4698868,
+        "lng": 34.3978915
+      },
+      "intensity": 65,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/2/8/families-inconsolable-in-gaza-as-israel-returns-more-unidentified-bodies",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/11/afp_6905a24a5e60-1761976906.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Washington Post CEO resigns after sweeping layoffs",
+      "description": "Will Lewis acknowledges ‘difficult decisions’ made during his rocky, two-year tenure.",
+      "mainLocation": {
+        "name": "WASHINGTON, USA",
+        "lat": 38.8950368,
+        "lng": -77.0365427
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/2/8/washington-post-ceo-resigns-after-sweeping-layoffs",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AFP__20260204__2259881934__v2__HighRes__TheWashingtonPostAnnouncesMassiveLayoffsOfEd-1770533446.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 6,
+      "headline": "Saudi Arabia denounces ‘foreign interference’ in Sudan after RSF attacks",
+      "description": "Riyadh condemns RSF attacks in Kordofan, blames foreign fighters and weapons for fuelling Sudan’s three-year conflict.",
+      "mainLocation": {
+        "name": "RIYADH, SAUDI ARABIA",
+        "lat": 23.333333,
+        "lng": 45.333333
+      },
+      "intensity": 55,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/2/8/saudi-arabia-slams-foreign-interference-in-sudan-after-deadly-rsf-attacks",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AP26036444918096-1770530654.jpg?resize=1920%2C1440"
+    }
+  ]
+}
