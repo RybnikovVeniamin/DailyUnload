@@ -20,13 +20,17 @@ function initBlotter(text) {
     const urlParams = new URLSearchParams(window.location.search);
     const dateParam = urlParams.get('date');
     const dateStr = dateParam || new Date().toISOString().split('T')[0];
-    const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
+    const rawSeed = parseInt(dateStr.replace(/-/g, '')) || 0;
     
-    randomSeed(seed);
+    // Hash the seed to spread similar dates far apart in the random space.
+    // Without this, consecutive dates (20260209, 20260210) produce nearly
+    // identical random values because p5's LCG doesn't diffuse close seeds.
+    const hashedSeed = Math.floor(Math.abs(Math.sin(rawSeed * 9301 + 49297) * 233280));
+    randomSeed(hashedSeed);
     
-    // Generate daily random values based on your requirements
-    let dailyOffset = random(0.015, 0.051); // uOffset from 0 to 0.051
-    let dailyRotation = random(40, 360); // uRotation from 0 to 360
+    // Generate daily random values — wider ranges for visible daily variation
+    let dailyOffset = random(0.02, 0.15);  // channel split amount (was 0.015–0.051, too narrow)
+    let dailyRotation = random(0, 360);     // split angle in degrees
     
     // Create material
     if (typeof Blotter !== 'undefined' && Blotter.ChannelSplitMaterial) {
