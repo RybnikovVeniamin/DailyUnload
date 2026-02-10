@@ -171,6 +171,8 @@ header .nav-container {
     justify-content: center;
     align-items: flex-end;
     z-index: 10;
+    margin-top: auto;
+    padding-bottom: 250px; /* 40px container padding + 20px = 60px from edge */
 }
 
 .big-word {

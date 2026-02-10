@@ -24,18 +24,21 @@ function initBlotter(text) {
     
     randomSeed(seed);
     
-    // Generate daily random values
-    let dailyOffset = random(0, 0.059);
-    let dailyRotation = random(0, 360);
+    // Generate daily random values based on your requirements
+    let dailyOffset = random(0.015, 0.051); // uOffset from 0 to 0.051
+    let dailyRotation = random(40, 360); // uRotation from 0 to 360
     
     // Create material
-    // Check if Blotter and ChannelSplitMaterial are available
     if (typeof Blotter !== 'undefined' && Blotter.ChannelSplitMaterial) {
         bottomWordMaterial = new Blotter.ChannelSplitMaterial();
         bottomWordMaterial.uniforms.uOffset.value = dailyOffset;
         bottomWordMaterial.uniforms.uRotation.value = dailyRotation;
-        bottomWordMaterial.uniforms.uApplyBlur.value = 1.0;
-        bottomWordMaterial.uniforms.uAnimateNoise.value = 1.0;
+        bottomWordMaterial.uniforms.uApplyBlur.value = 1; // always on
+        bottomWordMaterial.uniforms.uAnimateNoise.value = 1; // always on
+        
+        // Match the background color for the RGB splitting effect
+        // [R, G, B, A] in 0.0 to 1.0 range. #08090c is approx [0.03, 0.035, 0.047, 1.0]
+        bottomWordMaterial.uniforms.uBlendColor.value = [0.03, 0.035, 0.047, 1.0];
         
         // Create text
         const textObj = new Blotter.Text(text, {
@@ -46,7 +49,7 @@ function initBlotter(text) {
             paddingLeft: 40,
             paddingRight: 40,
             paddingTop: 40,
-            paddingBottom: 40
+            paddingBottom: 0
         });
         
         // Create Blotter instance
