@@ -93,8 +93,37 @@
         }
 
         @media (max-width: 1024px) {
+            .about-content {
+                padding: 0 32px;
+                margin-top: 100px;
+            }
             .about-section h2, .about-section p {
                 font-size: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                padding: 0 24px;
+                margin-top: 80px;
+                gap: 40px;
+            }
+            .about-section h2, .about-section p {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .nav-container {
+                padding: 0 20px !important;
+            }
+            .about-content {
+                padding: 0 20px;
+                margin-top: 72px;
+                gap: 32px;
+            }
+            .about-section h2, .about-section p {
+                font-size: 18px;
             }
         }
 
@@ -161,7 +190,7 @@
         let lastTimestamp = 0;
 
         const observer = new IntersectionObserver((entries) => {
-            // Сортируем элементы по их положению на странице, чтобы задержка шла сверху вниз
+            // Sort elements by position so delay runs top to bottom
             const sortedEntries = entries
                 .filter(entry => entry.isIntersecting)
                 .sort((a, b) => a.target.offsetTop - b.target.offsetTop);
@@ -170,11 +199,10 @@
                 const target = entry.target;
                 
                 if (!target.classList.contains('is-visible')) {
-                    // Если несколько элементов появляются одновременно (например, при загрузке),
-                    // добавляем им нарастающую задержку
+                    // If several elements appear at once (e.g. on load), add staggered delay
                     const now = Date.now();
                     if (now - lastTimestamp > 500) {
-                        delayCounter = 0; // Сбрасываем счетчик, если скроллим медленно
+                        delayCounter = 0; // Reset counter when scrolling slowly
                     }
                     
                     target.style.transitionDelay = `${delayCounter * 0.2}s`;

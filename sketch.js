@@ -5,7 +5,7 @@
 let canvas;
 let topStories = [];
 let currentBottomWord = "";
-let headerBounds = []; // Будем хранить границы заголовков
+let headerBounds = []; // Store header bounds
 let bottomWordBlotter = null;
 let bottomWordMaterial = null;
 
@@ -44,15 +44,19 @@ function initBlotter(text) {
         // [R, G, B, A] in 0.0 to 1.0 range. #08090c is approx [0.03, 0.035, 0.047, 1.0]
         bottomWordMaterial.uniforms.uBlendColor.value = [0.03, 0.035, 0.047, 1.0];
         
+        // Scale Blotter text size for mobile screens
+        const blotterSize = isMobile() ? Math.max(40, window.innerWidth * 0.14) : 80;
+        const blotterPad = isMobile() ? 20 : 40;
+
         // Create text
         const textObj = new Blotter.Text(text, {
             family: "'PP Neue Bit', serif",
-            size: 80,
+            size: blotterSize,
             fill: "#e8e9eb",
             weight: 700,
-            paddingLeft: 40,
-            paddingRight: 40,
-            paddingTop: 40,
+            paddingLeft: blotterPad,
+            paddingRight: blotterPad,
+            paddingTop: blotterPad,
             paddingBottom: 0
         });
         
@@ -71,14 +75,29 @@ function initBlotter(text) {
     }
 }
 
-const CANVAS_WIDTH = 600;
-const CANVAS_HEIGHT = 800;
+const DESKTOP_WIDTH = 600;
+const DESKTOP_HEIGHT = 800;
+
+// Detect if the device is a smartphone (used throughout the sketch)
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+// Return the correct canvas dimensions based on device
+function getCanvasSize() {
+    if (isMobile()) {
+        return { w: window.innerWidth, h: window.innerHeight };
+    }
+    return { w: DESKTOP_WIDTH, h: DESKTOP_HEIGHT };
+}
 
 async function setup() {
-    canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
+    const size = getCanvasSize();
+    canvas = createCanvas(size.w, size.h);
     canvas.parent('canvas-container');
     
-    pixelDensity(2);
+    // Use lower pixel density on mobile for performance
+    pixelDensity(isMobile() ? 1 : 2);
     noLoop();
     
     // 1. Fetch real data (from specific archive file if date param exists, otherwise latest.json)
@@ -87,7 +106,7 @@ async function setup() {
     // 2. Update HTML elements (Titles + Top Text + Bottom Word)
     updateUI();
     
-    // Даем браузеру время отрисовать HTML, чтобы получить размеры заголовков
+    // Give the browser time to render HTML so we can measure title positions
     setTimeout(() => {
         calculateHeaderBounds();
         drawPoster();
@@ -99,8 +118,19 @@ async function setup() {
         exportPosterData();
     }
 
-    // 5. Setup hover listeners for titles
+    // 5. Setup interaction listeners (hover on desktop, tap on mobile)
     setupTitleHovers();
+}
+
+// Handle orientation changes and resizes on mobile
+function windowResized() {
+    if (isMobile()) {
+        resizeCanvas(window.innerWidth, window.innerHeight);
+        setTimeout(() => {
+            calculateHeaderBounds();
+            drawPoster();
+        }, 150);
+    }
 }
 
 function setupTitleHovers() {
@@ -109,66 +139,167 @@ function setupTitleHovers() {
     const cardDesc = document.getElementById('news-card-description');
     const cardLink = document.getElementById('news-card-link');
     const container = document.querySelector('.poster-container');
+    const overlay = document.querySelector('.poster-dim-overlay');
     const titles = [1, 2, 3].map(id => document.getElementById(`title-${id}`));
 
-    titles.forEach((titleEl, i) => {
-        if (titleEl) {
+    // Helper: populate and show the news card for a given story
+    function showCard(story, titleEl) {
+        if (!story || !story.description || !story.imageUrl) return;
+
+        // Always clear leftover inline styles before opening
+        card.style.transform = '';
+        card.style.transition = '';
+
+        cardDesc.innerText = story.description;
+        cardLink.href = story.url || '#';
+        cardImg.src = story.imageUrl;
+        cardImg.parentElement.style.display = 'block';
+
+        card.classList.add('active');
+        container.classList.add('is-dimmed');
+        titles.forEach(t => t.classList.remove('is-active'));
+        titleEl.classList.add('is-active');
+    }
+
+    // Helper: hide the news card and remove dim effect
+    function hideCard() {
+        card.classList.remove('active');
+        container.classList.remove('is-dimmed');
+        titles.forEach(t => t.classList.remove('is-active'));
+    }
+
+    if (isMobile()) {
+        // ---- MOBILE: tap to show bottom sheet, tap outside to dismiss ----
+
+        // Move card out of .poster-container and into <body> so that
+        // position:fixed truly anchors to the viewport (transforms on
+        // ancestors create a new containing block and break fixed positioning)
+        document.body.appendChild(card);
+
+        // Clear any inline positioning left over from desktop styles
+        card.style.left = '';
+        card.style.top = '';
+        card.style.right = '';
+        card.style.bottom = '';
+
+        titles.forEach((titleEl, i) => {
+            if (!titleEl) return;
+            titleEl.style.pointerEvents = 'auto';
+            titleEl.style.cursor = 'pointer';
+
+            titleEl.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const story = topStories[i];
+
+                // If this card is already showing for this title, navigate to the article
+                if (titleEl.classList.contains('is-active') && card.classList.contains('active')) {
+                    window.open(story.url || '#', '_blank');
+                    return;
+                }
+
+                showCard(story, titleEl);
+            });
+        });
+
+        // Tap on the dim overlay to dismiss the bottom sheet
+        overlay.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hideCard();
+        });
+
+        // Also allow tapping the card link area on mobile
+        cardLink.style.pointerEvents = 'auto';
+
+        // ---- Swipe-down gesture to dismiss the bottom sheet ----
+        let touchStartY = 0;
+        let touchCurrentY = 0;
+        let isDragging = false;
+
+        card.addEventListener('touchstart', (e) => {
+            touchStartY = e.touches[0].clientY;
+            touchCurrentY = touchStartY;
+            isDragging = true;
+            // Disable the smooth transition while the user is dragging
+            card.style.transition = 'none';
+        }, { passive: true });
+
+        card.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            touchCurrentY = e.touches[0].clientY;
+            const deltaY = touchCurrentY - touchStartY;
+
+            // Only allow dragging downward (positive delta)
+            if (deltaY > 0) {
+                card.style.transform = `translateY(${deltaY}px)`;
+            }
+        }, { passive: true });
+
+        card.addEventListener('touchend', () => {
+            if (!isDragging) return;
+            isDragging = false;
+
+            const deltaY = touchCurrentY - touchStartY;
+
+            if (deltaY > 80) {
+                // Swiped far enough — animate to fully hidden, then clean up
+                card.style.transition = '';          // restore CSS transition
+                card.style.transform = 'translateY(100%)'; // slide off-screen
+
+                // After the slide-out animation finishes, remove .active and
+                // clear inline styles so the card is ready for next open
+                card.addEventListener('transitionend', function reset() {
+                    card.removeEventListener('transitionend', reset);
+                    card.style.transform = '';
+                    card.style.transition = '';
+                    hideCard();
+                });
+            } else {
+                // Didn't swipe far enough — snap back to open position
+                card.style.transition = '';  // restore CSS transition
+                card.style.transform = '';   // CSS .active translateY(0) takes over
+            }
+        });
+
+    } else {
+        // ---- DESKTOP: hover to show tooltip, follows cursor ----
+        titles.forEach((titleEl, i) => {
+            if (!titleEl) return;
             titleEl.style.pointerEvents = 'auto';
             titleEl.style.cursor = 'pointer';
 
             titleEl.addEventListener('mouseenter', (e) => {
                 const story = topStories[i];
-                // Показываем карточку только если есть и описание, и картинка
-                if (story && story.description && story.imageUrl) {
-                    cardDesc.innerText = story.description;
-                    cardLink.href = story.url || '#';
-                    cardImg.src = story.imageUrl;
-                    cardImg.parentElement.style.display = 'block';
-                    
-                    card.classList.add('active');
-                    
-                    // Эффект затемнения
-                    container.classList.add('is-dimmed');
-                    // Снимаем активность со всех и ставим только текущему
-                    titles.forEach(t => t.classList.remove('is-active'));
-                    titleEl.classList.add('is-active');
+                showCard(story, titleEl);
 
-                    // Делаем заголовок кликабельным
-                    titleEl.onclick = () => {
-                        window.open(story.url || '#', '_blank');
-                    };
-                }
+                // Make title clickable to open article
+                titleEl.onclick = () => {
+                    window.open(story.url || '#', '_blank');
+                };
             });
 
             titleEl.addEventListener('mousemove', (e) => {
                 const containerRect = container.getBoundingClientRect();
                 const x = e.clientX - containerRect.left;
                 const y = e.clientY - containerRect.top + 15;
-                
-                // Всегда справа от курсора: x + небольшой отступ
                 const finalX = x + 15;
 
                 card.style.left = `${finalX}px`;
                 card.style.top = `${y}px`;
             });
-        }
-    });
+        });
 
-    // Слушатель на весь контейнер, чтобы убирать эффект только когда мышь ушла совсем
-    container.addEventListener('mouseleave', (e) => {
-        // Проверяем, что мышь действительно ушла за пределы контейнера, 
-        // а не просто на дочерний элемент
-        if (!e.relatedTarget || !container.contains(e.relatedTarget)) {
-            card.classList.remove('active');
-            container.classList.remove('is-dimmed');
-            titles.forEach(t => t.classList.remove('is-active'));
-        }
-    });
+        // Hide card when mouse leaves the poster container entirely
+        container.addEventListener('mouseleave', (e) => {
+            if (!e.relatedTarget || !container.contains(e.relatedTarget)) {
+                hideCard();
+            }
+        });
+    }
 }
 
 function calculateHeaderBounds() {
     headerBounds = [];
-    // Заголовки
+    // Headers
     for (let i = 1; i <= 3; i++) {
         const el = document.getElementById(`title-${i}`);
         if (el && el.innerText.trim() !== "") {
@@ -184,21 +315,21 @@ function calculateHeaderBounds() {
             });
         }
     }
-    // Блоки описания сверху
+    // Top description blocks
     const expBlocks = document.querySelectorAll('.explanation-block');
     expBlocks.forEach((el, i) => {
         const rect = el.getBoundingClientRect();
         const containerRect = document.querySelector('.poster-container').getBoundingClientRect();
         headerBounds.push({
             type: 'exp',
-            id: i, // Добавляем ID для точной идентификации
+            id: i, // Add ID for precise identification
             top: rect.top - containerRect.top,
             bottom: rect.bottom - containerRect.top,
             left: rect.left - containerRect.left,
             right: rect.right - containerRect.left
         });
     });
-    // Большое слово внизу
+    // Large word at bottom
     const bottomWord = document.getElementById('bottom-word');
     if (bottomWord) {
         const rect = bottomWord.getBoundingClientRect();
@@ -256,14 +387,14 @@ function exportPosterData() {
         stories: topStories
     };
     
-    console.log("💾 Данные для сайта подготовлены:", dataToExport);
+    console.log("💾 Site data prepared:", dataToExport);
 }
 
-// Функция для выбора ключевого слова на основе настроения новостей
+// Choose key word based on news sentiment
 function getSentimentWord(stories) {
     const text = stories.map(s => (s.headline + " " + s.description).toUpperCase()).join(" ");
     
-    // Словари для анализа
+    // Dictionaries for analysis
     const tensionWords = ["WAR", "CONFLICT", "CRISIS", "DEAD", "ATTACK", "PROTEST", "TENSION", "FIGHT"];
     const powerWords = ["ELECTION", "TRUMP", "BIDEN", "GOVERNMENT", "POLICY", "POWER", "LEADER"];
     const economyWords = ["ECONOMY", "MARKET", "FINANCIAL", "PRICE", "BANK", "TRADE", "OIL"];
@@ -272,23 +403,23 @@ function getSentimentWord(stories) {
     let scores = {
         TENSION: 0,
         POWER: 0,
-        VOLUME: 0, // По умолчанию
+        VOLUME: 0, // Default
         IMPACT: 0,
         VOICE: 0
     };
 
-    // Подсчет очков
+    // Score counting
     tensionWords.forEach(w => { if (text.includes(w)) scores.TENSION += 2; });
     powerWords.forEach(w => { if (text.includes(w)) scores.POWER += 1.5; });
     economyWords.forEach(w => { if (text.includes(w)) scores.IMPACT += 1.2; });
     techWords.forEach(w => { if (text.includes(w)) scores.VOICE += 1; });
 
-    // Добавляем немного случайности к базовым словам
+    // Add some randomness to base words
     scores.VOLUME += Math.random();
     scores.IMPACT += Math.random();
     scores.VOICE += Math.random();
 
-    // Находим слово с максимальным баллом
+    // Find word with maximum score
     let maxScore = -1;
     let selectedWord = "GLOBAL";
 
@@ -314,7 +445,7 @@ function updateUI() {
         }
     }
     
-    // Обновляем дату в сайдбаре
+    // Update date in sidebar
     const dateSidebar = document.querySelector('.poster-date-sidebar');
     if (dateSidebar) {
         const urlParams = new URLSearchParams(window.location.search);
@@ -327,21 +458,7 @@ function updateUI() {
         }
     }
     
-    const today = getTodayFormatted();
-    const oldDate = document.querySelector('.today-date');
-    if (oldDate) oldDate.remove();
-    const dateEl = document.createElement('div');
-    dateEl.className = 'today-date';
-    dateEl.innerText = today;
-    dateEl.style.position = 'absolute';
-    dateEl.style.top = '20px';
-    dateEl.style.right = '20px';
-    dateEl.style.color = 'rgba(255,255,255,0.5)';
-    dateEl.style.fontFamily = 'PP Supply Mono, monospace';
-    dateEl.style.fontSize = '10px';
-    document.querySelector('.poster-container').appendChild(dateEl);
-    
-    // ОБНОВЛЕННАЯ ЛОГИКА: Сначала проверяем, есть ли слово от ИИ в данных
+    // UPDATED LOGIC: First check if there is an AI word in the data
     const bottomWordEl = document.getElementById('bottom-word');
     if (bottomWordEl) {
         let textToShow = "PULSE"; // Default
@@ -377,20 +494,20 @@ function drawPoster() {
     drawHeatmap();
     drawMarkers();
     
-    // Добавляем эффект зернистости (шум)
-    addGrain(15); 
+    // Grain effect — lower on touch devices to avoid excessive noise
+    addGrain(isMobile() ? 3 : 15); 
     
-    // После отрисовки всего на канвасе, проверяем яркость под текстом
+    // After drawing everything on canvas, check brightness under text
     applyAdaptiveTextColor();
 }
 
 function addGrain(strength) {
     loadPixels();
     for (let i = 0; i < pixels.length; i += 4) {
-        // Генерируем случайный шум
+        // Generate random noise
         let noiseVal = random(-strength, strength);
         
-        // Применяем к каналам R, G, B
+        // Apply to R, G, B channels
         pixels[i] = constrain(pixels[i] + noiseVal, 0, 255);
         pixels[i+1] = constrain(pixels[i+1] + noiseVal, 0, 255);
         pixels[i+2] = constrain(pixels[i+2] + noiseVal, 0, 255);
@@ -401,13 +518,13 @@ function addGrain(strength) {
 function applyAdaptiveTextColor() {
     loadPixels();
     
-    // Проходим по всем зарегистрированным текстовым блокам
+    // Iterate over all registered text blocks
     headerBounds.forEach((bound, index) => {
         let totalBrightness = 0;
         let count = 0;
         
-        // Вычисляем среднюю яркость фона под этим блоком
-        // Берем несколько точек внутри прямоугольника для скорости
+        // Compute average background brightness under this block
+        // Sample points inside the rect for speed
         for (let x = Math.floor(bound.left); x < bound.right; x += 10) {
             for (let y = Math.floor(bound.top); y < bound.bottom; y += 10) {
                 let pixIndex = 4 * (Math.floor(y * pixelDensity()) * width * pixelDensity() + Math.floor(x * pixelDensity()));
@@ -423,21 +540,20 @@ function applyAdaptiveTextColor() {
         
         let avgBrightness = count > 0 ? totalBrightness / count : 0;
         
-        // Если фон яркий (больше 100 из 255), делаем текст темнее или контрастнее
-        // В нашем случае, если фон яркий, текст должен быть белым (макс контраст), 
-        // а если фон темный, он и так белый. 
-        // Но пользователь просил "белый/серый в зависимости от контраста".
+        // If background is bright (>100 of 255), make text darker or more contrasting
+        // Here: bright background -> white text (max contrast); dark background stays as is.
+        // User asked for "white/grey depending on contrast".
         
-        let targetColor = '#e8e9eb'; // По умолчанию (светло-серый)
+        let targetColor = '#e8e9eb'; // Default (light grey)
         if (avgBrightness > 120) {
-            targetColor = '#ffffff'; // На ярком фоне делаем чисто белым для четкости
+            targetColor = '#ffffff'; // On bright background use pure white for clarity
         } else if (avgBrightness > 50) {
-            targetColor = '#ffffff'; // Тоже белый
+            targetColor = '#ffffff'; // Also white
         } else {
-            targetColor = '#e8e9eb'; // На темном фоне оставляем приглушенным
+            targetColor = '#e8e9eb'; // On dark background keep muted
         }
 
-        // Применяем цвет к HTML элементу
+        // Apply color to HTML element
         if (bound.type === 'title') {
             const el = document.getElementById(`title-${index + 1}`);
             if (el) el.style.color = targetColor;
@@ -462,22 +578,28 @@ function applyAdaptiveTextColor() {
 function drawHeatmap() {
     const centerY = height * 0.45;
     
-    // Используем тот же seed, что и в drawMarkers, чтобы пятна совпадали с точками
+    // Use same seed as drawMarkers so blobs align with points
     const urlParams = new URLSearchParams(window.location.search);
     const dateParam = urlParams.get('date');
     const dateStr = dateParam || new Date().toISOString().split('T')[0];
     const seed = parseInt(dateStr.replace(/-/g, '')) || 0;
     randomSeed(seed);
     
-    // Сначала рассчитываем позиции, как в drawMarkers
+    // Compute positions identically to drawMarkers (same seed, same calls)
     const storyPositions = [];
     for (let i = 0; i < Math.min(topStories.length, 3); i++) {
         let rx = width * (0.2 + random(0.6));
         let ry;
         if (headerBounds.length >= 3) {
-            if (i === 0) ry = random(headerBounds[0].top - 60, headerBounds[0].top - 30);
-            else if (i === 1) ry = random(headerBounds[0].bottom + 20, headerBounds[1].top - 20);
-            else ry = random(headerBounds[1].bottom + 20, headerBounds[2].top - 20);
+            if (i === 0) {
+                ry = random(headerBounds[0].top - 60, headerBounds[0].top - 30);
+            } else if (i === 1) {
+                let gapCenter = (headerBounds[0].bottom + headerBounds[1].top) / 2;
+                ry = gapCenter + random(-8, 8);
+            } else {
+                let gapCenter = (headerBounds[1].bottom + headerBounds[2].top) / 2;
+                ry = gapCenter + random(-8, 8);
+            }
         } else {
             ry = centerY + (i - 1) * 120 + random(-10, 10);
             if (i === 1) ry -= 40;
@@ -491,7 +613,9 @@ function drawHeatmap() {
         
         if (!story.mainLocation) continue;
         
-        const maxRadius = map(story.intensity, 40, 100, 200, 500);
+        // Scale heatmap radius proportionally to canvas size (600 is the desktop baseline)
+        const scaleFactor = width / DESKTOP_WIDTH;
+        const maxRadius = map(story.intensity, 40, 100, 200, 500) * scaleFactor;
         
         for (let r = maxRadius; r > 10; r -= 5) { 
             let alpha = map(r, 10, maxRadius, 110, 0); 
@@ -499,19 +623,19 @@ function drawHeatmap() {
             col.setAlpha(alpha);
             noStroke();
             fill(col);
-            let noiseVal = noise(r * 0.008, i * 10) * 30; 
+            let noiseVal = noise(r * 0.008, i * 10) * 30 * scaleFactor; 
             ellipse(pos.x, pos.y, r + noiseVal);
         }
         fill(255, 180);
-        ellipse(pos.x, pos.y, 8);
+        ellipse(pos.x, pos.y, 6 * scaleFactor + 2);
     }
 }
 
 function drawMarkers() {
     const centerY = height * 0.45;
     
-    // Генерируем случайные X для каждой истории, чтобы каждый день было по-разному
-    // Используем seed на основе даты из данных, чтобы в течение дня X был одинаковым, но разным между днями
+    // Generate random X per story so each day looks different
+    // Use date-based seed so X is stable within a day but varies between days
     const urlParams = new URLSearchParams(window.location.search);
     const dateParam = urlParams.get('date');
     const dateStr = dateParam || new Date().toISOString().split('T')[0];
@@ -520,24 +644,26 @@ function drawMarkers() {
 
     const storyPositions = [];
     for (let i = 0; i < Math.min(topStories.length, 3); i++) {
-        // Случайный X в пределах 20% - 80% ширины
+        // Random X within 20%–80% of width
         let rx = width * (0.2 + random(0.6));
         
-        // Логика поиска безопасного Y между строками текста
+        // Place dot at the CENTER of the gap between titles (with small random offset)
         let ry;
         if (headerBounds.length >= 3) {
             if (i === 0) {
-                // ПЕРВАЯ ТОЧКА: выше первого заголовка
+                // FIRST POINT: above first header
                 ry = random(headerBounds[0].top - 60, headerBounds[0].top - 30);
             } else if (i === 1) {
-                // ВТОРАЯ ТОЧКА: между первым и вторым заголовком
-                ry = random(headerBounds[0].bottom + 20, headerBounds[1].top - 20);
+                // SECOND POINT: centered in gap between title 1 and title 2
+                let gapCenter = (headerBounds[0].bottom + headerBounds[1].top) / 2;
+                ry = gapCenter + random(-8, 8);
             } else {
-                // ТРЕТЬЯ ТОЧКА: между вторым и третьим заголовком
-                ry = random(headerBounds[1].bottom + 20, headerBounds[2].top - 20);
+                // THIRD POINT: centered in gap between title 2 and title 3
+                let gapCenter = (headerBounds[1].bottom + headerBounds[2].top) / 2;
+                ry = gapCenter + random(-8, 8);
             }
         } else {
-            // Запасной вариант, если границы не определились
+            // Fallback when bounds were not determined
             ry = centerY + (i - 1) * 120 + random(-10, 10);
             if (i === 1) ry -= 40;
         }
@@ -545,14 +671,22 @@ function drawMarkers() {
         storyPositions.push({ x: rx, y: ry });
     }
     
-    // Рисуем цепочку линий между точками (1 -> 2 -> 3)
-    stroke(255, 30);
-    strokeWeight(1);
-    noFill();
-    for (let i = 0; i < storyPositions.length - 1; i++) {
-        let p1 = storyPositions[i];
-        let p2 = storyPositions[i + 1];
-        drawDashedCurve(p1.x, p1.y, p2.x, p2.y);
+    // Draw chain of lines ONLY between stories that have geo locations
+    // Collect positions of stories with mainLocation
+    const geoPositions = [];
+    for (let i = 0; i < Math.min(topStories.length, 3); i++) {
+        if (topStories[i].mainLocation) {
+            geoPositions.push(storyPositions[i]);
+        }
+    }
+    // Only draw lines if 2+ geo points exist
+    if (geoPositions.length >= 2) {
+        stroke(255, 30);
+        strokeWeight(1);
+        noFill();
+        for (let i = 0; i < geoPositions.length - 1; i++) {
+            drawDashedCurve(geoPositions[i].x, geoPositions[i].y, geoPositions[i + 1].x, geoPositions[i + 1].y);
+        }
     }
     
     for (let i = 0; i < Math.min(topStories.length, 3); i++) {
@@ -561,10 +695,10 @@ function drawMarkers() {
         
         if (!story.mainLocation) continue;
 
-        // Рисуем маркер и подпись в зависимости от индекса (0-верх, 1-середина, 2-низ)
+        // Draw compact geo label next to dot
         drawStoryMarker(pos.x, pos.y, story, i);
 
-        // Основная точка
+        // Main point (white dot)
         fill(255, 200);
         noStroke();
         ellipse(pos.x, pos.y, 6);
@@ -575,120 +709,41 @@ function drawStoryMarker(x, y, story, index) {
     const cityName = story.mainLocation.name.toUpperCase();
     const coords = `${story.mainLocation.lat.toFixed(1)}, ${story.mainLocation.lng.toFixed(1)}`;
     
-    stroke(255, 60);
-    strokeWeight(0.5);
-    noFill();
-    
     textFont('PP Supply Mono');
-    textSize(10); // Устанавливаем базовый размер
+    noStroke();
     
-    let lineLen = 30;
-    let labelOffset = 5;
-    let textH = 25; // Примерная высота блока текста
+    // Daily random: label goes left or right of the dot
+    // random() is already date-seeded in drawMarkers(), so this varies per day
+    let side = random() > 0.5 ? 1 : -1; // 1 = text to the right, -1 = text to the left
     
-    if (index === 0) {
-        // ВЕРХНЯЯ ТОЧКА: линия идет вверх
-        let lineTopY = y - lineLen;
-        
-        // Проверяем столкновения с любыми текстовыми блоками
-        for (let bound of headerBounds) {
-            // Если текст находится над точкой и по горизонтали пересекается
-            if (x > bound.left - 40 && x < bound.right + 40) {
-                // Если линия или текст подписи заходят на блок
-                if (lineTopY - textH < bound.bottom + 10 && y > bound.top) {
-                    // Пробуем инвертировать направление линии вниз, если там свободно
-                    lineTopY = y + lineLen; 
-                }
-            }
-        }
-        
-        line(x, y, x, lineTopY);
-        
-        noStroke();
-        fill(255, 200);
-        textSize(10); // Явно задаем размер перед выводом названия города
-        if (lineTopY < y) {
-            textAlign(CENTER, BOTTOM);
-            text(cityName, x, lineTopY - 15);
-            fill(255, 100);
-            textSize(8); // Координаты чуть меньше
-            text(coords, x, lineTopY - 5);
-        } else {
-            textAlign(CENTER, TOP);
-            text(cityName, x, lineTopY + 5);
-            fill(255, 100);
-            textSize(8); // Координаты чуть меньше
-            text(coords, x, lineTopY + 17);
-        }
-        
-    } else if (index === 1) {
-        // СРЕДНЯЯ ТОЧКА: линия идет вбок
-        let sideDir = x > width / 2 ? -1 : 1;
-        let endX = x + sideDir * 60;
-        let endY = y - 20;
-        
-        // Проверка столкновений для боковой линии
-        for (let bound of headerBounds) {
-            if (endY < bound.bottom + 10 && endY > bound.top - 10) {
-                if ((sideDir === 1 && endX + 50 > bound.left) || (sideDir === -1 && endX - 50 < bound.right)) {
-                    // Если мешает, пробуем направить в другую сторону или изменить наклон
-                    endY = y + 20;
-                }
-            }
-        }
-        
-        line(x, y, endX, endY);
-        
-        noStroke();
-        fill(255, 200);
-        textAlign(sideDir === 1 ? LEFT : RIGHT, CENTER);
-        textSize(10);
-        text(cityName, endX + sideDir * 10, endY - 5);
-        fill(255, 100);
-        textSize(8);
-        text(coords, endX + sideDir * 10, endY + 7);
-        
-    } else if (index === 2) {
-        // НИЖНЯЯ ТОЧКА: линия идет вниз
-        let lineBottomY = y + lineLen;
-        
-        for (let bound of headerBounds) {
-            if (x > bound.left - 40 && x < bound.right + 40) {
-                if (lineBottomY + textH > bound.top - 10 && y < bound.bottom) {
-                    lineBottomY = y - lineLen;
-                }
-            }
-        }
-        
-        line(x, y, x, lineBottomY);
-        
-        noStroke();
-        fill(255, 200);
-        if (lineBottomY > y) {
-            textAlign(CENTER, TOP);
-            text(cityName, x, lineBottomY + 5);
-            fill(255, 100);
-            textSize(8);
-            text(coords, x, lineBottomY + 17);
-        } else {
-            textAlign(CENTER, BOTTOM);
-            text(cityName, x, lineBottomY - 15);
-            fill(255, 100);
-            textSize(8);
-            text(coords, x, lineBottomY - 5);
-        }
-    }
+    // Keep label within canvas bounds
+    if (x < width * 0.25) side = 1;
+    if (x > width * 0.75) side = -1;
+    
+    let labelX = x + side * 14; // Small offset from the dot
+    let align = side === 1 ? LEFT : RIGHT;
+    
+    // City name (brighter)
+    fill(255, 200);
+    textSize(10);
+    textAlign(align, CENTER);
+    text(cityName, labelX, y - 5);
+    
+    // Coordinates (dimmer, slightly smaller)
+    fill(255, 100);
+    textSize(8);
+    text(coords, labelX, y + 7);
 }
 
 function drawDashedCurve(x1, y1, x2, y2) {
-    let steps = 30; // Увеличили количество шагов для плавности
+    let steps = 30; // More steps for smoothness
     
-    // Генерируем случайное смещение для "контрольной точки" кривой
-    // Это создаст уникальный изгиб для каждой линии
+    // Random offset for curve control point
+    // Creates unique bend per line
     let midX = lerp(x1, x2, 0.5);
     let midY = lerp(y1, y2, 0.5);
     
-    // Добавляем случайный "вылет" в сторону
+    // Add random offset to the side
     let offsetX = random(-50, 50);
     let offsetY = random(-30, 30);
     
@@ -699,7 +754,7 @@ function drawDashedCurve(x1, y1, x2, y2) {
         let t1 = i / steps;
         let t2 = (i + 1) / steps;
         
-        // Используем квадратичную кривую Безье для плавного изгиба
+        // Quadratic Bezier curve for smooth bend
         let cx1 = (1 - t1) * (1 - t1) * x1 + 2 * (1 - t1) * t1 * cpX + t1 * t1 * x2;
         let cy1 = (1 - t1) * (1 - t1) * y1 + 2 * (1 - t1) * t1 * cpY + t1 * t1 * y2;
         

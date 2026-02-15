@@ -111,6 +111,18 @@ body {
     padding: 64px 80px;
 }
 
+@media (max-width: 1024px) {
+    .container {
+        padding: 48px 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 32px 20px;
+    }
+}
+
 header {
     position: fixed;
     top: 0;
@@ -133,6 +145,18 @@ header {
             align-items: center;
         }
 
+@media (max-width: 1024px) {
+    header .nav-container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    header .nav-container {
+        padding: 0 20px;
+    }
+}
+
 .nav-links {
     display: flex;
     gap: 32px;
@@ -148,6 +172,12 @@ header {
     transition: opacity 0.2s ease;
 }
 
+@media (max-width: 640px) {
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
 .nav-link:hover {
     opacity: 0.7;
 }
@@ -156,6 +186,20 @@ header {
     text-align: center;
     margin-top: 240px;
     margin-bottom: 300px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        margin-top: 180px;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        margin-top: 140px;
+        margin-bottom: 120px;
+    }
 }
 
 .hero h1 {
@@ -168,6 +212,18 @@ header {
     font-family: var(--font-display);
 }
 
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
 .hero p {
     color: var(--text-white);
     font-size: 24px;
@@ -177,13 +233,55 @@ header {
     letter-spacing: -0.01em;
 }
 
-/* Poster Grid */
+@media (max-width: 1024px) {
+    .hero p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* Gradient animation: register custom properties for smooth interpolation */
+@property --gx1 { syntax: '<number>'; initial-value: 50; inherits: false; }
+@property --gy1 { syntax: '<number>'; initial-value: 50; inherits: false; }
+@property --gx2 { syntax: '<number>'; initial-value: 50; inherits: false; }
+@property --gy2 { syntax: '<number>'; initial-value: 50; inherits: false; }
+
+/* Poster Grid – --poster-reveal-duration controls how long each poster takes to fade in */
 .poster-grid {
+    --poster-reveal-duration: 1.2s;
     display: grid;
     grid-template-columns: repeat(4, 296px);
     justify-content: space-between;
     gap: 40px 20px;
     margin-top: 40px;
+}
+
+/* Responsive grid: tablet 3 columns, smartphone 2 columns */
+@media (max-width: 1280px) {
+    .poster-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .poster-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 12px;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .poster-grid {
+        gap: 20px 10px;
+        margin-top: 24px;
+    }
 }
 
 .poster-item {
@@ -195,8 +293,8 @@ header {
     opacity: 0;
     transform: translateY(20px);
     transition: 
-        opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1),
-        transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        opacity var(--poster-reveal-duration, 1.2s) cubic-bezier(0.19, 1, 0.22, 1),
+        transform var(--poster-reveal-duration, 1.2s) cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .poster-item.is-visible {
@@ -211,6 +309,7 @@ header {
 .poster-preview {
     width: 296px;
     height: 358px;
+    max-width: 100%;
     background: var(--bg-dark);
     border-radius: 0px;
     overflow: hidden;
@@ -218,7 +317,15 @@ header {
     border: none;
 }
 
-/* Эффект в стиле monopo.vn - анимированный Mesh-градиент */
+@media (max-width: 1280px) {
+    .poster-preview {
+        width: 100%;
+        aspect-ratio: 296 / 358;
+        height: auto;
+    }
+}
+
+/* monopo.vn-style effect - animated Mesh gradient */
 .poster-preview::before {
     content: '';
     position: absolute;
@@ -254,7 +361,7 @@ header {
     animation: meshAnimation 15s ease-in-out infinite alternate;
 }
 
-/* Текстура шума (Grain) - всегда видна для глубины */
+/* Noise texture (Grain) - always visible for depth */
 .poster-preview::after {
     content: '';
     position: absolute;
@@ -289,19 +396,33 @@ header {
     transform: scale(1);
 }
 
-.poster-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    padding: 0;
-}
-
-.poster-date {
-    font-family: var(--font-accent);
-    font-size: 18px;
+/* Poster date: centered on poster, PP Woodland 48px (main page only) */
+.poster-grid .poster-preview .poster-date {
+    font-family: 'PP Woodland', var(--font-display), serif;
+    font-size: 48px;
+    font-weight: normal;
     text-transform: none;
     letter-spacing: -0.01em;
     color: var(--text-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+    .poster-grid .poster-preview .poster-date {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 640px) {
+    .poster-grid .poster-preview .poster-date {
+        font-size: 24px;
+    }
 }
 
 /* Typography Helpers */

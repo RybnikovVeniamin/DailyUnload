@@ -2,28 +2,28 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 
-// Базовый URL основного репозитория (дизайн + данные)
+// Base URL of main repo (design + data)
 const REPO_BASE_URL = 'https://raw.githubusercontent.com/RybnikovVeniamin/NewsPosterGenerating/main/';
 
-// Список файлов, которые нужно синхронизировать
+// List of files to sync
 const FILES_TO_SYNC = [
     { remote: 'latest.json', local: 'latest.json' },
     { remote: 'sketch.js', local: 'sketch.js' },
     { remote: 'styles.css', local: 'styles.css' },
-    { remote: 'index.html', local: 'poster.html' } // poster.html в этом проекте — это index.html из того
+    { remote: 'index.html', local: 'poster.html' } // poster.html in this project is index.html from that one
 ];
 
 async function syncWithSource() {
-    console.log("🔄 Начинаю полную синхронизацию с основным проектом (дизайн + данные)...");
+    console.log("🔄 Starting full sync with main project (design + data)...");
     
     for (const file of FILES_TO_SYNC) {
         try {
             const response = await fetch(REPO_BASE_URL + file.remote);
-            if (!response.ok) throw new Error(`Ошибка загрузки ${file.remote}: ${response.statusText}`);
+            if (!response.ok) throw new Error(`Failed to load ${file.remote}: ${response.statusText}`);
             
             let content = await response.text();
 
-            // Если это latest.json, сохраняем его еще и в архив
+            // If it's latest.json, also save to archive
             if (file.remote === 'latest.json') {
                 const data = JSON.parse(content);
                 const archiveDir = path.join(__dirname, 'archive');
@@ -31,9 +31,9 @@ async function syncWithSource() {
                 
                 const archivePath = path.join(archiveDir, `poster-${data.date}.json`);
                 fs.writeFileSync(archivePath, JSON.stringify(data, null, 2));
-                console.log(`📦 Данные за ${data.date} добавлены в архив`);
+                console.log(`📦 Data for ${data.date} added to archive`);
 
-                // Обновляем индекс архива
+                // Update archive index
                 const indexFile = path.join(archiveDir, 'index.json');
                 let archiveIndex = fs.existsSync(indexFile) ? JSON.parse(fs.readFileSync(indexFile)) : [];
                 if (!archiveIndex.find(p => p.date === data.date)) {
@@ -42,15 +42,15 @@ async function syncWithSource() {
                 }
             }
 
-            // Сохраняем локальный файл
+            // Save local file
             fs.writeFileSync(path.join(__dirname, file.local), content);
-            console.log(`✅ Синхронизирован: ${file.local}`);
+            console.log(`✅ Synced: ${file.local}`);
 
         } catch (error) {
-            console.error(`❌ Ошибка при синхронизации ${file.remote}:`, error.message);
+            console.error(`❌ Sync error for ${file.remote}:`, error.message);
         }
     }
-    console.log("✨ Синхронизация завершена!");
+    console.log("✨ Sync complete!");
 }
 
 syncWithSource();

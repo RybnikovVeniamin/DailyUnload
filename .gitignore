@@ -1,2 +1,9 @@
 node_modules/
 .DS_Store
+
+# Keep real project data — do not commit (updated by bot/GitHub Actions)
+archive/
+latest.json
+
+# IDE / local
+.cursor/

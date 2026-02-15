@@ -88,6 +88,12 @@ header .nav-container {
     opacity: 0.7;
 }
 
+.poster-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
 .poster-container {
     width: 600px;
     height: 800px;
@@ -97,12 +103,12 @@ header .nav-container {
     flex-direction: column;
     padding: 40px;
     border: 1px solid #1a1e28;
+    overflow: hidden; /* Prevent content from spilling outside poster */
 }
 
 .poster-date-sidebar {
-    position: absolute;
-    right: -120px;
-    top: 0;
+    flex-shrink: 0;
+    padding-top: 0;
     font-family: 'PP Object Sans', sans-serif;
     font-size: 15px;
     color: #6A6A6A;
@@ -139,6 +145,7 @@ header .nav-container {
     align-items: center;
     text-align: center;
     z-index: 60; /* Higher than dim overlay to allow titles to be above */
+    padding-bottom: 100px; /* Reserve space for the absolutely-positioned bottom word */
     /* pointer-events: none; REMOVED to allow hover */
 }
 
@@ -146,12 +153,16 @@ header .nav-container {
     font-family: var(--font-display);
     font-size: 42px;
     line-height: 1.1;
-    margin-bottom: 30px; /* Увеличили отступ между заголовками */
+    margin-bottom: 55px; /* Gap for geo labels between titles */
     text-transform: uppercase;
     position: relative;
     transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease, color 0.4s ease;
     pointer-events: auto; /* Ensure titles capture mouse events */
     cursor: pointer;
+}
+
+.news-title:last-child {
+    margin-bottom: 0; /* No gap needed after the last title */
 }
 
 .poster-container.is-dimmed .news-title:not(.is-active) {
@@ -165,14 +176,16 @@ header .nav-container {
     color: #ffffff !important;
 }
 
-/* Bottom Word */
+/* Bottom Word — pinned to the bottom of the poster, always visible */
 .bottom-content {
+    position: absolute;
+    bottom: -30px; /* Match container padding */
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    z-index: 10;
-    margin-top: auto;
-    padding-bottom: 5px; /* 40px container padding + 20px = 60px from edge */
+    z-index: 70; /* Above titles so it's never hidden */
 }
 
 .big-word {
@@ -228,8 +241,7 @@ header .nav-container {
 /* Ensure other elements are dimmed too */
 .poster-container.is-dimmed .top-blocks,
 .poster-container.is-dimmed .bottom-content,
-.poster-container.is-dimmed .poster-date-sidebar,
-.poster-container.is-dimmed .today-date {
+.poster-container.is-dimmed ~ .poster-date-sidebar {
     opacity: 0.1;
     transition: opacity 0.4s ease;
 }
@@ -351,3 +363,138 @@ body.is-leaving .reveal {
 body.is-leaving .reveal-1 { animation-delay: 0s !important; }
 body.is-leaving .reveal-2 { animation-delay: 0.08s !important; }
 body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
+
+/* ============================================
+   Mobile: Full-Screen Poster
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* Body fills viewport, no padding needed */
+    body {
+        padding-top: 0;
+        overflow: hidden; /* No scroll on poster page */
+    }
+
+    /* Header becomes transparent overlay */
+    header {
+        background: transparent;
+        height: 60px;
+    }
+
+    header .nav-container {
+        padding: 0 20px;
+    }
+
+    /* Poster fills the entire screen */
+    .poster-wrapper {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .poster-container {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 60px 20px 20px; /* top accounts for transparent header */
+    }
+
+    /* Date overlays bottom-right on mobile */
+    .poster-date-sidebar {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        top: auto;
+        padding-top: 0;
+        font-size: 10px;
+    }
+
+    /* Top blocks: tighter spacing */
+    .top-blocks {
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    /* Responsive font sizes */
+    .explanation-block {
+        font-size: clamp(6px, 1.8vw, 8px);
+    }
+
+    .news-title {
+        font-size: clamp(22px, 6.5vw, 42px);
+        margin-bottom: 40px; /* Gap for geo labels on mobile */
+    }
+
+    .big-word {
+        font-size: clamp(40px, 14vw, 80px);
+    }
+
+    .bottom-content {
+        bottom: 20px; /* Match mobile container padding */
+    }
+
+    /* News card becomes a bottom sheet */
+    .news-card {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        width: 100%;
+        max-height: 50vh;
+        background: #1C1C1C;
+        padding: 24px 20px;
+        border-radius: 16px 16px 0 0;
+        z-index: 200;
+        transform: translateY(100%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .news-card.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Bottom sheet handle indicator */
+    .news-card::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+        margin: 0 auto 16px;
+    }
+
+    .news-card-content {
+        gap: 16px;
+    }
+
+    .news-card-image-container {
+        width: 72px;
+        height: 72px;
+    }
+
+    #news-card-description {
+        font-size: 14px;
+    }
+
+    #news-card-link {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    /* Dim overlay should also be fixed on mobile */
+    .poster-container.is-dimmed .poster-dim-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: auto; /* Allow tapping overlay to dismiss */
+    }
+}
