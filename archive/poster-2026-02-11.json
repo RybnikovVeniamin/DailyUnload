@@ -1,0 +1,73 @@
+{
+  "date": "2026-02-11",
+  "displayDate": "FEB 11, 2026",
+  "bottomWord": "UNCERTAINTY",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Instagram and YouTube owners built 'addiction machines', trial told",
+      "description": "The tech giants are under scrutiny over social media addiction in a landmark jury trial in Los Angeles",
+      "mainLocation": {
+        "name": "LOS ANGELES, USA",
+        "lat": 34.0536909,
+        "lng": -118.242766
+      },
+      "intensity": 65,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/c3wlpqpe2z4o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d3df/live/62944060-05f7-11f1-b5e2-dd58fc65f0f6.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "How does the cutoff of Starlink terminals affect Russia’s moves in Ukraine?",
+      "description": "Russian drone operators have been dealt a blow, but experts say the shut-off is unlikely to change the course of war.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 68,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/2/10/how-does-the-cutoff-of-starlink-terminals-affect-russias-moves-in-ukraine",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-01-12T200518Z_464537579_RC28WW9KBMON_RTRMADP_3_IRAN-ECONOMY-PROTESTS-STARLINK-1770670679.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "More solar farms on the way after record renewables auction",
+      "description": "The results have been welcomed by climate and clean energy groups but could face opposition from local communities.",
+      "mainLocation": null,
+      "intensity": 55,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/cp85n416n3vo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2fb1/live/fa8e5190-05b0-11f1-8336-6d2201ebafb2.jpg"
+    },
+    {
+      "id": 7,
+      "headline": "‘Evil deeds’: Hong Kong leader praises lengthy jail sentence for Jimmy Lai",
+      "description": "US, UK officials call for Jimmy Lai’s release on ‘humanitarian’ grounds due to his age and health.",
+      "mainLocation": {
+        "name": "HONG KONG, CHINA",
+        "lat": 22.2792968,
+        "lng": 114.1628907
+      },
+      "intensity": 65,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/2/10/evil-deeds-hong-kong-leader-praises-lengthy-jail-sentence-for-jimmy-lai",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/08/2021-02-09T013732Z_366892669_RC2POL9CEEDD_RTRMADP_3_HONGKONG-SECURITY-JIMMY-LAI-1755221603.jpg?resize=1844%2C1080"
+    },
+    {
+      "id": 8,
+      "headline": "Iran’s top security official in Oman following nuclear talks with US",
+      "description": "The trip by Larijani, secretary of Iran’s Supreme National Security Council, comes amid diplomatic efforts to avert war.",
+      "mainLocation": {
+        "name": "MUSCAT, OMAN",
+        "lat": 23.6123628,
+        "lng": 58.5938134
+      },
+      "intensity": 65,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/2/10/irans-top-security-official-in-oman-following-nuclear-talks-with-us",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2025-08-13T113002Z_1033075158_RC2A6GAN5WM1_RTRMADP_3_IRAN-LEBANON-1770705548.jpg?resize=1920%2C1440"
+    }
+  ]
+}

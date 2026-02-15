@@ -1,0 +1,77 @@
+{
+  "date": "2026-02-12",
+  "displayDate": "FEB 12, 2026",
+  "bottomWord": "UNCERTAINTY",
+  "stories": [
+    {
+      "id": 2,
+      "headline": "UK doubles troops in Norway to counter Russian 'threat to Arctic'",
+      "description": "Defence Secretary John Healey says British personnel in Norway will rise from 1,000 to 2,000 over three years.",
+      "mainLocation": {
+        "name": "LONDON, UK",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 55,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/ce94jm1pp5xo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/fb34/live/b4aeaf60-06cf-11f1-a088-6db44f8964b4.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "In Ukraine’s west, Hungarian minority rights collide with wartime politics",
+      "description": "In Zakarpattia, ordinary life continues as an old dispute between neighbouring nations rocks regional geopolitics.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/2/11/in-ukraines-west-hungarian-minority-rights-collide-with-wartime-politics",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2023-12-13T080127Z_744790659_RC29O4ARGTDU_RTRMADP_3_UKRAINE-CRISIS-HUNGARY-MINORITY-1770801229.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Kingsbury School: Boy, 13, questioned after two students stabbed",
+      "description": "The investigation into the attack at a London school is being led by counter-terrorism officers.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/c4g0rnvpr1no",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/96bf/live/88293a10-06b0-11f1-9a46-37f4a626eabd.jpg"
+    },
+    {
+      "id": 9,
+      "headline": "Tumbler Ridge mass shooting: What we know about Canada’s school attack",
+      "description": "At least 9 people were killed, 26 injured; authorities described the suspect as a ‘female in a dress with brown hair’.",
+      "mainLocation": {
+        "name": "TUMBLER RIDGE, CANADA",
+        "lat": 55.1262007,
+        "lng": -120.998067
+      },
+      "intensity": 75,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/2/11/tumbler-ridge-mass-shooting-what-we-know-about-canadas-school-attack",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-02-11T060956Z_677344450_RC2IJJA5LJPW_RTRMADP_3_CANADA-SHOOTING-1-1770790714.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 10,
+      "headline": "More Palestinians return to Gaza via Rafah as Israeli attacks continue",
+      "description": "Those returning to Gaza describe being subjected to humiliating searches and interrogations by the Israeli military.",
+      "mainLocation": {
+        "name": "GAZA, PALESTINE",
+        "lat": 31.4662109,
+        "lng": 34.3995428
+      },
+      "intensity": 65,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/2/11/more-palestinians-return-to-gaza-via-rafah-as-israeli-attacks-continue",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/afp_698c20e0861e-1770791136.jpg?resize=1920%2C1440"
+    }
+  ]
+}

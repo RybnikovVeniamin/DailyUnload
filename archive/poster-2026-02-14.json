@@ -1,0 +1,73 @@
+{
+  "date": "2026-02-14",
+  "displayDate": "FEB 14, 2026",
+  "bottomWord": "INSTABILITY",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Russia faces Ukraine casualties, broken communications and total oil ban",
+      "description": "Russia unleashes deadly air assaults on civilians as Ukraine’s Zelenskyy promises new front-line tactics.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 85,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/2/13/russia-faces-ukraine-casualties-broken-communications-and-total-oil-ban",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-02-12T102544Z_453992495_RC2AKJAJJJEQ_RTRMADP_3_UKRAINE-CRISIS-ATTACK-ODESA-1770927999.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Iran fortifies underground complex near nuclear site, satellite images show",
+      "description": "Iran fortifies nuclear site underground amid heightened tensions with the US.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 72,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/cwygxz81330o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/28a1/live/e25c9ed0-0851-11f1-b5e2-dd58fc65f0f6.png"
+    },
+    {
+      "id": 4,
+      "headline": "Former Israeli PM Barak responds to criticism over close Epstein links",
+      "description": "Ehud Barak, whose relationship with sex offender Jeffrey Epstein spanned 15 years, says he regrets ever meeting him.",
+      "mainLocation": null,
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/2/13/former-israeli-pm-barak-responds-to-criticism-over-close-epstein-links",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2019-06-26T151236Z_1388642092_RC1D538D5C90_RTRMADP_3_ISRAEL-POLITICS-BARAK-1770964722.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "US says it caused dollar shortage to trigger Iran protests: What that means",
+      "description": "US official admits engineering dollar shortage to strangle rial, which culminated in the deadliest crackdown in Iran.",
+      "mainLocation": {
+        "name": "WASHINGTON D.C., USA",
+        "lat": 38.8950368,
+        "lng": -77.0365427
+      },
+      "intensity": 68,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/economy/2026/2/13/us-says-it-caused-dollar-shortage-to-trigger-iran-protests-what-that-means",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-02-01T145336Z_2099602781_RC22DJABJC0E_RTRMADP_3_IRAN-CRISIS-TURKEY-PROTEST-1770810778.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 6,
+      "headline": "Madagascar cyclone death toll hits 38, 12,000 displaced; Mozambique braces",
+      "description": "Gezani is forecast to return to cyclone status when it strikes southern Mozambique on Friday evening.",
+      "mainLocation": {
+        "name": "ANTANANARIVO, MADAGASCAR",
+        "lat": -18.9100122,
+        "lng": 47.5255809
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/2/13/madagascar-cyclone-death-toll-hits-38-12000-displaced-mozambique-braces",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AFP__20260212__978F64L__v1__HighRes__MadagascarWeatherCycloneDisaster-1770966027.jpg?resize=1920%2C1440"
+    }
+  ]
+}

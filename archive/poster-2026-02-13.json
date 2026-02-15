@@ -1,0 +1,77 @@
+{
+  "date": "2026-02-13",
+  "displayDate": "FEB 13, 2026",
+  "bottomWord": "DISTURBANCE",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Don't sack cabinet secretary until Mandelson files published, Badenoch says",
+      "description": "Head of the Civil Service Sir Chris Wormald  is understood to be negotiating an exit package from his job.",
+      "mainLocation": {
+        "name": "LONDON, UK",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 42,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/c98qene0gpdo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/983d/live/99bb56f0-b0b7-11ef-a0f2-fd81ae5962f4.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "Compromised peace? Oslo Accords figure deeply linked to Epstein network",
+      "description": "Oslo architect Rod-Larsen linked to Epstein files and visa fraud, prompting fears of blackmail behind peace deal.",
+      "mainLocation": {
+        "name": "OSLO, NORWAY",
+        "lat": 59.9133301,
+        "lng": 10.7389701
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/features/2026/2/12/compromised-peace-oslo-accords-figure-deeply-linked-to-epstein-network",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2010/08/201083116543758734_20.jpeg?resize=1200%2C675"
+    },
+    {
+      "id": 4,
+      "headline": "Kosovo parliament backs Albin Kurti-led government ending deadlock",
+      "description": "Securing international loans and reforming health and education systems among the top priorities of the new government.",
+      "mainLocation": {
+        "name": "PRISTINA, KOSOVO",
+        "lat": 42.6638771,
+        "lng": 21.1640849
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/2/12/kosovos-parliament-approves-new-govt-ending-yearlong-political-deadlock",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/2026-02-11T223402Z_1523034578_RC2WJJA0CDRC_RTRMADP_3_KOSOVO-GOVERNMENT-1770881260.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Virginia’s Law: How Democrat proposal could spark flood of sex abuse claims",
+      "description": "US Democrats seek to scrap statute of limitations for sex abuse crimes in bill named after Epstein accuser.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., USA",
+        "lat": 38.8950368,
+        "lng": -77.0365427
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/2/12/virginias-law-how-democrat-proposal-could-spark-flood-of-sex-abuse-claims",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/afp_698c665f7604-1770808927.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 7,
+      "headline": "‘Colonial-era classism’: Residents decry demolitions in Nigeria’s Makoko",
+      "description": "Thousands displaced from December to February as Lagos authorities destroy homes in Africa’s largest floating village.",
+      "mainLocation": {
+        "name": "LAGOS, NIGERIA",
+        "lat": 6.4550575,
+        "lng": 3.3941795
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/features/2026/2/12/colonial-era-classism-residents-decry-demolitions-in-nigerias-makoko",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/IMG_0296-1770827214.jpg?resize=1920%2C1440"
+    }
+  ]
+}
