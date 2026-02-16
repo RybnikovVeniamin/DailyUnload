@@ -26,6 +26,18 @@ jobs:
     - name: Run generator
       run: node generator.js
 
+    - name: Debug — files and git state before commit
+      run: |
+        echo "=== Files after generator ==="
+        ls -la archive/ 2>/dev/null || echo "archive/ missing or empty"
+        ls -la latest.json 2>/dev/null || echo "latest.json missing"
+        echo "=== .gitignore (archive/latest) ==="
+        grep -E 'archive|latest' .gitignore || true
+        echo "=== Command we will run (must include -f) ==="
+        echo "git add -f archive/ latest.json"
+        echo "=== Git status before add ==="
+        git status -sb
+
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
