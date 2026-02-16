@@ -103,7 +103,7 @@ header .nav-container {
     flex-direction: column;
     padding: 40px;
     border: 1px solid #1a1e28;
-    overflow: hidden; /* Prevent content from spilling outside poster */
+    overflow: visible; /* Allow hover card to show on top layer outside frame */
 }
 
 .poster-date-sidebar {
@@ -206,13 +206,13 @@ header .nav-container {
     z-index: 1;
 }
 
-/* News Card Tooltip */
+/* News Card Tooltip — top layer above dim overlay and titles */
 .news-card {
     position: absolute;
     width: 504px;
     background: #1C1C1C;
     padding: 12px;
-    z-index: 110; /* Above overlay */
+    z-index: 999; /* Top layer so popup is never clipped or hidden */
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
@@ -238,10 +238,9 @@ header .nav-container {
     opacity: 1;
 }
 
-/* Ensure other elements are dimmed too */
+/* Ensure other elements are dimmed too (date excluded — stays full opacity) */
 .poster-container.is-dimmed .top-blocks,
-.poster-container.is-dimmed .bottom-content,
-.poster-container.is-dimmed ~ .poster-date-sidebar {
+.poster-container.is-dimmed .bottom-content {
     opacity: 0.1;
     transition: opacity 0.4s ease;
 }
@@ -430,7 +429,7 @@ body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
     }
 
     .bottom-content {
-        bottom: 20px; /* Match mobile container padding */
+        bottom: 35px; /* Mobile: word of the day closer to bottom */
     }
 
     /* News card becomes a bottom sheet */
