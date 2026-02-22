@@ -1,51 +1,12 @@
-@font-face {
-    font-family: 'PP Neue Montreal';
-    src: url('fonts/PP Neue Montreal/PPNeueMontreal-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+/* ============================================
+   POSTER — Styles specific to the poster page
+   Poster layout, news titles, canvas, news card
+   ============================================ */
 
-@font-face {
-    font-family: 'PP Neue Montreal';
-    src: url('fonts/PP Neue Montreal/PPNeueMontreal-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PP Neue Bit';
-    src: url('fonts/PPNeuebit/PPNeueBit-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PP Supply Mono';
-    src: url('fonts/PP Supply/Mono/PPSupplyMono-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root {
-    --bg-primary: #08090c;
-    --text-primary: #e8e9eb;
-    --text-muted: #8b8d93;
-    
-    --font-main: 'PP Neue Montreal', sans-serif;
-    --font-display: 'PP Neue Bit', serif;
-    --font-mono: 'PP Supply Mono', monospace;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Poster page uses a darker bg and centered layout */
 body {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: var(--font-main);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,38 +16,10 @@ body {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-primary);
-    z-index: 1000;
+    background-color: var(--bg-dark);
 }
 
-header .nav-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.nav-link {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'PP Object Sans', sans-serif;
-    transition: opacity 0.2s ease;
-}
-
-.nav-link:hover {
-    opacity: 0.7;
-}
+/* ---- Poster Layout ---- */
 
 .poster-wrapper {
     display: flex;
@@ -97,19 +30,19 @@ header .nav-container {
 .poster-container {
     width: 600px;
     height: 800px;
-    background: var(--bg-primary);
+    background: var(--bg-dark);
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 40px;
     border: 1px solid #1a1e28;
-    overflow: visible; /* Allow hover card to show on top layer outside frame */
+    overflow: visible;
 }
 
 .poster-date-sidebar {
     flex-shrink: 0;
     padding-top: 0;
-    font-family: 'PP Object Sans', sans-serif;
+    font-family: var(--font-accent);
     font-size: 15px;
     color: #6A6A6A;
     text-transform: uppercase;
@@ -118,7 +51,8 @@ header .nav-container {
     line-height: 1;
 }
 
-/* Top Explanation Blocks */
+/* ---- Top Explanation Blocks ---- */
+
 .top-blocks {
     display: flex;
     justify-content: space-between;
@@ -132,11 +66,12 @@ header .nav-container {
     font-family: var(--font-mono);
     font-size: 8px;
     line-height: 1.4;
-    color: var(--text-muted);
+    color: var(--text-muted-solid);
     text-transform: uppercase;
 }
 
-/* Middle Titles */
+/* ---- News Titles ---- */
+
 .middle-content {
     flex: 1;
     display: flex;
@@ -144,25 +79,24 @@ header .nav-container {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 60; /* Higher than dim overlay to allow titles to be above */
-    padding-bottom: 100px; /* Reserve space for the absolutely-positioned bottom word */
-    /* pointer-events: none; REMOVED to allow hover */
+    z-index: 60;
+    padding-bottom: 100px;
 }
 
 .news-title {
-    font-family: var(--font-display);
+    font-family: var(--font-display-bit);
     font-size: 42px;
     line-height: 1.1;
-    margin-bottom: 55px; /* Gap for geo labels between titles */
+    margin-bottom: 55px;
     text-transform: uppercase;
     position: relative;
     transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease, color 0.4s ease;
-    pointer-events: auto; /* Ensure titles capture mouse events */
+    pointer-events: auto;
     cursor: pointer;
 }
 
 .news-title:last-child {
-    margin-bottom: 0; /* No gap needed after the last title */
+    margin-bottom: 0;
 }
 
 .poster-container.is-dimmed .news-title:not(.is-active) {
@@ -176,27 +110,29 @@ header .nav-container {
     color: #ffffff !important;
 }
 
-/* Bottom Word — pinned to the bottom of the poster, always visible */
+/* ---- Bottom Word ---- */
+
 .bottom-content {
     position: absolute;
-    bottom: -30px; /* Match container padding */
+    bottom: -30px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    z-index: 70; /* Above titles so it's never hidden */
+    z-index: 70;
 }
 
 .big-word {
-    font-family: var(--font-display);
+    font-family: var(--font-display-bit);
     font-size: 80px;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: -2px;
 }
 
-/* Canvas Container */
+/* ---- Canvas ---- */
+
 #canvas-container {
     position: absolute;
     top: 0;
@@ -206,21 +142,8 @@ header .nav-container {
     z-index: 1;
 }
 
-/* News Card Tooltip — top layer above dim overlay and titles */
-.news-card {
-    position: absolute;
-    width: 504px;
-    background: #1C1C1C;
-    padding: 12px;
-    z-index: 999; /* Top layer so popup is never clipped or hidden */
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-    transform: translate(10px, 10px);
-}
+/* ---- Dimming Overlay ---- */
 
-/* Dimming Overlay */
 .poster-dim-overlay {
     position: absolute;
     top: 0;
@@ -228,7 +151,7 @@ header .nav-container {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 50; /* Above canvas, below titles */
+    z-index: 50;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease;
@@ -238,11 +161,25 @@ header .nav-container {
     opacity: 1;
 }
 
-/* Ensure other elements are dimmed too (date excluded — stays full opacity) */
 .poster-container.is-dimmed .top-blocks,
 .poster-container.is-dimmed .bottom-content {
     opacity: 0.1;
     transition: opacity 0.4s ease;
+}
+
+/* ---- News Card Tooltip ---- */
+
+.news-card {
+    position: absolute;
+    width: 504px;
+    background: #1C1C1C;
+    padding: 12px;
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: translate(10px, 10px);
 }
 
 .news-card.active {
@@ -279,15 +216,15 @@ header .nav-container {
 }
 
 #news-card-description {
-    font-family: 'PP Woodland', serif;
+    font-family: var(--font-display);
     font-size: 15px;
     line-height: 1.4;
-    color: var(--text-primary);
+    color: var(--text-light);
     margin: 0;
 }
 
 #news-card-link {
-    font-family: 'PP Object Sans', sans-serif;
+    font-family: var(--font-accent);
     font-size: 15px;
     color: #ffffff;
     text-decoration: none;
@@ -296,85 +233,20 @@ header .nav-container {
     transition: opacity 0.2s ease;
 }
 
-.reveal {
-    opacity: 0;
-    animation: fadeInUp 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-}
-
-.reveal-1 { animation-delay: 0.2s; }
-.reveal-2 { 
-    animation-delay: 0.4s; 
-    --travel-y: 8px;
-}
-.reveal-3 { animation-delay: 0.6s; }
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(var(--travel-y, 15px));
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 #news-card-link:hover {
     opacity: 1;
 }
-
-/* Page Transitions */
-.page-transition {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-black, var(--bg-primary, #000000));
-    z-index: 9999;
-    pointer-events: none;
-    opacity: 1;
-    transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.page-transition.is-loaded {
-    opacity: 0;
-}
-
-/* Page exit animations — inverted entrance */
-@keyframes fadeOutUp {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-}
-
-body.is-leaving .reveal {
-    opacity: 1;
-    transform: translateY(0);
-    animation: fadeOutUp 0.5s cubic-bezier(0.19, 1, 0.22, 1) forwards !important;
-}
-
-body.is-leaving .reveal-1 { animation-delay: 0s !important; }
-body.is-leaving .reveal-2 { animation-delay: 0.08s !important; }
-body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
 
 /* ============================================
    Mobile: Full-Screen Poster
    ============================================ */
 @media (max-width: 768px) {
 
-    /* Body fills viewport, no padding needed */
     body {
         padding-top: 0;
-        overflow: hidden; /* No scroll on poster page */
+        overflow: hidden;
     }
 
-    /* Header becomes transparent overlay */
     header {
         background: transparent;
         height: 60px;
@@ -384,7 +256,6 @@ body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
         padding: 0 20px;
     }
 
-    /* Poster fills the entire screen */
     .poster-wrapper {
         position: relative;
         width: 100vw;
@@ -395,10 +266,9 @@ body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
         width: 100%;
         height: 100%;
         border: none;
-        padding: 60px 20px 20px; /* top accounts for transparent header */
+        padding: 60px 20px 20px;
     }
 
-    /* Date overlays bottom-right on mobile */
     .poster-date-sidebar {
         position: absolute;
         right: 20px;
@@ -408,20 +278,18 @@ body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
         font-size: 10px;
     }
 
-    /* Top blocks: tighter spacing */
     .top-blocks {
         gap: 12px;
         margin-bottom: 40px;
     }
 
-    /* Responsive font sizes */
     .explanation-block {
         font-size: clamp(6px, 1.8vw, 8px);
     }
 
     .news-title {
         font-size: clamp(22px, 6.5vw, 42px);
-        margin-bottom: 40px; /* Gap for geo labels on mobile */
+        margin-bottom: 40px;
     }
 
     .big-word {
@@ -429,7 +297,7 @@ body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
     }
 
     .bottom-content {
-        bottom: 35px; /* Mobile: word of the day closer to bottom */
+        bottom: 35px;
     }
 
     /* News card becomes a bottom sheet */
@@ -458,7 +326,6 @@ body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
         visibility: visible;
     }
 
-    /* Bottom sheet handle indicator */
     .news-card::before {
         content: '';
         display: block;
@@ -487,13 +354,12 @@ body.is-leaving .reveal-3 { animation-delay: 0.16s !important; }
         margin-top: 8px;
     }
 
-    /* Dim overlay should also be fixed on mobile */
     .poster-container.is-dimmed .poster-dim-overlay {
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        pointer-events: auto; /* Allow tapping overlay to dismiss */
+        pointer-events: auto;
     }
 }

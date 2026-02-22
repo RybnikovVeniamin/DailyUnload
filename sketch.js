@@ -96,8 +96,7 @@ async function setup() {
     canvas = createCanvas(size.w, size.h);
     canvas.parent('canvas-container');
     
-    // Use lower pixel density on mobile for performance
-    pixelDensity(isMobile() ? 1 : 2);
+    pixelDensity(window.devicePixelRatio || 2);
     noLoop();
     
     // 1. Fetch real data (from specific archive file if date param exists, otherwise latest.json)

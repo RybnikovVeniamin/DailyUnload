@@ -1,0 +1,296 @@
+/* ============================================
+   HOME — Styles specific to the home/index page
+   Hero section, poster grid, poster cards
+   ============================================ */
+
+/* Nav link on the right for home page */
+header .nav-container {
+    justify-content: flex-end;
+}
+
+/* Layout */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 64px 80px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 48px 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 32px 20px;
+    }
+}
+
+/* ---- Hero Section ---- */
+
+.hero {
+    text-align: center;
+    margin-top: 240px;
+    margin-bottom: 300px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        margin-top: 180px;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        margin-top: 140px;
+        margin-bottom: 120px;
+    }
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+    line-height: 1.0;
+    font-family: var(--font-display);
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+.hero p {
+    color: var(--text-white);
+    font-size: 24px;
+    font-family: var(--font-accent);
+    max-width: none;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+@media (max-width: 1024px) {
+    .hero p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* ---- Poster Grid ---- */
+
+.poster-grid {
+    --poster-reveal-duration: 1.2s;
+    display: grid;
+    grid-template-columns: repeat(4, 296px);
+    justify-content: center;
+    gap: 40px 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1280px) {
+    .poster-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .poster-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 12px;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .poster-grid {
+        gap: 20px 10px;
+        margin-top: 24px;
+    }
+}
+
+/* ---- Poster Cards ---- */
+
+.poster-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity var(--poster-reveal-duration, 1.2s) cubic-bezier(0.19, 1, 0.22, 1),
+        transform var(--poster-reveal-duration, 1.2s) cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.poster-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.poster-item:hover {
+    transform: translateY(-8px);
+}
+
+.poster-preview {
+    width: 296px;
+    height: 358px;
+    max-width: 100%;
+    background: var(--bg-dark);
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+@media (max-width: 1280px) {
+    .poster-preview {
+        width: 100%;
+        aspect-ratio: 296 / 358;
+        height: auto;
+    }
+}
+
+/* Animated mesh gradient on hover */
+.poster-preview::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #08090c;
+    background-image:
+        radial-gradient(at 0% 0%, hsla(223, 17%, 10%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(223, 17%, 10%, 1) 0, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 50%, hsla(223, 17%, 10%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 50%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(223, 17%, 10%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 100%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(223, 17%, 10%, 1) 0, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: 0;
+}
+
+@keyframes meshAnimation {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    33% { transform: translate(2%, 3%) scale(1.1) rotate(1deg); }
+    66% { transform: translate(-2%, 1%) scale(0.95) rotate(-1deg); }
+    100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
+.poster-item:hover .poster-preview::before {
+    opacity: 1;
+    animation: meshAnimation 15s ease-in-out infinite alternate;
+}
+
+/* Noise texture overlay */
+.poster-preview::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.poster-placeholder {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    filter: blur(40px);
+    transform: scale(1.1);
+    transition:
+        opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+        filter 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+        transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+    position: relative;
+    mix-blend-mode: screen;
+}
+
+.poster-item:hover .poster-placeholder {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+}
+
+/* WebGL canvas on first poster card */
+.poster-aurora-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Static rendered image on non-first poster cards */
+.poster-static-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* Date label centered on poster card */
+.poster-grid .poster-preview .poster-date {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+    color: var(--text-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+    .poster-grid .poster-preview .poster-date {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 640px) {
+    .poster-grid .poster-preview .poster-date {
+        font-size: 24px;
+    }
+}
+
+/* ---- Home Exit Animations ---- */
+
+body.is-leaving .poster-item.is-visible {
+    opacity: 0 !important;
+    transform: translateY(-15px) !important;
+    transition-duration: 0.5s !important;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1) !important;
+}

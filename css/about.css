@@ -1,0 +1,138 @@
+/* ============================================
+   ABOUT — Styles specific to the about page
+   Section layout, scroll reveal, typography
+   ============================================ */
+
+body {
+    overflow-y: auto;
+    height: auto;
+}
+
+/* ---- Content Layout ---- */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 120px;
+    width: 1242px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: none;
+    transition: opacity 1.8s cubic-bezier(0.19, 1, 0.22, 1),
+                transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.about-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-section h2,
+.about-section p {
+    max-width: 732px;
+    width: 100%;
+}
+
+.about-section.align-right h2,
+.about-section.align-right p {
+    align-self: flex-end;
+}
+
+.about-section.align-right {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.about-section h2 {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: var(--text-white);
+    line-height: 1.1;
+}
+
+.about-section p {
+    font-family: var(--font-accent);
+    font-size: 48px;
+    color: var(--text-gray);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.about-section .highlight {
+    text-decoration: underline;
+    color: var(--text-gray);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 1280px) {
+    .about-content {
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+        padding: 0 32px;
+        margin-top: 100px;
+    }
+
+    .about-section h2,
+    .about-section p {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 0 24px;
+        margin-top: 80px;
+        gap: 40px;
+    }
+
+    .about-section h2,
+    .about-section p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-content {
+        padding: 0 20px;
+        margin-top: 72px;
+        gap: 32px;
+    }
+
+    .about-section h2,
+    .about-section p {
+        font-size: 18px;
+    }
+}
+
+/* ---- Exit Animations ---- */
+
+body.is-leaving .about-section.is-visible {
+    opacity: 0 !important;
+    transform: translateY(-15px) !important;
+    transition-duration: 0.5s !important;
+    transition-delay: 0s !important;
+}
+
+body.is-leaving header {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+                transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
