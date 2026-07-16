@@ -1,57 +1,77 @@
 {
   "date": "2026-07-16",
   "displayDate": "JUL 16, 2026",
-  "bottomWord": "GLOBAL",
+  "bottomWord": "TURMOIL",
   "stories": [
     {
-      "id": 1,
-      "headline": "Xbox layoffs: What's next for the video game giant?",
-      "description": "The video game giant owned by Microsoft plans to let 3,200 workers go. Will it be a big reset or a system crash?",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/c932eynvq1do",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4e23/live/fa524280-7f8c-11f1-bee8-53ce494e1abc.jpg"
-    },
-    {
       "id": 2,
-      "headline": "Travellers warned of methanol poisoning risks in new campaign",
-      "description": "Holidaymakers are urged to understand the dangers and symptoms of methanol poisoning.",
-      "mainLocation": null,
-      "intensity": 60,
+      "headline": "Reform UK proposes £100m 'round-the-clock' security plan for MPs",
+      "description": "The policy was announced after police said party spokeswoman Ann Widdecombe was killed in a \"targeted attack\".",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 45,
       "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/c9929dg5l5lo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/410b/live/b8303310-8033-11f1-a2a1-e90920ef9667.jpg"
-    },
-    {
-      "id": 3,
-      "headline": "FIFA World Cup brackets: Teams, predictions, schedule and road to the final",
-      "description": "Spain booked its place in the World Cup final while England and Argentina prepare for the game at Atlanta stadium.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/7/15/fifa-world-cup-brackets-teams-predictions-schedule-and-road-to-the-final",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-15T050939Z_1001621684_MT1USATODAY29387621_RTRMADP_3_SOCCER-FIFA-WORLD-CUP-2026-FANS-IN-ATLANTA-1784105392.jpg?resize=1920%2C1440"
+      "url": "https://www.bbc.co.uk/news/articles/clyey3re402o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/200e/live/c7db53c0-8043-11f1-926f-c90d1bcfbc84.jpg"
     },
     {
       "id": 4,
-      "headline": "‘A role model’: Djed Spence, first Muslim England player, lifts hopes",
-      "description": "Britain swells with pride over the 25-year-old, the first Muslim to wear the England jersey at a FIFA World Cup.",
-      "mainLocation": null,
-      "intensity": 60,
+      "headline": "Protest in Pakistan’s Kashmir stalls after nine killed in clashes",
+      "description": "At least 28 people have been killed since protests began in June, as the region braces for a major protest march.",
+      "mainLocation": {
+        "name": "SRINAGAR, INDIA",
+        "lat": 34.0747444,
+        "lng": 74.8204443
+      },
+      "intensity": 50,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/7/15/a-role-model-djed-spence-first-muslim-england-player-lifts-hopes",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/GettyImages-2285108228-1-1784102627.jpg?resize=1200%2C630"
+      "url": "https://www.aljazeera.com/news/2026/7/15/protest-in-pakistans-kashmir-stalls-after-nine-killed-in-clashes",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a269491cc83-1780913297.jpg?resize=1920%2C1440"
     },
     {
-      "id": 5,
-      "headline": "Bangkok pub fire toll rises to 32 with 15 in intensive care",
-      "description": "Officials confirm two more deaths as 30 people remain in hospital, including 15 in intensive care units.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/7/15/bangkok-pub-fire-toll-rises-to-32-with-15-in-intensive-care",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/afp_6a573dcd8419-1784102349.jpg?resize=1920%2C1440"
+      "id": 6,
+      "headline": "Israeli air attack on Gaza apartment kills family of three",
+      "description": "One child survives hit on Deir el-Balah home as Israel escalates attacks across territory despite October ‘ceasefire’.",
+      "mainLocation": {
+        "name": "DEIR EL-BALAH, GAZA STRIP",
+        "lat": 31.4183455,
+        "lng": 34.3502476
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/7/15/israeli-air-attack-on-gaza-apartment-kills-family-of-3",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-15T101550Z_2134313576_RC28EMA2PMHP_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-1784112649.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 7,
+      "headline": "DRC Ebola cases surpass 2,000 as more health workers begin strike",
+      "description": "Health workers in Democratic Republic of the Congo’s Ituri province strike over unpaid wages as death toll rises to 754.",
+      "mainLocation": {
+        "name": "BUNIA, DEMOCRATIC REPUBLIC OF THE CONGO",
+        "lat": 1.5620529,
+        "lng": 30.2478844
+      },
+      "intensity": 70,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/7/15/drc-ebola-cases-surpass-2000-as-more-health-workers-begin-strike",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/2026-07-06T183544Z_229392891_RC218MA5SC60_RTRMADP_3_HEALTH-EBOLA-CONGO-RWAMPARA-PROTEST-1784110463.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 9,
+      "headline": "Iran threatens to block more trade routes as US launches fresh strikes",
+      "description": "Trump vowed to strike Iran's infrastructure next week if the country does not return to talks.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 80,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/c9323zgq6wvo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/acd7/live/1d668290-8037-11f1-86b6-ffbb9ce74513.jpg"
     }
   ]
 }
