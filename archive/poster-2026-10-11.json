@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-11",
+  "displayDate": "OCT 11, 2026",
+  "bottomWord": "SUPPRESSION",
+  "stories": [
+    {
+      "id": 3,
+      "headline": "Why is the US sanctioning the International Criminal Court?",
+      "description": "The sanctions targeting the ICC, which prosecutes humanitarian crimes, are the latest move by the US against the court.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 70,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-the-us-sanctioning-the-international-criminal-court",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/GettyImages-2292621652-1788482517.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Abbas postpones Palestinian legislative elections to September 2027",
+      "description": "November 2026 vote delayed; joint presidential and legislative elections set for next year, president says in decree.",
+      "mainLocation": {
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.9158948,
+        "lng": 35.1781579
+      },
+      "intensity": 50,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2023/01/2022-12-09T154155Z_2108035194_RC2F2Y9HJ3FQ_RTRMADP_3_CHINA-SAUDI-ARABS.jpg?resize=1920%2C1421"
+    },
+    {
+      "id": 5,
+      "headline": "Has Yemen returned to ‘full-scale war’?",
+      "description": "Fighting is intensifying between Yemeni government forces and Houthi rebel group.",
+      "mainLocation": {
+        "name": "SANAA, YEMEN",
+        "lat": 15.35,
+        "lng": 44.2
+      },
+      "intensity": 65,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/10/has-yemen-returned-to-full-scale-war",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ac7c0ce-1791475918.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 7,
+      "headline": "‘Anachronism’: Rubio’s civilisational rhetoric prompts pushback from Iran",
+      "description": "Rubio says threats to Western civilisation today ‘every bit as real as they were on the dramatic stage of antiquity’.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/10/anachronism-rubios-civilisational-rhetoric-prompts-pushback-from-iran",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6aca23ff4929-1791632383.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 9,
+      "headline": "India’s ‘Cockroach’ leaders detained; New Delhi in lockdown",
+      "description": "Indian police crackdown appears to have prevented mass protests against the country’s election chief from taking place.",
+      "mainLocation": {
+        "name": "NEW DELHI, INDIA",
+        "lat": 28.6138954,
+        "lng": 77.2090057
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-10T071845Z_1459547873_RC250OABX3V4_RTRMADP_3_INDIA-POLITICS-GEN-Z-1791626580.jpg?resize=1920%2C1440"
+    }
+  ]
+}

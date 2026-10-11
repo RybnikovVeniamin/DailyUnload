@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-10",
-  "displayDate": "OCT 10, 2026",
-  "bottomWord": "ESCALATION",
+  "date": "2026-10-11",
+  "displayDate": "OCT 11, 2026",
+  "bottomWord": "SUPPRESSION",
   "stories": [
     {
-      "id": 1,
-      "headline": "Widdecombe suspect had 'particular hostility to Reform', court told",
-      "description": "Kerry is charged with the murder of the 78-year-old former Conservative minister and Reform UK spokeswoman.",
-      "mainLocation": {
-        "name": "LONDON, UNITED KINGDOM",
-        "lat": 51.4893335,
-        "lng": -0.1440551
-      },
-      "intensity": 42,
-      "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/cmkgknz19z7po",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ea5f/live/df9f5520-c241-11f1-babe-4199b0e7ccea.jpg"
-    },
-    {
       "id": 3,
-      "headline": "US to livestream Fort Hood shooter’s execution: Is that legal?​",
-      "description": "Rights groups and legal experts say the move could endanger minors, who are usually barred from witnessing executions.",
+      "headline": "Why is the US sanctioning the International Criminal Court?",
+      "description": "The sanctions targeting the ICC, which prosecutes humanitarian crimes, are the latest move by the US against the court.",
       "mainLocation": {
         "name": "WASHINGTON, D.C., UNITED STATES",
         "lat": 38.8950982,
         "lng": -77.0363849
       },
-      "intensity": 45,
+      "intensity": 70,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/10/9/us-to-livestream-fort-hood-shooters-execution-is-that",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-06T043047Z_1593930106_RC2GXNARUYD2_RTRMADP_3_USA-MILITARY-EXECUTION-1791275079.jpg?resize=1200%2C675"
+      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-the-us-sanctioning-the-international-criminal-court",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/GettyImages-2292621652-1788482517.jpg?resize=1920%2C1440"
     },
     {
       "id": 4,
-      "headline": "Ethiopia and Eritrea accuse one another of launching war",
-      "description": "Eritrea denies backing TPLF as Ethiopia alleges collusion, further straining their already volatile relationship.",
+      "headline": "Abbas postpones Palestinian legislative elections to September 2027",
+      "description": "November 2026 vote delayed; joint presidential and legislative elections set for next year, president says in decree.",
       "mainLocation": {
-        "name": "ADDIS ABABA, ETHIOPIA",
-        "lat": 9.0358119,
-        "lng": 38.7524315
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.9158948,
+        "lng": 35.1781579
       },
-      "intensity": 72,
+      "intensity": 50,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ac8d389-1791546249.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2023/01/2022-12-09T154155Z_2108035194_RC2F2Y9HJ3FQ_RTRMADP_3_CHINA-SAUDI-ARABS.jpg?resize=1920%2C1421"
     },
     {
       "id": 5,
-      "headline": "Who is Navi Pillay, winner of the 2026 Nobel Peace Prize?",
-      "description": "The 85-year-old South African judge has spent decades fighting apartheid and genocide.",
+      "headline": "Has Yemen returned to ‘full-scale war’?",
+      "description": "Fighting is intensifying between Yemeni government forces and Houthi rebel group.",
       "mainLocation": {
-        "name": "OSLO, NORWAY",
-        "lat": 59.9133301,
-        "lng": 10.7389701
+        "name": "SANAA, YEMEN",
+        "lat": 15.35,
+        "lng": 44.2
       },
-      "intensity": 70,
+      "intensity": 65,
       "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/10/9/who-is-navi-pillay-winner-of-the-2026-nobel-peace-prize",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ac8e3586cb8-1791550296_6edd2d-1791550912.jpg?resize=1200%2C630&quality=80"
+      "url": "https://www.aljazeera.com/news/2026/10/10/has-yemen-returned-to-full-scale-war",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ac7c0ce-1791475918.jpg?resize=1920%2C1440"
     },
     {
       "id": 7,
-      "headline": "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar",
-      "description": "Russia is fighting for settlements it once firmly held in Donetsk, and has retreated from many others.",
+      "headline": "‘Anachronism’: Rubio’s civilisational rhetoric prompts pushback from Iran",
+      "description": "Rubio says threats to Western civilisation today ‘every bit as real as they were on the dramatic stage of antiquity’.",
       "mainLocation": {
-        "name": "DONETSK, UKRAINE",
-        "lat": 47.9212914,
-        "lng": 37.7809825
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
       },
-      "intensity": 75,
+      "intensity": 45,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-05T213836Z_850227429_RC21XNA9XM6I_RTRMADP_3_UKRAINE-CRISIS-ATTACK-KHARKIV-1791545451.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/10/anachronism-rubios-civilisational-rhetoric-prompts-pushback-from-iran",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6aca23ff4929-1791632383.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 9,
+      "headline": "India’s ‘Cockroach’ leaders detained; New Delhi in lockdown",
+      "description": "Indian police crackdown appears to have prevented mass protests against the country’s election chief from taking place.",
+      "mainLocation": {
+        "name": "NEW DELHI, INDIA",
+        "lat": 28.6138954,
+        "lng": 77.2090057
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-10T071845Z_1459547873_RC250OABX3V4_RTRMADP_3_INDIA-POLITICS-GEN-Z-1791626580.jpg?resize=1920%2C1440"
     }
   ]
 }
