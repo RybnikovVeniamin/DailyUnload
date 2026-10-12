@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-11",
-  "displayDate": "OCT 11, 2026",
-  "bottomWord": "SUPPRESSION",
+  "date": "2026-10-12",
+  "displayDate": "OCT 12, 2026",
+  "bottomWord": "INTRUSION",
   "stories": [
     {
-      "id": 3,
-      "headline": "Why is the US sanctioning the International Criminal Court?",
-      "description": "The sanctions targeting the ICC, which prosecutes humanitarian crimes, are the latest move by the US against the court.",
+      "id": 1,
+      "headline": "PM says it is 'clear' Russia interfered with Brexit referendum",
+      "description": "He says voters were not \"sufficiently\" informed about how foreign actors sought to disrupt UK democracy.",
       "mainLocation": {
-        "name": "WASHINGTON, D.C., UNITED STATES",
-        "lat": 38.8950982,
-        "lng": -77.0363849
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
       },
-      "intensity": 70,
-      "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-the-us-sanctioning-the-international-criminal-court",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/GettyImages-2292621652-1788482517.jpg?resize=1920%2C1440"
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/c6jdm3zggl0ko",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b37c/live/b4b0e8c0-c57e-11f1-80f2-5bd1e5df7ada.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "Citroen revives the 2CV for an electric age",
+      "description": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8588897,
+        "lng": 2.320041
+      },
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/c620r33plgppo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b9db/live/c47fea70-c3f4-11f1-97a9-2d4b5e26e282.jpg"
     },
     {
       "id": 4,
-      "headline": "Abbas postpones Palestinian legislative elections to September 2027",
-      "description": "November 2026 vote delayed; joint presidential and legislative elections set for next year, president says in decree.",
+      "headline": "Six senators call for Trump to abandon Russian diesel plan",
+      "description": "Six bipartisan senators are calling on Trump to cancel plans to buy Russian diesel.",
       "mainLocation": {
-        "name": "RAMALLAH, PALESTINE",
-        "lat": 31.9158948,
-        "lng": 35.1781579
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
       },
       "intensity": 50,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2023/01/2022-12-09T154155Z_2108035194_RC2F2Y9HJ3FQ_RTRMADP_3_CHINA-SAUDI-ARABS.jpg?resize=1920%2C1421"
+      "url": "https://apnews.com/article/trump-diesel-russia-ukraine-senators-protest-93fa63c8a88e538f1456e7d448fc550d",
+      "imageUrl": "https://dims.apnews.com/dims4/default/b837351/2147483647/strip/true/crop/6000x3998+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa2%2Fda%2F64471b8b2eaa03aa0d37bb1b5b19%2Fb4de25e18bfb44c6b33fc3abafc79346"
     },
     {
-      "id": 5,
-      "headline": "Has Yemen returned to ‘full-scale war’?",
-      "description": "Fighting is intensifying between Yemeni government forces and Houthi rebel group.",
+      "id": 6,
+      "headline": "Saudi Arabia's Riyadh airport hit by second Houthi strike in two days",
+      "description": "Houthi attacks on two airports and oil facilities killed 13 people over the weekend.",
       "mainLocation": {
-        "name": "SANAA, YEMEN",
-        "lat": 15.35,
-        "lng": 44.2
+        "name": "RIYADH, SAUDI ARABIA",
+        "lat": 24.638916,
+        "lng": 46.7160104
       },
-      "intensity": 65,
-      "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/10/10/has-yemen-returned-to-full-scale-war",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ac7c0ce-1791475918.jpg?resize=1920%2C1440"
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/01f0/live/59d06e70-c57a-11f1-a64c-550be9e3c66b.jpg"
     },
     {
-      "id": 7,
-      "headline": "‘Anachronism’: Rubio’s civilisational rhetoric prompts pushback from Iran",
-      "description": "Rubio says threats to Western civilisation today ‘every bit as real as they were on the dramatic stage of antiquity’.",
+      "id": 8,
+      "headline": "Yandex: Ukraine strikes data centre in third attack on Russian tech giant",
+      "description": "Ukraine struck Russian tech giant Yandex for a third time, forcing it to suspend operations.",
       "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
       },
-      "intensity": 45,
-      "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news-analysis/2026/10/10/anachronism-rubios-civilisational-rhetoric-prompts-pushback-from-iran",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6aca23ff4929-1791632383.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 9,
-      "headline": "India’s ‘Cockroach’ leaders detained; New Delhi in lockdown",
-      "description": "Indian police crackdown appears to have prevented mass protests against the country’s election chief from taking place.",
-      "mainLocation": {
-        "name": "NEW DELHI, INDIA",
-        "lat": 28.6138954,
-        "lng": 77.2090057
-      },
-      "intensity": 45,
-      "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-10T071845Z_1459547873_RC250OABX3V4_RTRMADP_3_INDIA-POLITICS-GEN-Z-1791626580.jpg?resize=1920%2C1440"
+      "intensity": 55,
+      "color": "#ffb800",
+      "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/92b1/live/fca86430-c56c-11f1-a64c-550be9e3c66b.jpg"
     }
   ]
 }
