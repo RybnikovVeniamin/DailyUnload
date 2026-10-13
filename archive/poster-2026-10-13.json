@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-13",
+  "displayDate": "OCT 13, 2026",
+  "bottomWord": "PROVOCATION",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Miliband says Britain won't tolerate threats on our soil, as Iran ambassador summoned",
+      "description": "The prime minister says Iran's Islamic Revolutionary Guard \"almost certainly\" directed the RAF Fairford incident.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 50,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/c6gr82ekqewyo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a5cd/live/32979870-c303-11f1-bc2e-018d645d8d21.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "Deadly gold mine air strikes highlight Egypt-Sudan border insecurity",
+      "description": "Deadly air raids on gold miners in Sudan expose deepening border lawlessness and regional instability.",
+      "mainLocation": {
+        "name": "KHARTOUM, SUDAN",
+        "lat": 15.5635972,
+        "lng": 32.5349123
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/12/deadly-gold-mine-air-strikes-highlight-egypt-sudan-border-insecurity",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/AP26144602354770-1790064707.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Fridges in French supermarkets hit by cyber attack",
+      "description": "An overnight hack on hundreds of stores spoiled millions of euros in fresh and frozen food.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8588897,
+        "lng": 2.320041
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cfaf/live/a3ced500-c63a-11f1-b99d-0127a94fa1d0.jpg"
+    },
+    {
+      "id": 5,
+      "headline": "US agents search home of Ilhan Omar, Trump critic and Congress member",
+      "description": "US authorities searched the Democratic congresswoman’s home as part of a criminal investigation.",
+      "mainLocation": {
+        "name": "MINNEAPOLIS, UNITED STATES",
+        "lat": 44.9772995,
+        "lng": -93.2654692
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/12/trump-critic-democratic-rep-ilhan-omars-home-searched-by-federal-agents",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6accf17f-1791816063.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 11,
+      "headline": "Iran sets crosshairs on ‘US-UAE’ oil shuttle out of Strait of Hormuz",
+      "description": "The IRGC is hitting more ships allegedly part of a shuttle operation to move crude oil beyond the Strait of Hormuz.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 70,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/economy/2026/10/12/iran-sets-crosshairs-on-us-uae-oil-shuttle-out-of-strait-of-hormuz",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6accd4e81711-1791808744.jpg?resize=1920%2C1440"
+    }
+  ]
+}

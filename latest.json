@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-12",
-  "displayDate": "OCT 12, 2026",
-  "bottomWord": "INTRUSION",
+  "date": "2026-10-13",
+  "displayDate": "OCT 13, 2026",
+  "bottomWord": "PROVOCATION",
   "stories": [
     {
       "id": 1,
-      "headline": "PM says it is 'clear' Russia interfered with Brexit referendum",
-      "description": "He says voters were not \"sufficiently\" informed about how foreign actors sought to disrupt UK democracy.",
+      "headline": "Miliband says Britain won't tolerate threats on our soil, as Iran ambassador summoned",
+      "description": "The prime minister says Iran's Islamic Revolutionary Guard \"almost certainly\" directed the RAF Fairford incident.",
       "mainLocation": {
         "name": "LONDON, UNITED KINGDOM",
         "lat": 51.5074456,
         "lng": -0.1277653
       },
-      "intensity": 60,
+      "intensity": 50,
       "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/c6jdm3zggl0ko",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b37c/live/b4b0e8c0-c57e-11f1-80f2-5bd1e5df7ada.jpg"
+      "url": "https://www.bbc.co.uk/news/articles/c6gr82ekqewyo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a5cd/live/32979870-c303-11f1-bc2e-018d645d8d21.jpg"
     },
     {
-      "id": 2,
-      "headline": "Citroen revives the 2CV for an electric age",
-      "description": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals.",
+      "id": 3,
+      "headline": "Deadly gold mine air strikes highlight Egypt-Sudan border insecurity",
+      "description": "Deadly air raids on gold miners in Sudan expose deepening border lawlessness and regional instability.",
+      "mainLocation": {
+        "name": "KHARTOUM, SUDAN",
+        "lat": 15.5635972,
+        "lng": 32.5349123
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/12/deadly-gold-mine-air-strikes-highlight-egypt-sudan-border-insecurity",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/AP26144602354770-1790064707.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Fridges in French supermarkets hit by cyber attack",
+      "description": "An overnight hack on hundreds of stores spoiled millions of euros in fresh and frozen food.",
       "mainLocation": {
         "name": "PARIS, FRANCE",
         "lat": 48.8588897,
         "lng": 2.320041
       },
-      "intensity": 40,
-      "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/c620r33plgppo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b9db/live/c47fea70-c3f4-11f1-97a9-2d4b5e26e282.jpg"
-    },
-    {
-      "id": 4,
-      "headline": "Six senators call for Trump to abandon Russian diesel plan",
-      "description": "Six bipartisan senators are calling on Trump to cancel plans to buy Russian diesel.",
-      "mainLocation": {
-        "name": "WASHINGTON, UNITED STATES",
-        "lat": 38.8950982,
-        "lng": -77.0363849
-      },
-      "intensity": 50,
+      "intensity": 45,
       "color": "#34c759",
-      "url": "https://apnews.com/article/trump-diesel-russia-ukraine-senators-protest-93fa63c8a88e538f1456e7d448fc550d",
-      "imageUrl": "https://dims.apnews.com/dims4/default/b837351/2147483647/strip/true/crop/6000x3998+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa2%2Fda%2F64471b8b2eaa03aa0d37bb1b5b19%2Fb4de25e18bfb44c6b33fc3abafc79346"
+      "url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cfaf/live/a3ced500-c63a-11f1-b99d-0127a94fa1d0.jpg"
     },
     {
-      "id": 6,
-      "headline": "Saudi Arabia's Riyadh airport hit by second Houthi strike in two days",
-      "description": "Houthi attacks on two airports and oil facilities killed 13 people over the weekend.",
+      "id": 5,
+      "headline": "US agents search home of Ilhan Omar, Trump critic and Congress member",
+      "description": "US authorities searched the Democratic congresswoman’s home as part of a criminal investigation.",
       "mainLocation": {
-        "name": "RIYADH, SAUDI ARABIA",
-        "lat": 24.638916,
-        "lng": 46.7160104
+        "name": "MINNEAPOLIS, UNITED STATES",
+        "lat": 44.9772995,
+        "lng": -93.2654692
       },
-      "intensity": 60,
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/12/trump-critic-democratic-rep-ilhan-omars-home-searched-by-federal-agents",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6accf17f-1791816063.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 11,
+      "headline": "Iran sets crosshairs on ‘US-UAE’ oil shuttle out of Strait of Hormuz",
+      "description": "The IRGC is hitting more ships allegedly part of a shuttle operation to move crude oil beyond the Strait of Hormuz.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 70,
       "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/01f0/live/59d06e70-c57a-11f1-a64c-550be9e3c66b.jpg"
-    },
-    {
-      "id": 8,
-      "headline": "Yandex: Ukraine strikes data centre in third attack on Russian tech giant",
-      "description": "Ukraine struck Russian tech giant Yandex for a third time, forcing it to suspend operations.",
-      "mainLocation": {
-        "name": "MOSCOW, RUSSIA",
-        "lat": 55.625578,
-        "lng": 37.6063916
-      },
-      "intensity": 55,
-      "color": "#ffb800",
-      "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/92b1/live/fca86430-c56c-11f1-a64c-550be9e3c66b.jpg"
+      "url": "https://www.aljazeera.com/economy/2026/10/12/iran-sets-crosshairs-on-us-uae-oil-shuttle-out-of-strait-of-hormuz",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6accd4e81711-1791808744.jpg?resize=1920%2C1440"
     }
   ]
 }
