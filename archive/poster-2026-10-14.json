@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-14",
+  "displayDate": "OCT 14, 2026",
+  "bottomWord": "SABOTAGE",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Kimberly Guilfoyle, Trump's ambassador to Greece, is asked to resign",
+      "description": "Kimberly Guilfoyle was asked to resign as ambassador to Greece over misconduct allegations.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 40,
+      "color": "#ff2d55",
+      "url": "https://apnews.com/article/trump-ambassador-greece-guilfoyle-9da9d2e50e18bccc38946404c1ca756f",
+      "imageUrl": "https://dims.apnews.com/dims4/default/0d40067/2147483647/strip/true/crop/8640x5757+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F83%2F1d%2Fb3304623cc8ea6fb7de5a03b350a%2Fffbd4f0766924143a6af0024c8712e66"
+    },
+    {
+      "id": 2,
+      "headline": "Palestinians dream of returning home after Israel raids West Bank camps",
+      "description": "Palestinians have been displaced from their homes in Tulkarem refugee camp and dream of returning home.",
+      "mainLocation": {
+        "name": "TULKAREM, PALESTINE",
+        "lat": 32.3091259,
+        "lng": 35.026538
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/features/2026/10/13/palestinians-dream-of-returning-home-after-israel-raids-west-bank-camps",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/A-photo-of-Tulkarm-Camp-taken-from-Fuad-Abu-Salams-apartment-which-overlooks-the-camp-from-there-he-looks-out-at-his-destroyed-home-every-day-Photo-by-Raghad-Salameh-1791892530.jpeg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Yemeni government launches air strikes on Houthi positions",
+      "description": "Yemeni rights group accuses the Houthis of killing five civilians and injuring more than a dozen others.",
+      "mainLocation": {
+        "name": "SANAA, YEMEN",
+        "lat": 15.35,
+        "lng": 44.2
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/13/yemeni-government-launches-air-strikes-on-houthi-positions",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261009__D2Q29KE__v2__HighRes__YemenSaudiIranUsIsraelWar-1791891006.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "French fridge fright: Why supermarkets have become target for hackers",
+      "description": "More than 500 shops across France were hit in a major cyberattack on freezers, which caused tonnes of food to perish.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8588897,
+        "lng": 2.320041
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/economy/2026/10/13/french-fridge-fright-why-supermarkets-have-become-target-for-hackers",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-13T095528Z_610812068_RC282OAFN3ET_RTRMADP_3_FRANCE-CYBERATTACK-1791890075_f127ef-1791891568.jpg?resize=1200%2C630&quality=80"
+    },
+    {
+      "id": 7,
+      "headline": "Iran sees ‘false flag’ operations after UK blames IRGC for airbase incident",
+      "description": "Iran has been accused of being behind a plot against an airbase in the UK.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 50,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/13/iran-sees-false-flag-operations-after-uk-blames-irgc-for-airbase-incident",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-27T064542Z_1242454410_RC2IRNAX7BHD_RTRMADP_3_BRITAIN-USA-FAIRFORD-1790500368.jpg?resize=1920%2C1440"
+    }
+  ]
+}
