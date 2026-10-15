@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-15",
+  "displayDate": "OCT 15, 2026",
+  "bottomWord": "VOLATILITY",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "US inflation rises more than expected ahead of midterm elections",
+      "description": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 50,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bd50/live/e1cf6860-c7cf-11f1-9e10-4dcbd31d4273.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "Iraq’s PM tells Saudi crown prince Iraqi territory will not be used for attacks",
+      "description": "Saudi Arabia’s East-West oil pipeline was struck by drones last month in an attack that originated in Iraq.",
+      "mainLocation": {
+        "name": "BAGHDAD, IRAQ",
+        "lat": 33.3061701,
+        "lng": 44.3872213
+      },
+      "intensity": 55,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/14/iraq-pm-tells-saudi-crown-prince-iraqi-territory-wont-be-used-for-attacks",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6acf762063-1791981088.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Saudi-led coalition intercepts Houthi missile launched towards Riyadh",
+      "description": "Saudi civil defence authority says danger passed after it issued alerts via its national early warning platform.",
+      "mainLocation": {
+        "name": "RIYADH, SAUDI ARABIA",
+        "lat": 24.638916,
+        "lng": 46.7160104
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/14/saudi-led-coalition-intercepts-houthi-missile-launched-towards-riyadh",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-14T075856Z_1546767291_RC2V2OAT5LXU_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-1791970674.jpg?resize=1200%2C675"
+    },
+    {
+      "id": 9,
+      "headline": "Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again",
+      "description": "Ships in the Strait of Hormuz have been experiencing the worst spate of attacks since the start of the war.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 78,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-09T100655Z_1620753654_RC2UUNAZA068_RTRMADP_3_IRAQ-SYRIA-BARRACK-1791615596.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 11,
+      "headline": "Russia’s arrest of Japanese journalist: Why are tensions rising?",
+      "description": "Japanese journalist Imai Yuki arrested on Sakhalin for allegedly spying on Russian defence capabilities, says the FSB.",
+      "mainLocation": {
+        "name": "YUZHNO-SAKHALINSK, RUSSIA",
+        "lat": 46.9574273,
+        "lng": 142.727438
+      },
+      "intensity": 50,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/14/russias-arrest-of-japanese-journalist-why-are-tensions-rising",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261014__D37X3F6__v2__HighRes__JapanPoliticsRussiaMediaDiplomacy-1791974789.jpg?resize=1920%2C1440"
+    }
+  ]
+}
