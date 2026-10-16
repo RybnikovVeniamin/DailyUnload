@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-16",
+  "displayDate": "OCT 16, 2026",
+  "bottomWord": "LEVERAGE",
+  "stories": [
+    {
+      "id": 2,
+      "headline": "What is Starshield, and who limited Ukraine’s access to it?",
+      "description": "Ukraine relies on Starshield, the military-grade version of Elon Musk’s Starlink satellite service, to fight Russia.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 68,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/15/what-is-starshield-and-who-limited-ukraines-access-to-it",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6acf722f2e-1791980079.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Critically endangered frogs bred for first time at London Zoo",
+      "description": "The Afia Birago’s puddle frogs are a recently identified species from a single Ghanaian forest.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 40,
+      "color": "#ffb800",
+      "url": "https://www.bbc.co.uk/news/articles/cr2keqxggx0wo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e601/live/e1449e30-c877-11f1-9a39-31b474234113.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "US-Iran stalemate: What are Trump’s next military options?",
+      "description": "Trump has ruled out attacks before the midterms. Analysts weigh what he could do next, and at what cost.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 55,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/15/us-iran-stalemate-what-are-trumps-next-military-options",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/08/2026-07-14T014008Z_1532514817_RC2ADMA8MKDN_RTRMADP_3_USA-RIMPAC-1787799997.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 7,
+      "headline": "Syrian authorities arrest main suspect in 2013 Baniyas mass killings",
+      "description": "Ali Kayali, also known as Mihrac Ural, was apprehended as he tried to cross the border, state media reported.",
+      "mainLocation": {
+        "name": "BANIYAS, SYRIA",
+        "lat": 35.185136,
+        "lng": 35.9477821
+      },
+      "intensity": 45,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/15/syrian-authorities-arrest-main-suspect-in-2013-baniyas-mass-killings",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad0a60395283-1792058883.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 9,
+      "headline": "Fighting in Yemen intensifies: What’s the latest on the battlefield?",
+      "description": "Houthis attempt to raise the cost of the Yemen war for Saudi Arabia as attacks, fighting intensify.",
+      "mainLocation": {
+        "name": "SANAA, YEMEN",
+        "lat": 15.35,
+        "lng": 44.2
+      },
+      "intensity": 50,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/15/fighting-in-yemen-intensifies-whats-the-latest-on-the-battlefield",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad09274b0a8-1792053876.jpg?resize=1649%2C1080&quality=80"
+    }
+  ]
+}
