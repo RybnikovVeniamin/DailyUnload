@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-17",
-  "displayDate": "OCT 17, 2026",
-  "bottomWord": "ENCROACHMENT",
+  "date": "2026-10-18",
+  "displayDate": "OCT 18, 2026",
+  "bottomWord": "STRIFE",
   "stories": [
     {
       "id": 1,
-      "headline": "‘Trying to dominate’: In Cyprus, some fear Israel’s growing influence",
-      "description": "Israel now reaches into Cyprus’s water, gas, health and defence and many Cypriots fear their island is losing control.",
+      "headline": "Child, four women among Palestinians injured in West Bank pogroms",
+      "description": "Attacks follow a religious edict by a prominent far-right rabbi permitting the seizure of Palestinian olives.",
       "mainLocation": {
-        "name": "NICOSIA, CYPRUS",
-        "lat": 35.1746503,
-        "lng": 33.3638783
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.9048964,
+        "lng": 35.197357
       },
       "intensity": 45,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/features/2026/10/16/an-easy-target-how-israel-is-embedding-itself-in-the-cypriot-state",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-10T091450Z_697793967_RC29GNAHPF0I_RTRMADP_3_CYPRUS-ISRAEL-1792152026.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-16T094210Z_503381275_RC254OAOMY72_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-ATTACK-1792230965.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Hardline Israeli rabbi ruling on stolen Palestinian olives prompts uproar",
+      "description": "A controversial ruling by a hardline Israeli rabbi has been condemned by Palestinians.",
+      "mainLocation": {
+        "name": "JERUSALEM, ISRAEL",
+        "lat": 31.7788472,
+        "lng": 35.2257856
+      },
+      "intensity": 40,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/17/hardline-israeli-rabbi-ruling-on-stolen-palestinian-olives-sparks-uproar",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2019/02/b29b75b23ad849298e257aefdfd0a85b_18.jpeg?resize=1200%2C675"
     },
     {
       "id": 4,
-      "headline": "US in ‘denuclearisation’ talks with Russia and China: Trump",
-      "description": "US and Russia each have more than 4,000 warheads. China set to catch up with them within five years, Trump says.",
+      "headline": "House Speaker Mike Johnson draws on faith as he seeks to hold GOP majority",
+      "description": "Speaker Mike Johnson believes Republicans will hold their House majority on Election Day.",
       "mainLocation": {
-        "name": "MOSCOW, RUSSIA",
-        "lat": 55.625578,
-        "lng": 37.6063916
-      },
-      "intensity": 75,
-      "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/10/16/us-in-denuclearisation-talks-with-russia-and-china-trump",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2021/01/000_Del8389935.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 5,
-      "headline": "Action needed to save water, minister tells MPs",
-      "description": "Severe drought was declared across parts of southern England after months of low rainfall.",
-      "mainLocation": {
-        "name": "LONDON, UNITED KINGDOM",
-        "lat": 51.5074456,
-        "lng": -0.1277653
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
       },
       "intensity": 40,
-      "color": "#5ac8fa",
-      "url": "https://www.bbc.co.uk/news/articles/cq0ld4g0309go",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2a06/live/9bb0b860-c951-11f1-8879-9d9deeb686e1.jpg"
+      "color": "#34c759",
+      "url": "https://apnews.com/article/house-speaker-johnson-faith-midterm-trump-republicans-317fc1aa0cb08a250ed44be323036afa",
+      "imageUrl": "https://dims.apnews.com/dims4/default/6ecb431/2147483647/strip/true/crop/3762x2508+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F96%2F4b%2Fa94da256ef90c52df66daa8033b9%2F2edc09575fc445bab48af8361cc18c69"
+    },
+    {
+      "id": 6,
+      "headline": "US and Iran both claim control of Strait of Hormuz amid attacks on vessels",
+      "description": "Two vessels have been struck with naval mines in the Strait of Hormuz this week.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 80,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad356329eaa-1792235058.jpg?resize=1920%2C1440"
     },
     {
       "id": 7,
-      "headline": "‘It was fake’: Indian villagers allege forgery behind Adani mine project",
-      "description": "Forged signatures and thumbprints – even of dead and fictitious people – allegedly used to obtain land for bauxite mine.",
+      "headline": "Protests spread across France as ‘yellow vests’ set to join",
+      "description": "Demonstrations began in mid-September at schools and have expanded, tapping into wider grievances.",
       "mainLocation": {
-        "name": "AHMEDABAD, INDIA",
-        "lat": 23.0215374,
-        "lng": 72.5800568
+        "name": "PARIS, FRANCE",
+        "lat": 48.8534951,
+        "lng": 2.3483915
       },
-      "intensity": 45,
+      "intensity": 65,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/10/16/tribals-in-indias-odisha-allege-forgery-behind-lands-taken-for-adani-mine",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/Picture-7-1792144048.jpeg?resize=1200%2C630"
-    },
-    {
-      "id": 8,
-      "headline": "Poland scrambles fighter jets as Russia strikes western Ukraine",
-      "description": "Countries along NATO’s eastern flank growing increasingly concerned about the risk of escalation of the war in Ukraine.",
-      "mainLocation": {
-        "name": "WARSAW, POLAND",
-        "lat": 52.2333742,
-        "lng": 21.0711489
-      },
-      "intensity": 60,
-      "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/10/16/poland-scrambles-fighter-jets-as-russia-strikes-western-ukraine",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-20T042816Z_888155140_RC2QMNA71VDJ_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-REFINERY-1792058411.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/17/france-braces-for-nationwide-protests-with-yellow-vest-members-set-to-join",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad344e34252-1792230627.jpg?resize=1920%2C1440"
     }
   ]
 }

@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-18",
+  "displayDate": "OCT 18, 2026",
+  "bottomWord": "STRIFE",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Child, four women among Palestinians injured in West Bank pogroms",
+      "description": "Attacks follow a religious edict by a prominent far-right rabbi permitting the seizure of Palestinian olives.",
+      "mainLocation": {
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.9048964,
+        "lng": 35.197357
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-16T094210Z_503381275_RC254OAOMY72_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-ATTACK-1792230965.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Hardline Israeli rabbi ruling on stolen Palestinian olives prompts uproar",
+      "description": "A controversial ruling by a hardline Israeli rabbi has been condemned by Palestinians.",
+      "mainLocation": {
+        "name": "JERUSALEM, ISRAEL",
+        "lat": 31.7788472,
+        "lng": 35.2257856
+      },
+      "intensity": 40,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/17/hardline-israeli-rabbi-ruling-on-stolen-palestinian-olives-sparks-uproar",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2019/02/b29b75b23ad849298e257aefdfd0a85b_18.jpeg?resize=1200%2C675"
+    },
+    {
+      "id": 4,
+      "headline": "House Speaker Mike Johnson draws on faith as he seeks to hold GOP majority",
+      "description": "Speaker Mike Johnson believes Republicans will hold their House majority on Election Day.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 40,
+      "color": "#34c759",
+      "url": "https://apnews.com/article/house-speaker-johnson-faith-midterm-trump-republicans-317fc1aa0cb08a250ed44be323036afa",
+      "imageUrl": "https://dims.apnews.com/dims4/default/6ecb431/2147483647/strip/true/crop/3762x2508+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F96%2F4b%2Fa94da256ef90c52df66daa8033b9%2F2edc09575fc445bab48af8361cc18c69"
+    },
+    {
+      "id": 6,
+      "headline": "US and Iran both claim control of Strait of Hormuz amid attacks on vessels",
+      "description": "Two vessels have been struck with naval mines in the Strait of Hormuz this week.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 80,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad356329eaa-1792235058.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 7,
+      "headline": "Protests spread across France as ‘yellow vests’ set to join",
+      "description": "Demonstrations began in mid-September at schools and have expanded, tapping into wider grievances.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8534951,
+        "lng": 2.3483915
+      },
+      "intensity": 65,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/17/france-braces-for-nationwide-protests-with-yellow-vest-members-set-to-join",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad344e34252-1792230627.jpg?resize=1920%2C1440"
+    }
+  ]
+}
