@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-19",
+  "displayDate": "OCT 19, 2026",
+  "bottomWord": "UNREST",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Trump says he'll close historic DC golf course for 15 months of renovations",
+      "description": "Trump plans to close a historic D.C. golf course for 15 months to redevelop it.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 40,
+      "color": "#ff2d55",
+      "url": "https://apnews.com/article/trump-east-potomac-golf-course-ef8daa134bb6c7c08fd528d98aa3e77f",
+      "imageUrl": "https://dims.apnews.com/dims4/default/be84419/2147483647/strip/true/crop/4820x3213+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F75%2Fea%2Ff150ce7b8ceffb32eac4e31d40a9%2F9ac9ea6990374d59b8a0f6b1b46585b9"
+    },
+    {
+      "id": 2,
+      "headline": "BBC pauses civil service secondment scheme",
+      "description": "The BBC said all journalism and editorial decisions are made by BBC journalists and editors.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/cwjdmy20yjmno",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/89c0/live/b16af500-caee-11f1-ac38-a74b6e44cca7.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "EU condemns Israeli settler attack on diplomats in occupied West Bank",
+      "description": "EU demands accountability after settlers attack European diplomats amid violence against Palestinian olive farmers.",
+      "mainLocation": {
+        "name": "BRUSSELS, BELGIUM",
+        "lat": 50.8467372,
+        "lng": 4.352493
+      },
+      "intensity": 55,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/18/eu-condemns-israeli-settler-attack-on-diplomats-in-occupied-west-bank",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261018__D3MD4UD__v1__HighRes__IsraelPalestinianConflictProtestSettlement-1792333258.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Tirana sees sixth day of violent protests as Albania’s PM refuses to resign",
+      "description": "Police crack down on hundreds of protesters in Albania’s capital, using rubber bullets, water cannons and tear gas.",
+      "mainLocation": {
+        "name": "TIRANA, ALBANIA",
+        "lat": 41.3281482,
+        "lng": 19.8184435
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/18/chaos-in-tirana-demonstrators-determined-to-not-give-up-so-easily",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad4d7cf-1792333775.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "A timeline of West Bank attacks on Palestinians and foreign officials",
+      "description": "Settler pogroms have escalated, coinciding with the annual olive harvest season in the occupied West Bank.",
+      "mainLocation": {
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.9158865,
+        "lng": 35.1781398
+      },
+      "intensity": 50,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/18/a-timeline-of-west-bank-attacks-on-palestinians-and-foreign-officials",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad3ac8c69-1792257164.jpg?resize=1920%2C1440"
+    }
+  ]
+}
