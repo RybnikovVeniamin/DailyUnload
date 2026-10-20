@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-19",
-  "displayDate": "OCT 19, 2026",
-  "bottomWord": "UNREST",
+  "date": "2026-10-20",
+  "displayDate": "OCT 20, 2026",
+  "bottomWord": "VIGILANCE",
   "stories": [
     {
       "id": 1,
-      "headline": "Trump says he'll close historic DC golf course for 15 months of renovations",
-      "description": "Trump plans to close a historic D.C. golf course for 15 months to redevelop it.",
+      "headline": "French protest violence: A ‘Christmas present’ for Le Pen’s far right?",
+      "description": "Le Pen is positioning her party as more capable than centrist or left-wing forces before the 2027 presidential election.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8534951,
+        "lng": 2.3483915
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/19/french-protest-violence-a-christmas-present-for-le-pens-far-right",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6aba100f-1790578703.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Russia’s Lavrov to discuss US war and regional security during Tehran visit",
+      "description": "GCC states have pressed Moscow to help halt Iranian attacks and reopen the Strait of Hormuz.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 70,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/19/russias-lavrov-to-discuss-us-war-and-regional-security-during-tehran-visit",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-18T211935Z_219612327_RC2W5OA90OJ7_RTRMADP_3_IRAN-CRISIS-GULF-RUSSIA-1792390205.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "This House Democrat fights to keep her party’s foothold in Pacific Northwest’s Trump country",
+      "description": "Rep. Marie Gluesenkamp Perez has won twice in a district that voted for Trump.",
       "mainLocation": {
         "name": "WASHINGTON, UNITED STATES",
         "lat": 38.8950982,
         "lng": -77.0363849
       },
       "intensity": 40,
-      "color": "#ff2d55",
-      "url": "https://apnews.com/article/trump-east-potomac-golf-course-ef8daa134bb6c7c08fd528d98aa3e77f",
-      "imageUrl": "https://dims.apnews.com/dims4/default/be84419/2147483647/strip/true/crop/4820x3213+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F75%2Fea%2Ff150ce7b8ceffb32eac4e31d40a9%2F9ac9ea6990374d59b8a0f6b1b46585b9"
-    },
-    {
-      "id": 2,
-      "headline": "BBC pauses civil service secondment scheme",
-      "description": "The BBC said all journalism and editorial decisions are made by BBC journalists and editors.",
-      "mainLocation": {
-        "name": "LONDON, UNITED KINGDOM",
-        "lat": 51.5074456,
-        "lng": -0.1277653
-      },
-      "intensity": 40,
-      "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/cwjdmy20yjmno",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/89c0/live/b16af500-caee-11f1-ac38-a74b6e44cca7.jpg"
-    },
-    {
-      "id": 3,
-      "headline": "EU condemns Israeli settler attack on diplomats in occupied West Bank",
-      "description": "EU demands accountability after settlers attack European diplomats amid violence against Palestinian olive farmers.",
-      "mainLocation": {
-        "name": "BRUSSELS, BELGIUM",
-        "lat": 50.8467372,
-        "lng": 4.352493
-      },
-      "intensity": 55,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/10/18/eu-condemns-israeli-settler-attack-on-diplomats-in-occupied-west-bank",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261018__D3MD4UD__v1__HighRes__IsraelPalestinianConflictProtestSettlement-1792333258.jpg?resize=1920%2C1440"
+      "url": "https://apnews.com/article/marie-gluesenkamp-perez-mgp-john-braun-bed136d00107bff61b0f992ef44e76b6",
+      "imageUrl": "https://dims.apnews.com/dims4/default/a94673c/2147483647/strip/true/crop/4699x3132+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F8b%2F1f%2F3b8c91349d8947b3b73213a77a56%2F0c5af46ed39640428620c77bde2ea3aa"
     },
     {
       "id": 4,
-      "headline": "Tirana sees sixth day of violent protests as Albania’s PM refuses to resign",
-      "description": "Police crack down on hundreds of protesters in Albania’s capital, using rubber bullets, water cannons and tear gas.",
+      "headline": "At least 18 killed in Houthi attack on military camp in Yemen’s Shabwa",
+      "description": "Houthis launch ballistic missiles at camp in southern governorate during training exercise, gov’t forces spokesman says.",
       "mainLocation": {
-        "name": "TIRANA, ALBANIA",
-        "lat": 41.3281482,
-        "lng": 19.8184435
+        "name": "SANAA, YEMEN",
+        "lat": 15.35,
+        "lng": 44.2
       },
       "intensity": 45,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/10/18/chaos-in-tirana-demonstrators-determined-to-not-give-up-so-easily",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad4d7cf-1792333775.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/19/at-least-18-killed-in-houthi-attack-on-military-camp-in-yemens-shabwa",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-19T124334Z_1198234747_RC2C6OA9HU0Z_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-SHABWA-1792414144.jpg?resize=1200%2C675"
     },
     {
       "id": 5,
-      "headline": "A timeline of West Bank attacks on Palestinians and foreign officials",
-      "description": "Settler pogroms have escalated, coinciding with the annual olive harvest season in the occupied West Bank.",
+      "headline": "The night watch: Palestinians protecting their homes from settler pogroms",
+      "description": "Palestinians in the occupied West Bank are organising to protect themselves from settler attacks.",
       "mainLocation": {
         "name": "RAMALLAH, PALESTINE",
-        "lat": 31.9158865,
-        "lng": 35.1781398
+        "lat": 31.9048964,
+        "lng": 35.197357
       },
-      "intensity": 50,
+      "intensity": 45,
       "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/10/18/a-timeline-of-west-bank-attacks-on-palestinians-and-foreign-officials",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad3ac8c69-1792257164.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/features/2026/10/19/the-night-watch-palestinians-protecting-their-homes-from-settler-pogroms",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/Palestinians-in-Sinjil-make-night-guard-shifts-to-protect-the-town-from-settlers-attacks-Photo-by-Shadi-Hatim-1792329882.jpg?resize=1200%2C630"
     }
   ]
 }

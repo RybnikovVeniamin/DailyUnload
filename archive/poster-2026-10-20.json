@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-20",
+  "displayDate": "OCT 20, 2026",
+  "bottomWord": "VIGILANCE",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "French protest violence: A ‘Christmas present’ for Le Pen’s far right?",
+      "description": "Le Pen is positioning her party as more capable than centrist or left-wing forces before the 2027 presidential election.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8534951,
+        "lng": 2.3483915
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/19/french-protest-violence-a-christmas-present-for-le-pens-far-right",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6aba100f-1790578703.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Russia’s Lavrov to discuss US war and regional security during Tehran visit",
+      "description": "GCC states have pressed Moscow to help halt Iranian attacks and reopen the Strait of Hormuz.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 70,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/19/russias-lavrov-to-discuss-us-war-and-regional-security-during-tehran-visit",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-18T211935Z_219612327_RC2W5OA90OJ7_RTRMADP_3_IRAN-CRISIS-GULF-RUSSIA-1792390205.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "This House Democrat fights to keep her party’s foothold in Pacific Northwest’s Trump country",
+      "description": "Rep. Marie Gluesenkamp Perez has won twice in a district that voted for Trump.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 40,
+      "color": "#ffb800",
+      "url": "https://apnews.com/article/marie-gluesenkamp-perez-mgp-john-braun-bed136d00107bff61b0f992ef44e76b6",
+      "imageUrl": "https://dims.apnews.com/dims4/default/a94673c/2147483647/strip/true/crop/4699x3132+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F8b%2F1f%2F3b8c91349d8947b3b73213a77a56%2F0c5af46ed39640428620c77bde2ea3aa"
+    },
+    {
+      "id": 4,
+      "headline": "At least 18 killed in Houthi attack on military camp in Yemen’s Shabwa",
+      "description": "Houthis launch ballistic missiles at camp in southern governorate during training exercise, gov’t forces spokesman says.",
+      "mainLocation": {
+        "name": "SANAA, YEMEN",
+        "lat": 15.35,
+        "lng": 44.2
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/19/at-least-18-killed-in-houthi-attack-on-military-camp-in-yemens-shabwa",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-19T124334Z_1198234747_RC2C6OA9HU0Z_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-SHABWA-1792414144.jpg?resize=1200%2C675"
+    },
+    {
+      "id": 5,
+      "headline": "The night watch: Palestinians protecting their homes from settler pogroms",
+      "description": "Palestinians in the occupied West Bank are organising to protect themselves from settler attacks.",
+      "mainLocation": {
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.9048964,
+        "lng": 35.197357
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/features/2026/10/19/the-night-watch-palestinians-protecting-their-homes-from-settler-pogroms",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/Palestinians-in-Sinjil-make-night-guard-shifts-to-protect-the-town-from-settlers-attacks-Photo-by-Shadi-Hatim-1792329882.jpg?resize=1200%2C630"
+    }
+  ]
+}
