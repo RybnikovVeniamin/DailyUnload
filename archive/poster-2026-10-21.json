@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-21",
+  "displayDate": "OCT 21, 2026",
+  "bottomWord": "TURMOIL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Three months of PM Andy Burnham: Can he sustain the ‘hope vibe’?",
+      "description": "The UK’s new prime minister has made big promises and is a popular leader, but there is still talk of an early election.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/20/three-months-of-pm-andy-burnham-can-he-sustain-the-hope-vibe",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad763801a-1792500608.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "More than 250,000 displaced in Yemen since fighting escalated: UNHCR",
+      "description": "UNICEF says escalating fighting in Taiz is threatening its water systems, serving an estimated three million people.",
+      "mainLocation": {
+        "name": "TAIZ, YEMEN",
+        "lat": 13.5752242,
+        "lng": 44.0215268
+      },
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/20/more-than-250000-displaced-in-yemen-since-fighting-escalated-unhcr",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad752a5-1792496293.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Curfews imposed in French cities to prevent further rioting",
+      "description": "France imposed curfews and arrested over 2,400 people following a weekend of intense rioting.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8588897,
+        "lng": 2.320041
+      },
+      "intensity": 70,
+      "color": "#5ac8fa",
+      "url": "https://apnews.com/article/france-protests-violence-curfew-paris-looting-13189fcb1481614dc65c2125deb8333d",
+      "imageUrl": "https://dims.apnews.com/dims4/default/66c7662/2147483647/strip/true/crop/8640x5760+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9d%2F95%2F02aab095760cbe915bf371365928%2F36179df2d4884e1d86495c1936cd2781"
+    },
+    {
+      "id": 6,
+      "headline": "Why Rubio is visiting Reliance’s oil refinery in India, the world’s largest",
+      "description": "Reliance is central to Washington’s efforts to punish Russian energy buyers and contain oil prices amid the war on Iran.",
+      "mainLocation": {
+        "name": "JAMNAGAR, INDIA",
+        "lat": 22.4732415,
+        "lng": 70.0552102
+      },
+      "intensity": 62,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/20/why-rubio-is-visiting-reliances-oil-refinery-in-india-the-worlds-largest",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2007-02-01T120000Z_389211615_GM1DUNBEQOAA_RTRMADP_3_INDIA-OIL-FIRE-1792491599.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 7,
+      "headline": "Iran denies collapse is close as US claims IRGC running out of money",
+      "description": "Iranian authorities defiant despite financial strain, saying they want to lift US blockade and pressure on their terms.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 55,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/20/iran-denies-collapse-is-close-as-us-claims-irgc-running-out-of-money",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad7527f89c7-1792496255.jpg?resize=1920%2C1440"
+    }
+  ]
+}
