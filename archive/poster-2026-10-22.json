@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-22",
+  "displayDate": "OCT 22, 2026",
+  "bottomWord": "ENTANGLEMENT",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "PHP cyber-security warning sees sites taken down across Europe",
+      "description": "Two critical vulnerabilities have been identified in PHP, a widely used programming language.",
+      "mainLocation": null,
+      "intensity": 65,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/eb5e/live/02351720-cd44-11f1-8177-0f8bd59b54c4.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "US congressional candidate Brad Lander freed after West Bank detention",
+      "description": "Lander says dozens remain in Israeli custody after being detained while helping Palestinian farmers harvest olives.",
+      "mainLocation": {
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.8884755,
+        "lng": 35.2170823
+      },
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/21/us-congressional-candidate-brad-lander-freed-after-west-bank-detention",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad8c63755f4-1792591415.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "How Qatar, Turkiye, Pakistan and Indonesia are deepening defence ties",
+      "description": "Experts say conflicts and uncertainty are accelerating efforts to strengthen regional military capacity.",
+      "mainLocation": null,
+      "intensity": 50,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/21/how-qatar-turkiye-pakistan-and-indonesia-are-deepening-defence-ties",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/HVKDeZdXoAA79Xo-1792589562.jpg?resize=1728%2C1080"
+    },
+    {
+      "id": 4,
+      "headline": "How Israel’s war on Lebanon has cost young people with autism and ADHD",
+      "description": "Experts warn that war takes a heavy toll on neurodivergent people, who often rely on routine.",
+      "mainLocation": {
+        "name": "BEIRUT, LEBANON",
+        "lat": 33.8892265,
+        "lng": 35.5025585
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/21/how-cost-israels-war-on-lebanon-has-on-young-people-with-autism-and-adhd",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/Alex-Durie-photos-Lebanon-Autism-20-1792403808.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Are the UK, France being pulled into the Saudi-Houthi conflict?",
+      "description": "The European states say their support for Riyadh is ‘defensive’, but analysts warn Houthi reaction may complicate that.",
+      "mainLocation": {
+        "name": "RIYADH, SAUDI ARABIA",
+        "lat": 24.638916,
+        "lng": 46.7160104
+      },
+      "intensity": 50,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/21/are-the-uk-france-being-pulled-into-the-saudi-houthi-conflict",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad8ab0849-1792584456.jpg?resize=1920%2C1440"
+    }
+  ]
+}

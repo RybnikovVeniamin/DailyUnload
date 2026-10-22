@@ -1,77 +1,69 @@
 {
-  "date": "2026-10-21",
-  "displayDate": "OCT 21, 2026",
-  "bottomWord": "TURMOIL",
+  "date": "2026-10-22",
+  "displayDate": "OCT 22, 2026",
+  "bottomWord": "ENTANGLEMENT",
   "stories": [
     {
       "id": 1,
-      "headline": "Three months of PM Andy Burnham: Can he sustain the ‘hope vibe’?",
-      "description": "The UK’s new prime minister has made big promises and is a popular leader, but there is still talk of an early election.",
-      "mainLocation": {
-        "name": "LONDON, UNITED KINGDOM",
-        "lat": 51.5074456,
-        "lng": -0.1277653
-      },
-      "intensity": 45,
+      "headline": "PHP cyber-security warning sees sites taken down across Europe",
+      "description": "Two critical vulnerabilities have been identified in PHP, a widely used programming language.",
+      "mainLocation": null,
+      "intensity": 65,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/20/three-months-of-pm-andy-burnham-can-he-sustain-the-hope-vibe",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad763801a-1792500608.jpg?resize=1920%2C1440"
+      "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/eb5e/live/02351720-cd44-11f1-8177-0f8bd59b54c4.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "US congressional candidate Brad Lander freed after West Bank detention",
+      "description": "Lander says dozens remain in Israeli custody after being detained while helping Palestinian farmers harvest olives.",
+      "mainLocation": {
+        "name": "RAMALLAH, PALESTINE",
+        "lat": 31.8884755,
+        "lng": 35.2170823
+      },
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/21/us-congressional-candidate-brad-lander-freed-after-west-bank-detention",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad8c63755f4-1792591415.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "How Qatar, Turkiye, Pakistan and Indonesia are deepening defence ties",
+      "description": "Experts say conflicts and uncertainty are accelerating efforts to strengthen regional military capacity.",
+      "mainLocation": null,
+      "intensity": 50,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/21/how-qatar-turkiye-pakistan-and-indonesia-are-deepening-defence-ties",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/HVKDeZdXoAA79Xo-1792589562.jpg?resize=1728%2C1080"
     },
     {
       "id": 4,
-      "headline": "More than 250,000 displaced in Yemen since fighting escalated: UNHCR",
-      "description": "UNICEF says escalating fighting in Taiz is threatening its water systems, serving an estimated three million people.",
+      "headline": "How Israel’s war on Lebanon has cost young people with autism and ADHD",
+      "description": "Experts warn that war takes a heavy toll on neurodivergent people, who often rely on routine.",
       "mainLocation": {
-        "name": "TAIZ, YEMEN",
-        "lat": 13.5752242,
-        "lng": 44.0215268
+        "name": "BEIRUT, LEBANON",
+        "lat": 33.8892265,
+        "lng": 35.5025585
       },
-      "intensity": 60,
+      "intensity": 45,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/10/20/more-than-250000-displaced-in-yemen-since-fighting-escalated-unhcr",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad752a5-1792496293.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/21/how-cost-israels-war-on-lebanon-has-on-young-people-with-autism-and-adhd",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/Alex-Durie-photos-Lebanon-Autism-20-1792403808.jpg?resize=1920%2C1440"
     },
     {
       "id": 5,
-      "headline": "Curfews imposed in French cities to prevent further rioting",
-      "description": "France imposed curfews and arrested over 2,400 people following a weekend of intense rioting.",
+      "headline": "Are the UK, France being pulled into the Saudi-Houthi conflict?",
+      "description": "The European states say their support for Riyadh is ‘defensive’, but analysts warn Houthi reaction may complicate that.",
       "mainLocation": {
-        "name": "PARIS, FRANCE",
-        "lat": 48.8588897,
-        "lng": 2.320041
+        "name": "RIYADH, SAUDI ARABIA",
+        "lat": 24.638916,
+        "lng": 46.7160104
       },
-      "intensity": 70,
+      "intensity": 50,
       "color": "#5ac8fa",
-      "url": "https://apnews.com/article/france-protests-violence-curfew-paris-looting-13189fcb1481614dc65c2125deb8333d",
-      "imageUrl": "https://dims.apnews.com/dims4/default/66c7662/2147483647/strip/true/crop/8640x5760+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9d%2F95%2F02aab095760cbe915bf371365928%2F36179df2d4884e1d86495c1936cd2781"
-    },
-    {
-      "id": 6,
-      "headline": "Why Rubio is visiting Reliance’s oil refinery in India, the world’s largest",
-      "description": "Reliance is central to Washington’s efforts to punish Russian energy buyers and contain oil prices amid the war on Iran.",
-      "mainLocation": {
-        "name": "JAMNAGAR, INDIA",
-        "lat": 22.4732415,
-        "lng": 70.0552102
-      },
-      "intensity": 62,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/20/why-rubio-is-visiting-reliances-oil-refinery-in-india-the-worlds-largest",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2007-02-01T120000Z_389211615_GM1DUNBEQOAA_RTRMADP_3_INDIA-OIL-FIRE-1792491599.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 7,
-      "headline": "Iran denies collapse is close as US claims IRGC running out of money",
-      "description": "Iranian authorities defiant despite financial strain, saying they want to lift US blockade and pressure on their terms.",
-      "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
-      },
-      "intensity": 55,
-      "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/10/20/iran-denies-collapse-is-close-as-us-claims-irgc-running-out-of-money",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad7527f89c7-1792496255.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/21/are-the-uk-france-being-pulled-into-the-saudi-houthi-conflict",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad8ab0849-1792584456.jpg?resize=1920%2C1440"
     }
   ]
 }
