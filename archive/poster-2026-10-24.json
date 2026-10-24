@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-24",
+  "displayDate": "OCT 24, 2026",
+  "bottomWord": "PRECAUTION",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Are parents in France and Italy liable for damage caused by student protesters?",
+      "description": "Parents could face financial penalties if their children participate in vandalism or looting during demonstrations.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8534951,
+        "lng": 2.3483915
+      },
+      "intensity": 40,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/23/are-parents-in-france-and-italy-liable-for-damage-caused-by-student-protesters",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adb19f5-1792743925.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Ukraine plans independent satellite system as Starlink issues persist",
+      "description": "Ukraine to team up with Finnish firms as Starshield problems, started amid Trump-Zelenskyy jibes, continue.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/23/ukraine-plans-independent-satellite-system-as-starlink-issues-persist",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adb3142e8c6-1792749890.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Burnham suggests stocking up on tinned food and bottled water",
+      "description": "The prime ministers says unexpected events seem to be becoming more common and it was wise to prepare.",
+      "mainLocation": {
+        "name": "GEORGETOWN, GUYANA",
+        "lat": 6.8032561,
+        "lng": -58.1455403
+      },
+      "intensity": 40,
+      "color": "#ffb800",
+      "url": "https://www.bbc.co.uk/news/articles/ckr5yz2pqqppo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c972/live/d689a070-cecc-11f1-8507-45cb00a1c41c.png"
+    },
+    {
+      "id": 4,
+      "headline": "Hispanic voters helped bring Trump to power",
+      "description": "Recent polls suggest the president is facing challenging headwinds in the state ahead of the midterms.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyqn6ejyd4o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d2f6/live/7d318ca0-cd90-11f1-b1e7-39558e114359.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "US-Iran war, then and now: How the landscape has changed since February",
+      "description": "The positions of Washington and Tehran have changed dramatically since US-Israeli strikes began the war, analysts say.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 85,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/08/GettyImages-2288250827-1785861807.jpg?resize=1920%2C1440"
+    }
+  ]
+}
