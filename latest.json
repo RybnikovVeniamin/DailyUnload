@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-24",
-  "displayDate": "OCT 24, 2026",
-  "bottomWord": "PRECAUTION",
+  "date": "2026-10-25",
+  "displayDate": "OCT 25, 2026",
+  "bottomWord": "DEFIANCE",
   "stories": [
     {
       "id": 1,
-      "headline": "Are parents in France and Italy liable for damage caused by student protesters?",
-      "description": "Parents could face financial penalties if their children participate in vandalism or looting during demonstrations.",
-      "mainLocation": {
-        "name": "PARIS, FRANCE",
-        "lat": 48.8534951,
-        "lng": 2.3483915
-      },
-      "intensity": 40,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/23/are-parents-in-france-and-italy-liable-for-damage-caused-by-student-protesters",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adb19f5-1792743925.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 2,
-      "headline": "Ukraine plans independent satellite system as Starlink issues persist",
-      "description": "Ukraine to team up with Finnish firms as Starshield problems, started amid Trump-Zelenskyy jibes, continue.",
-      "mainLocation": {
-        "name": "KYIV, UKRAINE",
-        "lat": 50.4500336,
-        "lng": 30.5241361
-      },
-      "intensity": 60,
-      "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/10/23/ukraine-plans-independent-satellite-system-as-starlink-issues-persist",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adb3142e8c6-1792749890.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 3,
-      "headline": "Burnham suggests stocking up on tinned food and bottled water",
-      "description": "The prime ministers says unexpected events seem to be becoming more common and it was wise to prepare.",
-      "mainLocation": {
-        "name": "GEORGETOWN, GUYANA",
-        "lat": 6.8032561,
-        "lng": -58.1455403
-      },
-      "intensity": 40,
-      "color": "#ffb800",
-      "url": "https://www.bbc.co.uk/news/articles/ckr5yz2pqqppo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c972/live/d689a070-cecc-11f1-8507-45cb00a1c41c.png"
-    },
-    {
-      "id": 4,
-      "headline": "Hispanic voters helped bring Trump to power",
-      "description": "Recent polls suggest the president is facing challenging headwinds in the state ahead of the midterms.",
-      "mainLocation": {
-        "name": "WASHINGTON, UNITED STATES",
-        "lat": 38.8950982,
-        "lng": -77.0363849
-      },
-      "intensity": 45,
-      "color": "#34c759",
-      "url": "https://www.bbc.co.uk/news/articles/cmwyqn6ejyd4o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d2f6/live/7d318ca0-cd90-11f1-b1e7-39558e114359.jpg"
-    },
-    {
-      "id": 6,
-      "headline": "US-Iran war, then and now: How the landscape has changed since February",
-      "description": "The positions of Washington and Tehran have changed dramatically since US-Israeli strikes began the war, analysts say.",
+      "headline": "Iran says won’t allow US warships to get close as Trump ponders new attacks",
+      "description": "Iranian officials, media and analysts sense war is closer, but signal there will be no backing down.",
       "mainLocation": {
         "name": "TEHRAN, IRAN",
         "lat": 35.6892523,
         "lng": 51.3896004
       },
-      "intensity": 85,
+      "intensity": 70,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/08/GettyImages-2288250827-1785861807.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adcacbb-1792847035.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "France protests live: 135 arrested as marches held under tight security",
+      "description": "Authorities say they are determined to prevent another weekend of looting, burned cars and attacks on public buildings.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8588897,
+        "lng": 2.320041
+      },
+      "intensity": 65,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/france-protests-live-135-arrested-as-marches-held-under-tight-security",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adca795-1792845717.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Is Iran planning attacks on Americans; why is the US on alert?",
+      "description": "US intelligence memo warns that Iranian plots against US citizens in the Middle East ‘have reached advanced stages’.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 70,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/24/is-iran-planning-attacks-on-americans-why-is-the-us-on-alert",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad49897d480-1792317591.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "A look at Melania Trump-brokered ceasefire in Ukraine",
+      "description": "Melania Trump brokered a ceasefire in southern Ukraine to allow aid in and residents out.",
+      "mainLocation": {
+        "name": "OLESHKY, UKRAINE",
+        "lat": 46.6260908,
+        "lng": 32.7220187
+      },
+      "intensity": 55,
+      "color": "#34c759",
+      "url": "https://apnews.com/article/russia-ukraine-ceasefire-oleshky-melania-trump-7d8aadbf684780223434e705913ecbf3",
+      "imageUrl": "https://dims.apnews.com/dims4/default/92d5e1d/2147483647/strip/true/crop/6138x4092+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fef%2Ff3%2Fab41c9423e32d1d87ccb46add99b%2Fdcc1ce989cff448daee00393129edcd3"
+    },
+    {
+      "id": 6,
+      "headline": "Czech Republic advances media funding overhaul despite criticism",
+      "description": "Journalists prepare to strike as politicians push through changes that critics say threaten independence.",
+      "mainLocation": {
+        "name": "PRAGUE, CZECH REPUBLIC",
+        "lat": 50.0874654,
+        "lng": 14.4212535
+      },
+      "intensity": 43,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/24/czech-republic-advances-media-funding-overhaul-despite-criticism",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adc7907-1792833799.jpg?resize=1920%2C1440"
     }
   ]
 }
