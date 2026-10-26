@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-25",
-  "displayDate": "OCT 25, 2026",
-  "bottomWord": "DEFIANCE",
+  "date": "2026-10-26",
+  "displayDate": "OCT 26, 2026",
+  "bottomWord": "FRACTURE",
   "stories": [
     {
-      "id": 1,
-      "headline": "Iran says won’t allow US warships to get close as Trump ponders new attacks",
-      "description": "Iranian officials, media and analysts sense war is closer, but signal there will be no backing down.",
-      "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
-      },
-      "intensity": 70,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adcacbb-1792847035.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 2,
-      "headline": "France protests live: 135 arrested as marches held under tight security",
-      "description": "Authorities say they are determined to prevent another weekend of looting, burned cars and attacks on public buildings.",
-      "mainLocation": {
-        "name": "PARIS, FRANCE",
-        "lat": 48.8588897,
-        "lng": 2.320041
-      },
-      "intensity": 65,
-      "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/france-protests-live-135-arrested-as-marches-held-under-tight-security",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adca795-1792845717.jpg?resize=1920%2C1440"
-    },
-    {
       "id": 3,
-      "headline": "Is Iran planning attacks on Americans; why is the US on alert?",
-      "description": "US intelligence memo warns that Iranian plots against US citizens in the Middle East ‘have reached advanced stages’.",
+      "headline": "How is the US-Israeli war on Iran causing havoc in Europe?",
+      "description": "Rising energy costs and protests are sharpening European opposition to renewed US-Israeli attacks on Iran.",
       "mainLocation": {
-        "name": "WASHINGTON, UNITED STATES",
-        "lat": 38.8950982,
-        "lng": -77.0363849
+        "name": "BRUSSELS, BELGIUM",
+        "lat": 50.8467372,
+        "lng": 4.352493
       },
-      "intensity": 70,
+      "intensity": 85,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/10/24/is-iran-planning-attacks-on-americans-why-is-the-us-on-alert",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad49897d480-1792317591.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/25/how-is-the-us-israeli-war-on-iran-causing-havoc-in-europe",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6addf920-1792932128.jpg?resize=1920%2C1440"
     },
     {
       "id": 4,
-      "headline": "A look at Melania Trump-brokered ceasefire in Ukraine",
-      "description": "Melania Trump brokered a ceasefire in southern Ukraine to allow aid in and residents out.",
+      "headline": "Netanyahu’s pitch: Can Israel use crypto to evade economic sanctions?",
+      "description": "Prime Minister Netanyahu mulls cryptocurrency as answer to economic sanctions on Israel, but there are few buyers.",
       "mainLocation": {
-        "name": "OLESHKY, UKRAINE",
-        "lat": 46.6260908,
-        "lng": 32.7220187
+        "name": "JERUSALEM, ISRAEL",
+        "lat": 31.7788472,
+        "lng": 35.2257856
       },
-      "intensity": 55,
+      "intensity": 50,
       "color": "#34c759",
-      "url": "https://apnews.com/article/russia-ukraine-ceasefire-oleshky-melania-trump-7d8aadbf684780223434e705913ecbf3",
-      "imageUrl": "https://dims.apnews.com/dims4/default/92d5e1d/2147483647/strip/true/crop/6138x4092+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fef%2Ff3%2Fab41c9423e32d1d87ccb46add99b%2Fdcc1ce989cff448daee00393129edcd3"
+      "url": "https://www.aljazeera.com/news/2026/10/25/netanyahus-pitch-can-israel-use-crypto-to-evade-economic-sanctions",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ac01956-1790974294.jpg?resize=1920%2C1440"
     },
     {
-      "id": 6,
-      "headline": "Czech Republic advances media funding overhaul despite criticism",
-      "description": "Journalists prepare to strike as politicians push through changes that critics say threaten independence.",
+      "id": 7,
+      "headline": "Bangladesh per capita GDP forecast to outstrip India’s: What does it mean?",
+      "description": "Bangladesh expected to surpass India’s per capita GDP this year, but that’s not the complete economic picture.",
       "mainLocation": {
-        "name": "PRAGUE, CZECH REPUBLIC",
-        "lat": 50.0874654,
-        "lng": 14.4212535
+        "name": "DHAKA, BANGLADESH",
+        "lat": 23.7643863,
+        "lng": 90.3890144
       },
-      "intensity": 43,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/24/czech-republic-advances-media-funding-overhaul-despite-criticism",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adc7907-1792833799.jpg?resize=1920%2C1440"
+      "intensity": 48,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/25/bangladesh-per-capita-gdp-forecast-to-outstrip-indias-what-does-it-mean",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/02/AP18111291320142-1770666958.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 8,
+      "headline": "PHOTO ESSAY: A Trump voter, struggling with cancer and bills, breaks ranks",
+      "description": "Cindy Banda, a Texas mother facing cancer, breaks ranks with the GOP over rising medical bills.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 40,
+      "color": "#ffb800",
+      "url": "https://apnews.com/photo-essay/trump-talarico-paxton-texas-cancer-healthcare-midterms-67c6edf617943a48fd23120284a44936",
+      "imageUrl": "https://dims.apnews.com/dims4/default/e141ec3/2147483647/strip/true/crop/3936x2632+0+0/resize/1200x802!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fca%2F7c%2F464dc6ccb412d0cfb94c7a9b5b67%2F6d82f36295ff4978beaf13ac9e67da0f"
+    },
+    {
+      "id": 10,
+      "headline": "Saudi air defences intercept Houthi barrage near Mecca",
+      "description": "Houthi attacks on Saudi Arabia escalate as fierce ground battles and a devastating siege strangle Yemen’s Taiz.",
+      "mainLocation": {
+        "name": "MECCA, SAUDI ARABIA",
+        "lat": 21.420847,
+        "lng": 39.826869
+      },
+      "intensity": 50,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/25/saudi-air-defences-intercept-houthi-barrage-near-mecca",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/M11079823-copy-1792925888.jpg?resize=1200%2C630"
     }
   ]
 }
