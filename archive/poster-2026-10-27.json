@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-27",
+  "displayDate": "OCT 27, 2026",
+  "bottomWord": "REALIGNMENT",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Mecca defence alliance members in Tehran to defuse Iran-US, Yemen tensions",
+      "description": "Countering Houthi advances in Yemen will be a major focus for Saudi Arabia and its allies in Tehran.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adf65c71390-1793025479.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "AI giant Anthropic unveils plans for blockbuster share listing",
+      "description": "Anthropic will be the first true artificial intelligence company to go public.",
+      "mainLocation": {
+        "name": "SAN FRANCISCO, UNITED STATES",
+        "lat": 37.7879363,
+        "lng": -122.4075201
+      },
+      "intensity": 70,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/746e/live/6e0550b0-cec4-11f1-b9e0-e5f0da03dc7f.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "Andy Burnham leaves door open to referendum on EU free movement",
+      "description": "The PM says he wants to start a conversation about potential options for the UK's future relationship with the EU.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/cx240dpzv009o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bc4a/live/267093e0-d135-11f1-be77-d1864d279cb0.jpg"
+    },
+    {
+      "id": 7,
+      "headline": "Israel expands expulsions in occupied West Bank to cement control",
+      "description": "Israel escalates forced expulsions and infrastructure destruction with the goal of imposing ‘new reality’, analysts say.",
+      "mainLocation": {
+        "name": "JERUSALEM, ISRAEL",
+        "lat": 31.7788472,
+        "lng": 35.2257856
+      },
+      "intensity": 70,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/10/26/israel-expands-occupied-west-bank-expulsions-to-cement-control",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adcaabfeaed-1792846527.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 9,
+      "headline": "How did Lula beat Bolsonaro after losing Brazil’s first-round election?",
+      "description": "Brazil’s president secured a historic fourth term after overturning a first-round defeat.",
+      "mainLocation": {
+        "name": "BRASÍLIA, BRAZIL",
+        "lat": -15.7939869,
+        "lng": -47.8828
+      },
+      "intensity": 70,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/10/26/how-did-lula-beat-bolsonaro-after-losing-brazils-first-round-election",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-26T041240Z_657336273_RC2RAOAIWPIZ_RTRMADP_3_BRAZIL-ELECTION-1793011394.jpg?resize=1920%2C1440"
+    }
+  ]
+}
