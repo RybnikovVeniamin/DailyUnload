@@ -1,77 +1,77 @@
 {
-  "date": "2026-10-27",
-  "displayDate": "OCT 27, 2026",
-  "bottomWord": "REALIGNMENT",
+  "date": "2026-10-28",
+  "displayDate": "OCT 28, 2026",
+  "bottomWord": "RECALIBRATION",
   "stories": [
     {
       "id": 1,
-      "headline": "Mecca defence alliance members in Tehran to defuse Iran-US, Yemen tensions",
-      "description": "Countering Houthi advances in Yemen will be a major focus for Saudi Arabia and its allies in Tehran.",
+      "headline": "Iran’s calculations as US escalation looms: Trust, midterms, Hormuz",
+      "description": "Tehran remains firm on demands despite diplomatic urgency to prevent escalation in the ongoing US-Israeli conflict.",
       "mainLocation": {
         "name": "TEHRAN, IRAN",
         "lat": 35.6892523,
         "lng": 51.3896004
       },
-      "intensity": 60,
+      "intensity": 65,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adf65c71390-1793025479.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/27/irans-calculations-as-us-escalation-looms-trust-midterms-hormuz",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae062593a336-1793090137.jpg?resize=1920%2C1440"
     },
     {
-      "id": 5,
-      "headline": "AI giant Anthropic unveils plans for blockbuster share listing",
-      "description": "Anthropic will be the first true artificial intelligence company to go public.",
-      "mainLocation": {
-        "name": "SAN FRANCISCO, UNITED STATES",
-        "lat": 37.7879363,
-        "lng": -122.4075201
-      },
-      "intensity": 70,
-      "color": "#5ac8fa",
-      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/746e/live/6e0550b0-cec4-11f1-b9e0-e5f0da03dc7f.jpg"
-    },
-    {
-      "id": 6,
-      "headline": "Andy Burnham leaves door open to referendum on EU free movement",
-      "description": "The PM says he wants to start a conversation about potential options for the UK's future relationship with the EU.",
-      "mainLocation": {
-        "name": "LONDON, UNITED KINGDOM",
-        "lat": 51.5074456,
-        "lng": -0.1277653
-      },
-      "intensity": 45,
-      "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/cx240dpzv009o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bc4a/live/267093e0-d135-11f1-be77-d1864d279cb0.jpg"
-    },
-    {
-      "id": 7,
-      "headline": "Israel expands expulsions in occupied West Bank to cement control",
-      "description": "Israel escalates forced expulsions and infrastructure destruction with the goal of imposing ‘new reality’, analysts say.",
+      "id": 2,
+      "headline": "Israel election turnout highest in 50 years as voting continues",
+      "description": "Almost 45 percent of Israeli voters had cast their ballots by mid-afternoon.",
       "mainLocation": {
         "name": "JERUSALEM, ISRAEL",
         "lat": 31.7788472,
         "lng": 35.2257856
       },
-      "intensity": 70,
+      "intensity": 45,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/10/26/israel-expands-occupied-west-bank-expulsions-to-cement-control",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adcaabfeaed-1792846527.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/10/27/israel-election-turnout-highest-in-50-years-as-voting-continues",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae0b1d16ef6f-1793110481.jpg?resize=1920%2C1440"
     },
     {
-      "id": 9,
-      "headline": "How did Lula beat Bolsonaro after losing Brazil’s first-round election?",
-      "description": "Brazil’s president secured a historic fourth term after overturning a first-round defeat.",
+      "id": 3,
+      "headline": "Hegseth heads to Manila to shore up US ties with Asia-Pacific partners",
+      "description": "The Iran war and Trump’s criticisms of allies have led Asia-Pacific countries to recalibrate their calculations.",
       "mainLocation": {
-        "name": "BRASÍLIA, BRAZIL",
-        "lat": -15.7939869,
-        "lng": -47.8828
+        "name": "MANILA, PHILIPPINES",
+        "lat": 14.5904492,
+        "lng": 120.9803621
       },
-      "intensity": 70,
-      "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/10/26/how-did-lula-beat-bolsonaro-after-losing-brazils-first-round-election",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-26T041240Z_657336273_RC2RAOAIWPIZ_RTRMADP_3_BRAZIL-ELECTION-1793011394.jpg?resize=1920%2C1440"
+      "intensity": 50,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/27/hegseth-heads-to-manila-to-shore-up-us-ties-with-asia-pacific-partners",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-2243735739-1793113174_851714-1793113608.jpg?resize=1200%2C630&quality=80"
+    },
+    {
+      "id": 5,
+      "headline": "Norway and Finland hold rare call with Putin to discuss ending war",
+      "description": "This is the first time European leaders have had direct communication with Russia's president in more than a year.",
+      "mainLocation": {
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
+      },
+      "intensity": 72,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/62a7/live/0a738c90-d1fa-11f1-8c9f-8d21fef6ffad.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "King Charles’s Caribbean tour: Will he discuss slavery reparations?",
+      "description": "UK’s King Charles launches nine-day Caribbean tour amid monarchy questions and growing demands for slavery reparations.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 50,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/10/27/king-charless-caribbean-tour-will-he-discuss-slavery-reparations",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-2299653675-1793106738_43a875-1793106830.jpg?resize=1200%2C630&quality=80"
     }
   ]
 }
