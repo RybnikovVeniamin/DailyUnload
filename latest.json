@@ -1,26 +1,26 @@
 {
-  "date": "2026-10-28",
-  "displayDate": "OCT 28, 2026",
-  "bottomWord": "RECALIBRATION",
+  "date": "2026-10-29",
+  "displayDate": "OCT 29, 2026",
+  "bottomWord": "COLLISION",
   "stories": [
     {
       "id": 1,
-      "headline": "Iran’s calculations as US escalation looms: Trust, midterms, Hormuz",
-      "description": "Tehran remains firm on demands despite diplomatic urgency to prevent escalation in the ongoing US-Israeli conflict.",
+      "headline": "Photos show aftermath of deadly high-speed train collision in Spain",
+      "description": "A high-speed train crash in Spain killed dozens of people and injured scores.",
       "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
+        "name": "URDA, SPAIN",
+        "lat": 39.3675974,
+        "lng": -3.7313689
       },
-      "intensity": 65,
+      "intensity": 50,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/27/irans-calculations-as-us-escalation-looms-trust-midterms-hormuz",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae062593a336-1793090137.jpg?resize=1920%2C1440"
+      "url": "https://apnews.com/photo-gallery/photos-show-aftermath-deadly-high-speed-train-collision-spain-897aba261c6b4bff8e831d0b7aa7f7dd",
+      "imageUrl": "https://dims.apnews.com/dims4/default/92b644c/2147483647/strip/true/crop/6000x4000+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fee%2F32%2F19d859980745d80f5c631a377c3f%2Faf8fcc5618eb4c649ad6cd45606fb7c6"
     },
     {
       "id": 2,
-      "headline": "Israel election turnout highest in 50 years as voting continues",
-      "description": "Almost 45 percent of Israeli voters had cast their ballots by mid-afternoon.",
+      "headline": "All about Gadi Eisenkot, the Israeli opposition leader",
+      "description": "Gadi Eisenkot still has a chance to oust Prime Minister Benjamin Netanyahu.",
       "mainLocation": {
         "name": "JERUSALEM, ISRAEL",
         "lat": 31.7788472,
@@ -28,50 +28,50 @@
       },
       "intensity": 45,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/10/27/israel-election-turnout-highest-in-50-years-as-voting-continues",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae0b1d16ef6f-1793110481.jpg?resize=1920%2C1440"
+      "url": "https://apnews.com/article/israel-election-eisenkort-da107a1b69b5cf763394bae89ad759bc",
+      "imageUrl": "https://dims.apnews.com/dims4/default/ae2d56e/2147483647/strip/true/crop/3864x2576+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fba%2F0c%2F27ac9740959293e5880e6270c9c1%2F8f30a89c5041414393003874214f1dbd"
     },
     {
-      "id": 3,
-      "headline": "Hegseth heads to Manila to shore up US ties with Asia-Pacific partners",
-      "description": "The Iran war and Trump’s criticisms of allies have led Asia-Pacific countries to recalibrate their calculations.",
-      "mainLocation": {
-        "name": "MANILA, PHILIPPINES",
-        "lat": 14.5904492,
-        "lng": 120.9803621
-      },
-      "intensity": 50,
-      "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/10/27/hegseth-heads-to-manila-to-shore-up-us-ties-with-asia-pacific-partners",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-2243735739-1793113174_851714-1793113608.jpg?resize=1200%2C630&quality=80"
-    },
-    {
-      "id": 5,
-      "headline": "Norway and Finland hold rare call with Putin to discuss ending war",
-      "description": "This is the first time European leaders have had direct communication with Russia's president in more than a year.",
-      "mainLocation": {
-        "name": "MOSCOW, RUSSIA",
-        "lat": 55.625578,
-        "lng": 37.6063916
-      },
-      "intensity": 72,
-      "color": "#5ac8fa",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/62a7/live/0a738c90-d1fa-11f1-8c9f-8d21fef6ffad.jpg"
-    },
-    {
-      "id": 6,
-      "headline": "King Charles’s Caribbean tour: Will he discuss slavery reparations?",
-      "description": "UK’s King Charles launches nine-day Caribbean tour amid monarchy questions and growing demands for slavery reparations.",
+      "id": 4,
+      "headline": "Tommy Robinson guilty of harassing Daily Mail journalists",
+      "description": "The 43-year-old is convicted after a week-long trial at Southwark Crown Court.",
       "mainLocation": {
         "name": "LONDON, UNITED KINGDOM",
         "lat": 51.5074456,
         "lng": -0.1277653
       },
-      "intensity": 50,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/10/27/king-charless-caribbean-tour-will-he-discuss-slavery-reparations",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-2299653675-1793106738_43a875-1793106830.jpg?resize=1200%2C630&quality=80"
+      "intensity": 40,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/cq2d6z36pp53o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0f2c/live/60f697b0-1203-11ef-82e8-cd354766a224.png"
+    },
+    {
+      "id": 9,
+      "headline": "Gaza residents watch Israel’s election, fearing a Netanyahu win as airstrikes hit Khan Younis",
+      "description": "Gaza residents hope Netanyahu loses Israel's election, but doubt real change will follow.",
+      "mainLocation": {
+        "name": "KHAN YOUNIS, PALESTINE",
+        "lat": 31.3465773,
+        "lng": 34.3036015
+      },
+      "intensity": 48,
+      "color": "#34c759",
+      "url": "https://apnews.com/article/israel-election-gaza-khan-younis-netanyahu-eisenkot-bc43883046b3c34f2878263a9de97ddb",
+      "imageUrl": "https://dims.apnews.com/dims4/default/0be5305/2147483647/strip/true/crop/8640x5760+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F15%2Fa1%2F559540056ded37385d1ea2712061%2F15091cd5e4cb451280689f2e42cd7efa"
+    },
+    {
+      "id": 12,
+      "headline": "Four investigations Democrats could launch if they win Congress",
+      "description": "Democrats have promised a wave of probes into the Trump administration if they win back the House.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/cvglwg033027o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/11f9/live/81a98dc0-d252-11f1-b6ed-51fc9a3ab608.jpg"
     }
   ]
 }
