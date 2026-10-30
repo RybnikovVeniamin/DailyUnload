@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-30",
+  "displayDate": "OCT 30, 2026",
+  "bottomWord": "HARDSHIP",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "'Painful' years ahead, think tanks warn, as living standards set to fall",
+      "description": "Budget forecasts show growth in living standards grinding almost to a halt.",
+      "mainLocation": null,
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/c6z7x8214np7o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/45cd/live/c93e7220-d385-11f1-b5f4-fd541fd21001.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+      "description": "At least 14 others were wounded in the attack in the central city of Dnipro, including an 11-year-old boy.",
+      "mainLocation": {
+        "name": "DNIPRO, UKRAINE",
+        "lat": 49.6243131,
+        "lng": 31.6666824
+      },
+      "intensity": 50,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c3f6/live/c8559bf0-d389-11f1-b5f4-fd541fd21001.jpg"
+    },
+    {
+      "id": 5,
+      "headline": "Airbnb commits $500 million for its philanthropic arm to expand emergency stays",
+      "description": "Airbnb is dedicating over $500M to expand temporary housing for medical travelers and survivors.",
+      "mainLocation": {
+        "name": "SAN FRANCISCO, UNITED STATES",
+        "lat": 37.7879363,
+        "lng": -122.4075201
+      },
+      "intensity": 40,
+      "color": "#5ac8fa",
+      "url": "https://apnews.com/article/airbnb-emergency-housing-fema-71444671a0ad0d67d001804a586144ae",
+      "imageUrl": "https://dims.apnews.com/dims4/default/19a31d2/2147483647/strip/true/crop/3682x2455+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F03%2F82%2F01e8eea003744759e57addab2fa9%2F2c819bfe06074885bdf0235f968d3512"
+    },
+    {
+      "id": 6,
+      "headline": "Damascus, Amman contradict each other on attack that killed civilians",
+      "description": "Analysts say accountability is needed to quell public outrage over killing of family in southern Syria.",
+      "mainLocation": {
+        "name": "DAMASCUS, SYRIA",
+        "lat": 33.5130695,
+        "lng": 36.3095814
+      },
+      "intensity": 40,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/features/2026/10/29/damascus-amman-contradict-each-other-on-attack-that-killed-civilians",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ae020c4-1793073348.jpg?resize=1200%2C630"
+    },
+    {
+      "id": 10,
+      "headline": "Fighting rages near Yemen’s Taiz as UN urges humanitarian access",
+      "description": "Fighting has forced more than 281,000 people from their homes in Yemen since the beginning of August, the UN said.",
+      "mainLocation": {
+        "name": "TAIZ, YEMEN",
+        "lat": 13.5752242,
+        "lng": 44.0215268
+      },
+      "intensity": 55,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/29/fighting-rages-near-yemens-taiz-as-un-urges-humanitarian-access",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae30d175914-1793264919.jpg?resize=1920%2C1440"
+    }
+  ]
+}
