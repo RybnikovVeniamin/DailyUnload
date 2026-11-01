@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-01",
+  "displayDate": "NOV 1, 2026",
+  "bottomWord": "FRICTION",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Kamala Harris urges a 'too big to rig' turnout for the midterms",
+      "description": "Kamala Harris urges voters to boost turnout for Democrats in the final stretch of midterms.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://apnews.com/article/kamala-harris-trump-2026-midterm-elections-9679b2979e9e67d49eaec999f06e964e",
+      "imageUrl": "https://dims.apnews.com/dims4/default/f4e3613/2147483647/strip/true/crop/4073x2716+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F38%2F88%2F92b5855d807f4d096cbbaf0d650d%2F62bd7eb155aa4be5a219bc0a965406a2"
+    },
+    {
+      "id": 3,
+      "headline": "Syria considering entry into Mecca defence pact, says foreign minister",
+      "description": "Damascus ‘evaluating’ whether to join the alliance that binds Turkiye, Saudi Arabia and Pakistan.",
+      "mainLocation": {
+        "name": "DAMASCUS, SYRIA",
+        "lat": 33.5130695,
+        "lng": 36.3095814
+      },
+      "intensity": 55,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/10/31/syria-considering-entry-into-mecca-defence-pact-says-foreign-minister",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae5e2b050ad-1793450672.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Iran targeted US warning systems then damaged base buildings: AP analysis",
+      "description": "Iranian strikes targeted early warning systems at U.S. bases, causing billions in damage.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 80,
+      "color": "#34c759",
+      "url": "https://apnews.com/article/iran-war-us-base-damage-trump-26e0f05e01d6f56ff46f7c1a14384f7c",
+      "imageUrl": "https://dims.apnews.com/dims4/default/c0b7922/2147483647/strip/true/crop/2498x1939+0+0/resize/1200x931!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F82%2Fbe%2Fbd5a52ce167a6c50535f974b46a0%2F401439a33cd8490b831f2aec4c6e3e17"
+    },
+    {
+      "id": 5,
+      "headline": "Burnham opens door to formal apology for Britain’s slave trade",
+      "description": "UK Prime Minister rules out financial reparations, despite longstanding Caribbean demands.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 55,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/10/31/burnham-opens-door-to-formal-apology-for-britains-slave-trade",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-30T112207Z_1284782824_RC2MDOAHVCWM_RTRMADP_3_BRITAIN-POLITICS-1793447416.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 6,
+      "headline": "On the Norway-Russia border, the Sámi people face a growing divide",
+      "description": "As Russia’s war in Ukraine reshapes this Arctic frontier, Sámi communities struggle to sustain cross-border traditions.",
+      "mainLocation": {
+        "name": "KIRKENES, NORWAY",
+        "lat": 69.7271478,
+        "lng": 30.0448971
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/features/longform/2026/10/31/on-the-norway-russia-border-the-sami-people-face-a-growing-divide",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/russia-2-1793450350.jpg?resize=1620%2C1080&quality=80"
+    }
+  ]
+}
