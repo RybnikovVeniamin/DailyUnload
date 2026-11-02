@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-02",
+  "displayDate": "NOV 2, 2026",
+  "bottomWord": "SHAKEUP",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Michigan Dem Haley Stevens endorses Republican Senate candidate Mike Rogers",
+      "description": "US Rep Stevens lost Democratic primary to Abdul El-Sayed and now endorses his Republican opponent in the Senate race.",
+      "mainLocation": {
+        "name": "LANSING, UNITED STATES",
+        "lat": 42.7338254,
+        "lng": -84.5546295
+      },
+      "intensity": 40,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/1/michigan-dem-haley-stevens-endorses-republican-senate-candidate-mike-rogers",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/08/2026-07-28T005746Z_1347388485_RC2NMMABFKA4_RTRMADP_3_USA-ELECTION-MICHIGAN-1785693966.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 7,
+      "headline": "Thousands of jobs at Virgin Media O2 to be cut",
+      "description": "Although exact numbers are not finalized, a sizeable chunk of its workforce will likely be cut.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/c6rry8x9d9qko",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ac17/live/9ec7c8b0-d610-11f1-bdc5-33a5057f63d4.jpg"
+    },
+    {
+      "id": 8,
+      "headline": "Al Jazeera marks 30 years of transforming news in Middle East and beyond",
+      "description": "The anniversary coincides with a significant restructuring of Al Jazeera Media Network’s Arabic-language news services.",
+      "mainLocation": {
+        "name": "DOHA, QATAR",
+        "lat": 25.3108807,
+        "lng": 51.5081812
+      },
+      "intensity": 40,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-celebrates-30-years-of-transforming-news-in-region-and-beyond",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2020/12/6N0A3830.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 10,
+      "headline": "Russia detains minor over alleged Moscow attack plot after US warning",
+      "description": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park.",
+      "mainLocation": {
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
+      },
+      "intensity": 50,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6ae75dc9-1793547721.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 14,
+      "headline": "Israel election: When will government be formed, who will lead it?",
+      "description": "President Herzog must tap candidate to form new government by November 11, with fraught negotiations likely to follow.",
+      "mainLocation": {
+        "name": "JERUSALEM, ISRAEL",
+        "lat": 31.7788472,
+        "lng": 35.2257856
+      },
+      "intensity": 50,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6ae72d243514-1793535268.jpg?resize=1920%2C1440"
+    }
+  ]
+}
