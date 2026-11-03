@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-02",
-  "displayDate": "NOV 2, 2026",
-  "bottomWord": "SHAKEUP",
+  "date": "2026-11-03",
+  "displayDate": "NOV 3, 2026",
+  "bottomWord": "TURBULENCE",
   "stories": [
     {
-      "id": 1,
-      "headline": "Michigan Dem Haley Stevens endorses Republican Senate candidate Mike Rogers",
-      "description": "US Rep Stevens lost Democratic primary to Abdul El-Sayed and now endorses his Republican opponent in the Senate race.",
+      "id": 2,
+      "headline": "China steps up Middle East diplomacy with Iran and Oman meetings",
+      "description": "Beijing urges dialogue on US-Iran war, sends envoy to Gulf as Xi hosts first Omani head of state visit since 1978.",
       "mainLocation": {
-        "name": "LANSING, UNITED STATES",
-        "lat": 42.7338254,
-        "lng": -84.5546295
+        "name": "BEIJING, CHINA",
+        "lat": 39.9057136,
+        "lng": 116.3912972
       },
-      "intensity": 40,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/1/michigan-dem-haley-stevens-endorses-republican-senate-candidate-mike-rogers",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/08/2026-07-28T005746Z_1347388485_RC2NMMABFKA4_RTRMADP_3_USA-ELECTION-MICHIGAN-1785693966.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 7,
-      "headline": "Thousands of jobs at Virgin Media O2 to be cut",
-      "description": "Although exact numbers are not finalized, a sizeable chunk of its workforce will likely be cut.",
-      "mainLocation": {
-        "name": "LONDON, UNITED KINGDOM",
-        "lat": 51.5074456,
-        "lng": -0.1277653
-      },
-      "intensity": 40,
+      "intensity": 50,
       "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/c6rry8x9d9qko",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ac17/live/9ec7c8b0-d610-11f1-bdc5-33a5057f63d4.jpg"
+      "url": "https://www.aljazeera.com/news/2026/11/2/china-steps-up-middle-east-diplomacy-with-iran-and-oman-meetings",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-02T054014Z_875293397_RC2FFOA843QO_RTRMADP_3_CHINA-OMAN-1793602839.jpg?resize=1920%2C1440"
     },
     {
-      "id": 8,
-      "headline": "Al Jazeera marks 30 years of transforming news in Middle East and beyond",
-      "description": "The anniversary coincides with a significant restructuring of Al Jazeera Media Network’s Arabic-language news services.",
+      "id": 3,
+      "headline": "Violence in northern Ethiopia pushing health system towards collapse: WHO",
+      "description": "Renewed fighting between rebels from northern Tigray and the government in Addis Ababa has shattered 2022 peace deal.",
       "mainLocation": {
-        "name": "DOHA, QATAR",
-        "lat": 25.3108807,
-        "lng": 51.5081812
+        "name": "ADDIS ABABA, ETHIOPIA",
+        "lat": 9.0358119,
+        "lng": 38.7524315
+      },
+      "intensity": 65,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/2/violence-in-northern-ethiopia-pushing-health-system-towards-collapse-who",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/01/IMG-20260121-WA0011-1769018484.jpg?resize=1200%2C630"
+    },
+    {
+      "id": 4,
+      "headline": "Lobster industry caught in Maine’s political headwinds before US midterms",
+      "description": "Senator Susan Collins and Democratic challenger Troy Jackson clash over tariffs and their impact on Maine’s economy.",
+      "mainLocation": {
+        "name": "AUGUSTA, UNITED STATES",
+        "lat": 33.4709714,
+        "lng": -81.9748429
       },
       "intensity": 40,
-      "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-celebrates-30-years-of-transforming-news-in-region-and-beyond",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2020/12/6N0A3830.jpg?resize=1920%2C1440"
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/economy/2026/11/2/lobster-industry-caught-in-maines-political-headwinds-before-midterms",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae2491de6c73-1793214749.jpg?resize=1920%2C1440"
     },
     {
-      "id": 10,
-      "headline": "Russia detains minor over alleged Moscow attack plot after US warning",
-      "description": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park.",
+      "id": 5,
+      "headline": "Displaced in Hebron: Picking up pieces after Israeli siege",
+      "description": "Displaced Hebron families return to damaged homes, left to pick up scattered pieces of their lives after Israeli siege.",
       "mainLocation": {
-        "name": "MOSCOW, RUSSIA",
-        "lat": 55.625578,
-        "lng": 37.6063916
+        "name": "HEBRON, PALESTINE",
+        "lat": 31.5336282,
+        "lng": 35.0979762
       },
       "intensity": 50,
       "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6ae75dc9-1793547721.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/2/displaced-in-hebron-picking-up-pieces-after-israeli-siege",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/163A4547-1793631096.jpg?resize=1920%2C1440"
     },
     {
-      "id": 14,
-      "headline": "Israel election: When will government be formed, who will lead it?",
-      "description": "President Herzog must tap candidate to form new government by November 11, with fraught negotiations likely to follow.",
+      "id": 7,
+      "headline": "Wizz Air flight from Luton in emergency landing after bomb threat",
+      "description": "A Hungarian fighter jet escorted the aircraft to Budapest after the threat was received mid-air.",
       "mainLocation": {
-        "name": "JERUSALEM, ISRAEL",
-        "lat": 31.7788472,
-        "lng": 35.2257856
+        "name": "BUDAPEST, HUNGARY",
+        "lat": 47.481849,
+        "lng": 19.1449053
       },
-      "intensity": 50,
-      "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6ae72d243514-1793535268.jpg?resize=1920%2C1440"
+      "intensity": 40,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/c6rryvwre0p5o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4189/live/0af88b20-d6c8-11f1-ac20-7783925c811f.jpg"
     }
   ]
 }
