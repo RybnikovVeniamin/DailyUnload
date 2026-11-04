@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-03",
-  "displayDate": "NOV 3, 2026",
-  "bottomWord": "TURBULENCE",
+  "date": "2026-11-04",
+  "displayDate": "NOV 4, 2026",
+  "bottomWord": "STRIFE",
   "stories": [
     {
-      "id": 2,
-      "headline": "China steps up Middle East diplomacy with Iran and Oman meetings",
-      "description": "Beijing urges dialogue on US-Iran war, sends envoy to Gulf as Xi hosts first Omani head of state visit since 1978.",
+      "id": 1,
+      "headline": "Opposition party organiser killed before South Africa elections",
+      "description": "Police are investigating the motive in murder of MKP coordinator as political killings rise during municipal elections.",
       "mainLocation": {
-        "name": "BEIJING, CHINA",
-        "lat": 39.9057136,
-        "lng": 116.3912972
+        "name": "PRETORIA, SOUTH AFRICA",
+        "lat": -25.7459277,
+        "lng": 28.1879101
       },
-      "intensity": 50,
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/3/opposition-party-organiser-killed-ahead-of-south-africa-elections",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6ae9f0b2df8e-1793716402.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Ukraine’s Zelenskyy hopes Abu Dhabi talks will open path to Putin meeting",
+      "description": "Ukrainian president meets German chancellor in Berlin, who says Russia is yet to engage seriously in peace efforts.",
+      "mainLocation": {
+        "name": "BERLIN, GERMANY",
+        "lat": 52.5173885,
+        "lng": 13.3951309
+      },
+      "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/2/china-steps-up-middle-east-diplomacy-with-iran-and-oman-meetings",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-02T054014Z_875293397_RC2FFOA843QO_RTRMADP_3_CHINA-OMAN-1793602839.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/3/zelenskyy-hopes-abu-dhabi-talks-will-open-way-to-meeting-with-putin",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6ae9f6cd4c4cd-1793717965.jpg?resize=1920%2C1440"
     },
     {
       "id": 3,
-      "headline": "Violence in northern Ethiopia pushing health system towards collapse: WHO",
-      "description": "Renewed fighting between rebels from northern Tigray and the government in Addis Ababa has shattered 2022 peace deal.",
+      "headline": "When will we know who won the US midterms?",
+      "description": "Once polls close, it is possible the results will not be projected for several hours, days or even weeks",
       "mainLocation": {
-        "name": "ADDIS ABABA, ETHIOPIA",
-        "lat": 9.0358119,
-        "lng": 38.7524315
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
       },
-      "intensity": 65,
+      "intensity": 55,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/11/2/violence-in-northern-ethiopia-pushing-health-system-towards-collapse-who",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/01/IMG-20260121-WA0011-1769018484.jpg?resize=1200%2C630"
+      "url": "https://www.bbc.co.uk/news/articles/cq20321y2nlyo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e286/live/58c44510-d6d2-11f1-b441-2b33b063138f.jpg"
     },
     {
       "id": 4,
-      "headline": "Lobster industry caught in Maine’s political headwinds before US midterms",
-      "description": "Senator Susan Collins and Democratic challenger Troy Jackson clash over tariffs and their impact on Maine’s economy.",
+      "headline": "Syria says it foiled Hezbollah plot to target Homs oil refinery",
+      "description": "Hezbollah denies the Syrian accusations, reiterating that it does not have any presence on Syrian territory.",
       "mainLocation": {
-        "name": "AUGUSTA, UNITED STATES",
-        "lat": 33.4709714,
-        "lng": -81.9748429
+        "name": "HOMS, SYRIA",
+        "lat": 34.7333334,
+        "lng": 36.7166667
       },
-      "intensity": 40,
+      "intensity": 45,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/economy/2026/11/2/lobster-industry-caught-in-maines-political-headwinds-before-midterms",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae2491de6c73-1793214749.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 5,
-      "headline": "Displaced in Hebron: Picking up pieces after Israeli siege",
-      "description": "Displaced Hebron families return to damaged homes, left to pick up scattered pieces of their lives after Israeli siege.",
-      "mainLocation": {
-        "name": "HEBRON, PALESTINE",
-        "lat": 31.5336282,
-        "lng": 35.0979762
-      },
-      "intensity": 50,
-      "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/2/displaced-in-hebron-picking-up-pieces-after-israeli-siege",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/163A4547-1793631096.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/3/syria-arrests-cell-it-links-to-isis-over-plot-against-oil-refinery",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-01T080946Z_1890216808_RC22LKAW9RV8_RTRMADP_3_SYRIA-ECONOMY-RUSSIAN-OIL-1777768388.jpg?resize=1200%2C675"
     },
     {
       "id": 7,
-      "headline": "Wizz Air flight from Luton in emergency landing after bomb threat",
-      "description": "A Hungarian fighter jet escorted the aircraft to Budapest after the threat was received mid-air.",
+      "headline": "Israel’s opposition leaders back Eisenkot to oust Netanyahu",
+      "description": "Opposition promises to form a government quickly but remains split over whether to ally with Arab-led parties.",
       "mainLocation": {
-        "name": "BUDAPEST, HUNGARY",
-        "lat": 47.481849,
-        "lng": 19.1449053
+        "name": "JERUSALEM, ISRAEL",
+        "lat": 31.7788472,
+        "lng": 35.2257856
       },
-      "intensity": 40,
+      "intensity": 50,
       "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/c6rryvwre0p5o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4189/live/0af88b20-d6c8-11f1-ac20-7783925c811f.jpg"
+      "url": "https://www.aljazeera.com/news/2026/11/3/israeli-opposition-leaders-back-eisenkot-to-oust-netanyahu",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae1fb031c60-1793194755.jpg?resize=1920%2C1440"
     }
   ]
 }
