@@ -1,77 +1,49 @@
 {
-  "date": "2026-11-04",
-  "displayDate": "NOV 4, 2026",
-  "bottomWord": "STRIFE",
+  "date": "2026-11-05",
+  "displayDate": "NOV 5, 2026",
+  "bottomWord": "RECKONING",
   "stories": [
     {
-      "id": 1,
-      "headline": "Opposition party organiser killed before South Africa elections",
-      "description": "Police are investigating the motive in murder of MKP coordinator as political killings rise during municipal elections.",
-      "mainLocation": {
-        "name": "PRETORIA, SOUTH AFRICA",
-        "lat": -25.7459277,
-        "lng": 28.1879101
-      },
-      "intensity": 45,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/3/opposition-party-organiser-killed-ahead-of-south-africa-elections",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6ae9f0b2df8e-1793716402.jpg?resize=1920%2C1440"
-    },
-    {
       "id": 2,
-      "headline": "Ukraine’s Zelenskyy hopes Abu Dhabi talks will open path to Putin meeting",
-      "description": "Ukrainian president meets German chancellor in Berlin, who says Russia is yet to engage seriously in peace efforts.",
+      "headline": "Ukrainian strikes kill three in Russia’s Belgorod region",
+      "description": "Russian strikes also cut power to Ukrainian cities as Moscow claims 700 Ukrainian drones downed across multiple regions.",
       "mainLocation": {
-        "name": "BERLIN, GERMANY",
-        "lat": 52.5173885,
-        "lng": 13.3951309
-      },
-      "intensity": 60,
-      "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/3/zelenskyy-hopes-abu-dhabi-talks-will-open-way-to-meeting-with-putin",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6ae9f6cd4c4cd-1793717965.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 3,
-      "headline": "When will we know who won the US midterms?",
-      "description": "Once polls close, it is possible the results will not be projected for several hours, days or even weeks",
-      "mainLocation": {
-        "name": "WASHINGTON, UNITED STATES",
-        "lat": 38.8950982,
-        "lng": -77.0363849
-      },
-      "intensity": 55,
-      "color": "#ffb800",
-      "url": "https://www.bbc.co.uk/news/articles/cq20321y2nlyo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e286/live/58c44510-d6d2-11f1-b441-2b33b063138f.jpg"
-    },
-    {
-      "id": 4,
-      "headline": "Syria says it foiled Hezbollah plot to target Homs oil refinery",
-      "description": "Hezbollah denies the Syrian accusations, reiterating that it does not have any presence on Syrian territory.",
-      "mainLocation": {
-        "name": "HOMS, SYRIA",
-        "lat": 34.7333334,
-        "lng": 36.7166667
-      },
-      "intensity": 45,
-      "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/11/3/syria-arrests-cell-it-links-to-isis-over-plot-against-oil-refinery",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/05/2026-05-01T080946Z_1890216808_RC22LKAW9RV8_RTRMADP_3_SYRIA-ECONOMY-RUSSIAN-OIL-1777768388.jpg?resize=1200%2C675"
-    },
-    {
-      "id": 7,
-      "headline": "Israel’s opposition leaders back Eisenkot to oust Netanyahu",
-      "description": "Opposition promises to form a government quickly but remains split over whether to ally with Arab-led parties.",
-      "mainLocation": {
-        "name": "JERUSALEM, ISRAEL",
-        "lat": 31.7788472,
-        "lng": 35.2257856
+        "name": "BELGOROD, RUSSIA",
+        "lat": 50.5955595,
+        "lng": 36.5873394
       },
       "intensity": 50,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/3/israeli-opposition-leaders-back-eisenkot-to-oust-netanyahu",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae1fb031c60-1793194755.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aeb3a3b-1793800763.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "'This is a disaster': Angry Republicans blame Trump for midterms defeat",
+      "description": "Some Republicans tell the BBC the president's focus on his legacy and indifference to voter concerns cost them.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5315/live/41e364b0-d854-11f1-94f3-cf7d1e52bb8c.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "Iranian leaders welcome US midterms, but Trump may still attack",
+      "description": "Tehran views midterm results as a rejection of Trump’s ‘war on Iran’, signalling US frustration with foreign policy.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/4/iranian-leaders-welcome-us-midterms-but-trump-may-still-attack",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261103__D6989NU__v3__HighRes__TopshotIranUsIsraelWar-1793758669.jpg?resize=1920%2C1440"
     }
   ]
 }

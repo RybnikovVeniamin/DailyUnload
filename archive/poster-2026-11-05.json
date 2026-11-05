@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-05",
+  "displayDate": "NOV 5, 2026",
+  "bottomWord": "RECKONING",
+  "stories": [
+    {
+      "id": 2,
+      "headline": "Ukrainian strikes kill three in Russia’s Belgorod region",
+      "description": "Russian strikes also cut power to Ukrainian cities as Moscow claims 700 Ukrainian drones downed across multiple regions.",
+      "mainLocation": {
+        "name": "BELGOROD, RUSSIA",
+        "lat": 50.5955595,
+        "lng": 36.5873394
+      },
+      "intensity": 50,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aeb3a3b-1793800763.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "'This is a disaster': Angry Republicans blame Trump for midterms defeat",
+      "description": "Some Republicans tell the BBC the president's focus on his legacy and indifference to voter concerns cost them.",
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5315/live/41e364b0-d854-11f1-94f3-cf7d1e52bb8c.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "Iranian leaders welcome US midterms, but Trump may still attack",
+      "description": "Tehran views midterm results as a rejection of Trump’s ‘war on Iran’, signalling US frustration with foreign policy.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/4/iranian-leaders-welcome-us-midterms-but-trump-may-still-attack",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261103__D6989NU__v3__HighRes__TopshotIranUsIsraelWar-1793758669.jpg?resize=1920%2C1440"
+    }
+  ]
+}
