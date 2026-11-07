@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-07",
+  "displayDate": "NOV 7, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "MTV Dirty Sanchez star Michael 'Pancho' Locke dies aged 47",
+      "description": "Locke starred in Dirty Sanchez as a stuntman and skateboarder called Pancho, and co-owned a clothing brand.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/cmrryyj02exxo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bcfb/live/892d5230-d9db-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "What a Trump-Xi-Putin summit could mean – and what it wouldn’t",
+      "description": "A Trump-Xi-Putin meeting at APEC would be a coup for Moscow, analysts say, but Beijing appears lukewarm.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/11/6/what-a-trump-xi-putin-summit-would-mean-and-what-it-wouldnt",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/05/getty_6a0563da71-1778738138.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Katherine Ryan says she feels 'grief and relief' after Russell Brand conviction",
+      "description": "The comedian had previously spoken about an unnamed \"predator\" in the entertainment industry.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.bbc.co.uk/news/articles/cxyvrr686lzqo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/84fd/live/e64eff60-d9de-11f1-bbe5-797ee05bee69.jpg"
+    },
+    {
+      "id": 4,
+      "headline": "Kenyan court sentences starvation cult leader to 200 years",
+      "description": "Paul Mackenzie and accomplices were convicted of murdering 190 children and one adult.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/11/6/kenyan-court-sentences-starvation-cult-leader-to-200-years",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-06T085454Z_240682271_RC28IOAVE6JW_RTRMADP_3_KENYA-RELIGION-1793967703.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Two Gloucester schools in lockdown and boy in hospital",
+      "description": "Armed police are on the scene in Tuffley - police say pupils are safe within school grounds.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/c6ly3343yj5po",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e0eb/live/1a609b00-d9db-11f1-b4ca-fd31344b71b9.jpg"
+    }
+  ]
+}

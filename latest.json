@@ -1,57 +1,57 @@
 {
-  "date": "2026-11-06",
-  "displayDate": "NOV 6, 2026",
+  "date": "2026-11-07",
+  "displayDate": "NOV 7, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "Interest rates hiked to 4% in first increase in over three years",
-      "description": "Most analysts expected the increase from 3.75% to 4%.",
+      "headline": "MTV Dirty Sanchez star Michael 'Pancho' Locke dies aged 47",
+      "description": "Locke starred in Dirty Sanchez as a stuntman and skateboarder called Pancho, and co-owned a clothing brand.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5e8c/live/91074120-d849-11f1-b870-55415e6a9944.jpg"
+      "url": "https://www.bbc.co.uk/news/articles/cmrryyj02exxo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bcfb/live/892d5230-d9db-11f1-a701-fddedf244c16.jpg"
     },
     {
       "id": 2,
-      "headline": "Vance eyes 2028 reset, as Republicans mull pivot after US midterms drubbing",
-      "description": "A Democratic ‘blue tsunami’ in the US midterms shines a light on emerging distaste for Trump’s brand among Republicans.",
+      "headline": "What a Trump-Xi-Putin summit could mean – and what it wouldn’t",
+      "description": "A Trump-Xi-Putin meeting at APEC would be a coup for Moscow, analysts say, but Beijing appears lukewarm.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/5/vance-eyes-2028-reset-as-republicans-mull-pivot-after-us-midterms-drubbing",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aec7c6a2a46-1793883242.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/6/what-a-trump-xi-putin-summit-would-mean-and-what-it-wouldnt",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/05/getty_6a0563da71-1778738138.jpg?resize=1920%2C1440"
     },
     {
       "id": 3,
-      "headline": "Sir Tom Jones tells fans he thought life 'was over' after flu",
-      "description": "The singer from Pontypridd told the audience just how serious his \"bad case of the flu\" was.",
+      "headline": "Katherine Ryan says she feels 'grief and relief' after Russell Brand conviction",
+      "description": "The comedian had previously spoken about an unnamed \"predator\" in the entertainment industry.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://www.bbc.co.uk/news/articles/c8qlnwng5pzwo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a8ff/live/56831200-d91f-11f1-ad94-e17fee4cd332.jpg"
+      "url": "https://www.bbc.co.uk/news/articles/cxyvrr686lzqo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/84fd/live/e64eff60-d9de-11f1-bbe5-797ee05bee69.jpg"
     },
     {
       "id": 4,
-      "headline": "More women likely to come forward, says detective who led Russell Brand investigation",
-      "description": "Det Supt Andy Furphy said he hoped other potential victims would gain \"courage\" and \"confidence\" fro...",
+      "headline": "Kenyan court sentences starvation cult leader to 200 years",
+      "description": "Paul Mackenzie and accomplices were convicted of murdering 190 children and one adult.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#34c759",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgx8q09gg4o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ecb3/live/33e07d40-d92a-11f1-af74-e735e628ea98.jpg"
+      "url": "https://www.aljazeera.com/news/2026/11/6/kenyan-court-sentences-starvation-cult-leader-to-200-years",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-06T085454Z_240682271_RC28IOAVE6JW_RTRMADP_3_KENYA-RELIGION-1793967703.jpg?resize=1920%2C1440"
     },
     {
       "id": 5,
-      "headline": "The Russell Brand I saw in court was not the flamboyant character most people will know",
-      "description": "Brand stood upright in the dock as the verdicts were read out in court - ending this sometimes surreal trial.",
+      "headline": "Two Gloucester schools in lockdown and boy in hospital",
+      "description": "Armed police are on the scene in Tuffley - police say pupils are safe within school grounds.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.bbc.co.uk/news/articles/cwvgdjyg6qrqo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/74e2/live/3a920d20-d92a-11f1-93e1-3b657b665bcf.jpg"
+      "url": "https://www.bbc.co.uk/news/articles/c6ly3343yj5po",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e0eb/live/1a609b00-d9db-11f1-b4ca-fd31344b71b9.jpg"
     }
   ]
 }
