@@ -1,57 +1,61 @@
 {
-  "date": "2026-11-07",
-  "displayDate": "NOV 7, 2026",
+  "date": "2026-11-08",
+  "displayDate": "NOV 8, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "MTV Dirty Sanchez star Michael 'Pancho' Locke dies aged 47",
-      "description": "Locke starred in Dirty Sanchez as a stuntman and skateboarder called Pancho, and co-owned a clothing brand.",
-      "mainLocation": null,
+      "headline": "Iran’s IRGC says building underground sites for weapons production, storage",
+      "description": "IRGC says underground military complexes allow missile production to continue even under heavy bombardment.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/cmrryyj02exxo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bcfb/live/892d5230-d9db-11f1-a701-fddedf244c16.jpg"
+      "url": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/ap_6abb8ee44632b-1790676708.jpg?resize=1920%2C1440"
     },
     {
       "id": 2,
-      "headline": "What a Trump-Xi-Putin summit could mean – and what it wouldn’t",
-      "description": "A Trump-Xi-Putin meeting at APEC would be a coup for Moscow, analysts say, but Beijing appears lukewarm.",
+      "headline": "Casualties reported after shooting in Poland’s Krakow",
+      "description": "Polish Prime Minister Donald Tusk says police are investigating after ‘tragic shooting’ in second-largest city.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/6/what-a-trump-xi-putin-summit-would-mean-and-what-it-wouldnt",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/05/getty_6a0563da71-1778738138.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6aef428423-1794065028.jpg?resize=1920%2C1440"
     },
     {
       "id": 3,
-      "headline": "Katherine Ryan says she feels 'grief and relief' after Russell Brand conviction",
-      "description": "The comedian had previously spoken about an unnamed \"predator\" in the entertainment industry.",
+      "headline": "Raman to take charge in LA amid homeless crisis and political division",
+      "description": "In her bid for Los Angeles mayor, Nithya Raman ran as an outsider. The democratic socialist didn’t w...",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://www.bbc.co.uk/news/articles/cxyvrr686lzqo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/84fd/live/e64eff60-d9de-11f1-bbe5-797ee05bee69.jpg"
+      "url": "https://apnews.com/article/nithya-raman-los-angeles-mayor-karen-bass-ff7dc05482094fdd539d4d15b71fc4ae",
+      "imageUrl": "https://dims.apnews.com/dims4/default/9694a69/2147483647/strip/true/crop/7453x4969+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fe8%2Fa0%2F6ca1d624bb15e2f359296c05c588%2Fa0f4679b62b642fd9dd574c73cdbd373"
     },
     {
       "id": 4,
-      "headline": "Kenyan court sentences starvation cult leader to 200 years",
-      "description": "Paul Mackenzie and accomplices were convicted of murdering 190 children and one adult.",
+      "headline": "Monty Don bids 'final goodbye' to Gardeners' World after two decades",
+      "description": "The head gardener on the long-running BBC TV series signed off from Longmeadow garden on Friday.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/11/6/kenyan-court-sentences-starvation-cult-leader-to-200-years",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-06T085454Z_240682271_RC28IOAVE6JW_RTRMADP_3_KENYA-RELIGION-1793967703.jpg?resize=1920%2C1440"
+      "url": "https://www.bbc.co.uk/news/articles/c6wyrrwj9xlro",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f8e7/live/d1af1d60-d9f7-11f1-84c1-dbcae60402d7.jpg"
     },
     {
       "id": 5,
-      "headline": "Two Gloucester schools in lockdown and boy in hospital",
-      "description": "Armed police are on the scene in Tuffley - police say pupils are safe within school grounds.",
+      "headline": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
+      "description": "Iraqi foreign minister tells Al Jazeera that Baghdad is investigating attacks on Gulf launched from its territory.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly3343yj5po",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e0eb/live/1a609b00-d9db-11f1-b4ca-fd31344b71b9.jpg"
+      "url": "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2024/11/2024-10-13T113225Z_1814715503_RC2NJAANKFJ0_RTRMADP_3_IRAQ-IRAN-1732287716.jpg?resize=1920%2C1440"
     }
   ]
 }
