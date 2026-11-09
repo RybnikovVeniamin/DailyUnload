@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-09",
+  "displayDate": "NOV 9, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "'Time is up': Nandy warns media industry to take abuse seriously in wake of Brand case",
+      "description": "Lisa Nandy tells the BBC \"many people\" in the media industry have come forward to her.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/ckn9r0zd0ynwo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/faca/live/23423a10-db77-11f1-b1f1-3be4e895d0fe.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "Seven dead and more than 100 injured after trains collide in Egypt",
+      "description": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3886/live/ab03aa70-db8a-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "Eisenkot open to Netanyahu joining Israel’s next government",
+      "description": "Israel’s president officially tasks the opposition leader with forming a new government.",
+      "mainLocation": {
+        "name": "TEL AVIV, ISRAEL",
+        "lat": 32.0852997,
+        "lng": 34.7818064
+      },
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af0a542e12b-1794155842.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Two arrested after police officers hurt in brawl outside Glasgow bare-knuckle fighting event",
+      "description": "Police Scotland said three officers were hurt as they responded to reports of a large disturbance in...",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/c8zxl9417e5vo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8d42/live/5bcb9e00-db7a-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "Iran executes three men for &#x27;armed unrest&#x27; after January protests",
+      "description": "",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo",
+      "imageUrl": null
+    }
+  ]
+}

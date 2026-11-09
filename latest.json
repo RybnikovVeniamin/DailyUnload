@@ -1,12 +1,56 @@
 {
-  "date": "2026-11-08",
-  "displayDate": "NOV 8, 2026",
+  "date": "2026-11-09",
+  "displayDate": "NOV 9, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "Iran’s IRGC says building underground sites for weapons production, storage",
-      "description": "IRGC says underground military complexes allow missile production to continue even under heavy bombardment.",
+      "headline": "'Time is up': Nandy warns media industry to take abuse seriously in wake of Brand case",
+      "description": "Lisa Nandy tells the BBC \"many people\" in the media industry have come forward to her.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/ckn9r0zd0ynwo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/faca/live/23423a10-db77-11f1-b1f1-3be4e895d0fe.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "Seven dead and more than 100 injured after trains collide in Egypt",
+      "description": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3886/live/ab03aa70-db8a-11f1-b441-2b33b063138f.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "Eisenkot open to Netanyahu joining Israel’s next government",
+      "description": "Israel’s president officially tasks the opposition leader with forming a new government.",
+      "mainLocation": {
+        "name": "TEL AVIV, ISRAEL",
+        "lat": 32.0852997,
+        "lng": 34.7818064
+      },
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af0a542e12b-1794155842.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Two arrested after police officers hurt in brawl outside Glasgow bare-knuckle fighting event",
+      "description": "Police Scotland said three officers were hurt as they responded to reports of a large disturbance in...",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/c8zxl9417e5vo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8d42/live/5bcb9e00-db7a-11f1-a701-fddedf244c16.jpg"
+    },
+    {
+      "id": 6,
+      "headline": "Iran executes three men for &#x27;armed unrest&#x27; after January protests",
+      "description": "",
       "mainLocation": {
         "name": "TEHRAN, IRAN",
         "lat": 35.6892523,
@@ -14,48 +58,8 @@
       },
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/ap_6abb8ee44632b-1790676708.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 2,
-      "headline": "Casualties reported after shooting in Poland’s Krakow",
-      "description": "Polish Prime Minister Donald Tusk says police are investigating after ‘tragic shooting’ in second-largest city.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6aef428423-1794065028.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 3,
-      "headline": "Raman to take charge in LA amid homeless crisis and political division",
-      "description": "In her bid for Los Angeles mayor, Nithya Raman ran as an outsider. The democratic socialist didn’t w...",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#ffb800",
-      "url": "https://apnews.com/article/nithya-raman-los-angeles-mayor-karen-bass-ff7dc05482094fdd539d4d15b71fc4ae",
-      "imageUrl": "https://dims.apnews.com/dims4/default/9694a69/2147483647/strip/true/crop/7453x4969+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fe8%2Fa0%2F6ca1d624bb15e2f359296c05c588%2Fa0f4679b62b642fd9dd574c73cdbd373"
-    },
-    {
-      "id": 4,
-      "headline": "Monty Don bids 'final goodbye' to Gardeners' World after two decades",
-      "description": "The head gardener on the long-running BBC TV series signed off from Longmeadow garden on Friday.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#34c759",
-      "url": "https://www.bbc.co.uk/news/articles/c6wyrrwj9xlro",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f8e7/live/d1af1d60-d9f7-11f1-84c1-dbcae60402d7.jpg"
-    },
-    {
-      "id": 5,
-      "headline": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
-      "description": "Iraqi foreign minister tells Al Jazeera that Baghdad is investigating attacks on Gulf launched from its territory.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2024/11/2024-10-13T113225Z_1814715503_RC2NJAANKFJ0_RTRMADP_3_IRAQ-IRAN-1732287716.jpg?resize=1920%2C1440"
+      "url": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo",
+      "imageUrl": null
     }
   ]
 }
