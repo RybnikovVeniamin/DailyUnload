@@ -1,32 +1,36 @@
 {
-  "date": "2026-11-09",
-  "displayDate": "NOV 9, 2026",
+  "date": "2026-11-10",
+  "displayDate": "NOV 10, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "'Time is up': Nandy warns media industry to take abuse seriously in wake of Brand case",
-      "description": "Lisa Nandy tells the BBC \"many people\" in the media industry have come forward to her.",
+      "headline": "James Bond: What we know so far about the next 007 film",
+      "description": "Josh O'Connor, Jack Lowden and Callum Turner are reportedly in the frame to replace Daniel Craig.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/ckn9r0zd0ynwo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/faca/live/23423a10-db77-11f1-b1f1-3be4e895d0fe.jpg"
+      "url": "https://www.bbc.co.uk/news/articles/ck79p0lev47po",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4eb2/live/e5e231a0-d9cf-11f1-a701-fddedf244c16.jpg"
     },
     {
       "id": 2,
-      "headline": "Seven dead and more than 100 injured after trains collide in Egypt",
-      "description": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza.",
-      "mainLocation": null,
+      "headline": "France accuses Iran of cyberattack on European fridges",
+      "description": "This is a breaking news story.",
+      "mainLocation": {
+        "name": "PARIS, FRANCE",
+        "lat": 48.8534951,
+        "lng": 2.3483915
+      },
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3886/live/ab03aa70-db8a-11f1-b441-2b33b063138f.jpg"
+      "url": "https://www.aljazeera.com/news/2026/11/9/france-accuses-iran-of-cyberattack-on-european-fridges",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2020/09/breaking-news%402x.png?resize=1200%2C630"
     },
     {
       "id": 3,
-      "headline": "Eisenkot open to Netanyahu joining Israel’s next government",
-      "description": "Israel’s president officially tasks the opposition leader with forming a new government.",
+      "headline": "Israel’s Shin Bet finds no evidence of foreign election meddling: Report",
+      "description": "Netanyahu and Zini’s interference claims lack evidence, according to law enforcement officials quoted by Haaretz.",
       "mainLocation": {
         "name": "TEL AVIV, ISRAEL",
         "lat": 32.0852997,
@@ -34,32 +38,28 @@
       },
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af0a542e12b-1794155842.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/9/israels-shin-bet-finds-no-evidence-of-foreign-election-meddling-report",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-10-27T055459Z_672279811_RC2HBOATHTNI_RTRMADP_3_ISRAEL-ELECTION-1793603109.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Tommy Walsh: Ground Force and Homes Under the Hammer star dies aged 69",
+      "description": "The building and DIY expert also appeared on TV shows like Challenge Tommy Walsh and Clean It, Fix It.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/ck0e0elq4ndpo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4b33/live/f727e1c0-dc4b-11f1-a869-656dc96bd12d.jpg"
     },
     {
       "id": 5,
-      "headline": "Two arrested after police officers hurt in brawl outside Glasgow bare-knuckle fighting event",
-      "description": "Police Scotland said three officers were hurt as they responded to reports of a large disturbance in...",
+      "headline": "One of James Bulger's killers to remain in prison",
+      "description": "Jon Venables told parole staff dealing with his latest review that he was not seeking release.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.bbc.co.uk/news/articles/c8zxl9417e5vo",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8d42/live/5bcb9e00-db7a-11f1-a701-fddedf244c16.jpg"
-    },
-    {
-      "id": 6,
-      "headline": "Iran executes three men for &#x27;armed unrest&#x27; after January protests",
-      "description": "",
-      "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
-      },
-      "intensity": 60,
-      "color": "#ff2d55",
-      "url": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo",
-      "imageUrl": null
+      "url": "https://www.bbc.co.uk/news/articles/cq80z0y85j0go",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ed16/live/51733710-dc47-11f1-b441-2b33b063138f.png"
     }
   ]
 }
