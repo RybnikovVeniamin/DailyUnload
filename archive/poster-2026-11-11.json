@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-11",
+  "displayDate": "NOV 11, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Who is David Walliams? His career and controversies including Little Britain and BGT",
+      "description": "The entertainer shot to fame on Little Britain and also has best-selling series of children's books.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/c6d7q98z1yz3o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/55f4/live/3d180d10-d86c-11f1-85ab-b3cc3b5498c6.jpg"
+    },
+    {
+      "id": 2,
+      "headline": "Father, child among six Palestinians killed in Israeli attacks on Gaza",
+      "description": "Israel has killed more than 1,600 people in Gaza since last year’s ‘ceasefire’, the enclave’s Health Ministry says.",
+      "mainLocation": {
+        "name": "TEL AVIV, ISRAEL",
+        "lat": 32.0852997,
+        "lng": 34.7818064
+      },
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/11/10/israeli-attacks-kill-at-least-six-in-gaza-including-father-and-son",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af33128b29b3-1794322728.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "Poland gunman fascinated by Norway’s neo-Nazi mass killer Breivik",
+      "description": "Suspect in deadly November 7 Krakow shooting looked up the white supremacist who killed dozens in 2011, a minister says.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/10/polish-gunman-visited-websites-about-norwegian-neo-nazi-serial-killer",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af328231285-1794320419.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Deadly Egypt train collision prompts calls for political accountability",
+      "description": "A deadly train collision in Egypt’s al-Ayyat prompts demands for political accountability and rail upgrade reviews.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/11/10/deadly-egypt-train-collision-prompts-calls-for-political-accountability",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-08T171534Z_1412183417_RC2TJOACIVN3_RTRMADP_3_EGYPT-TRANSPORT-TRAIN-ACCIDENT-1794315034.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Hegseth impeachment: What is he accused of, and could he be removed?",
+      "description": "Eight articles brought by a Republican lawmaker accuse the Pentagon chief of waging unlawful wars on Iran and Venezuela.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/11/10/hegseth-impeachment-what-is-he-accused-of-and-could-he-be-removed",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-10-28T060119Z_128960789_RC25COAFE793_RTRMADP_3_ASEAN-PHILIPPINES-DEFENCE-1794315810.jpg?resize=1920%2C1440"
+    }
+  ]
+}
