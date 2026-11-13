@@ -1,65 +1,61 @@
 {
-  "date": "2026-11-12",
-  "displayDate": "NOV 12, 2026",
+  "date": "2026-11-13",
+  "displayDate": "NOV 13, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "Bessent moves to a military base over safety concerns, an AP source says",
-      "description": "",
+      "headline": "UAE says 14 killed, 30 injured in Fujairah traffic accident",
+      "description": "Ministry says a driver lost control of his truck, causing a collision and fire involving 18 vehicles.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://apnews.com/article/bessent-iran-war-military-base-treasury-18ec33e7aedf030fac43af96163a87a4",
-      "imageUrl": null
+      "url": "https://www.aljazeera.com/news/2026/11/12/uae-says-14-killed-30-injured-in-fujairah-traffic-accident",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af5dd6366-1794497891.jpg?resize=1920%2C1440"
     },
     {
       "id": 2,
-      "headline": "Six thousand Italian schools hit by threats in suspected bomb hoax",
-      "description": "More than 700 schools in Scotland and Northern Ireland also received hoax bomb threats. It is unclea...",
+      "headline": "Nvidia’s next interim leader: Why CFO Colette Kress is stepping in after Jensen Huang’s exit",
+      "description": "Nvidia has appointed Colette Kress as interim CEO following Jensen Huang's resignation. Kress, who j...",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/80c9/live/fc093bd0-ddc7-11f1-9053-236ccb99630c.jpg"
+      "url": "https://apnews.com/article/nvidia-jensen-huang-colette-kress-39ea208c040539166e10d8c6f473bc57",
+      "imageUrl": "https://dims.apnews.com/dims4/default/dd4dcbc/2147483647/strip/true/crop/6000x3999+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F4e%2Fcb%2Fe47c1e001807a36e5ee18c5b5b2b%2Faff2016e0bcd489fa78d8a30fea3f9d8"
     },
     {
       "id": 3,
-      "headline": "Biden says he wouldn't have run in 2024 if he knew he had cancer",
-      "description": "Joe Biden says he didn't know he had cancer while he was president and wouldn't have sought a second...",
+      "headline": "ICE reports record-high immigration arrests and deportations",
+      "description": "U.S. Immigration and Customs Enforcement says it arrested and deported more people during a recent 1...",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://apnews.com/article/biden-cancer-trump-hunter-pardon-2024-election-f0f3e8dc07cee2463e1f8501461dda12",
-      "imageUrl": "https://dims.apnews.com/dims4/default/52c03f9/2147483647/strip/true/crop/3296x2472+0+0/resize/1200x900!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fab%2Fb3%2Fbe41811b94e55a22b4f4cb70fb17%2F7666eeb4a93f4bda8d7fe0952ab2c719"
+      "url": "https://apnews.com/article/ice-immigration-deportation-arrests-homeland-security-trump-2e8f9b619c009ddc183d1a80eb21629a",
+      "imageUrl": "https://dims.apnews.com/dims4/default/10c32aa/2147483647/strip/true/crop/1933x1289+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F8d%2F10%2F7e35ef98362b9d79637d33751bd9%2Fd90b9067c6f343179a6a6419507bd2a2"
     },
     {
       "id": 4,
-      "headline": "Treasury Secretary Scott Bessent calls for more balanced US-China trade ties ahead of Trump-Xi talks",
-      "description": "",
-      "mainLocation": {
-        "name": "BEIJING, CHINA",
-        "lat": 39.9057136,
-        "lng": 116.3912972
-      },
+      "headline": "Nvidia's Jensen Huang was AI's rock star before dramatic career unravelling",
+      "description": "Within days, Huang's status as a seemingly untouchable figure leading the global AI race has crumbled.",
+      "mainLocation": null,
       "intensity": 60,
       "color": "#34c759",
-      "url": "https://apnews.com/article/trump-xi-bessent-china-trade-67d0030d68ba42bdcbedd0eacf92d4b3",
-      "imageUrl": null
+      "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5297/live/47801ac0-de4a-11f1-8eb3-bb386b145647.jpg"
     },
     {
       "id": 5,
-      "headline": "Israel is ‘disrupting entire ecosystems’, including Lebanon’s wheat crop",
-      "description": "Lebanese wheat production hit by war as farmlands face severe destruction in the south and Bekaa Valley.",
+      "headline": "UK court finds two Iranian men guilty of spying for Iran",
+      "description": "The pair were promised rewards to send intelligence back to Iran, while one was prepared to commit a ‘violent attack’.",
       "mainLocation": {
-        "name": "TEL AVIV, ISRAEL",
-        "lat": 32.0852997,
-        "lng": 34.7818064
+        "name": "LONDON, UK",
+        "lat": 51.5074456,
+        "lng": -0.1277653
       },
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/11/israel-is-disrupting-entire-ecosystems-including-lebanons-wheat-crop",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2023/10/2022-09-07T113015Z_1560803045_RC2LBW9EQCZJ_RTRMADP_3_LEBANON-CRISIS-IMF-ECONOMY-1698486107.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/12/uk-court-finds-two-iranian-men-guilty-of-spying-for-iran",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af5cb73301c9-1794493299.jpg?resize=1920%2C1440"
     }
   ]
 }
