@@ -1,69 +1,57 @@
 {
-  "date": "2026-11-14",
-  "displayDate": "NOV 14, 2026",
+  "date": "2026-11-15",
+  "displayDate": "NOV 15, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "Will Democrats try to strip US-Israel initiative from Pentagon funding?",
-      "description": "Midterm gains give party room to overhaul NDAA funding, including provision to integrate US-Israeli military industries.",
-      "mainLocation": {
-        "name": "TEL AVIV, ISRAEL",
-        "lat": 32.0852997,
-        "lng": 34.7818064
-      },
+      "headline": "NASA’s Voyager 1 to hit new space distance record of one light-day",
+      "description": "The probe was launched in 1977 but it continues to relay space-related data back to a team of NASA scientists daily.",
+      "mainLocation": null,
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/13/will-democrats-try-to-strip-us-israel-initiative-from-pentagon-funding",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2020-10-10T024427Z_1497227507_RC2EFJ9D41ID_RTRMADP_3_HEALTH-CORONAVIRUS-USA-MILITARY-1794582086.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/14/nasas-voyager-1-to-hit-new-space-distance-record-of-one-light-day",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2013-09-12T120000Z_2135594600_GM1E99D08R201_RTRMADP_3_SPACE-VOYAGER-1794666602.jpg?resize=1920%2C1440"
     },
     {
       "id": 2,
-      "headline": "Can Netanyahu launch a strike on Iran before he leaves?",
-      "description": "PM’s caretaker government can legally go to war, though it would likely inflame domestic divisions.",
-      "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
-      },
+      "headline": "Noel Fielding 'appalled' by jokes he made with Russell Brand",
+      "description": "The Great British Bake Off presenter says he has not been in contact with the convicted rapist \"for many years\".",
+      "mainLocation": null,
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/13/can-netanyahu-launch-a-strike-on-iran-before-he-leaves",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af70030e6dd7-1794572336.jpg?resize=1920%2C1408"
+      "url": "https://www.bbc.co.uk/news/articles/cw808ll7x093o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e601/live/a305b450-e033-11f1-9ca9-b3b288fceb81.jpg"
     },
     {
       "id": 3,
-      "headline": "Ukraine claims record 3,000 Russian casualties in one day as war drags on",
-      "description": "Meanwhile, Russia appears to suggest it has control of half of unoccupied Donbas.",
-      "mainLocation": {
-        "name": "KYIV, UKRAINE",
-        "lat": 50.4500336,
-        "lng": 30.5241361
-      },
+      "headline": "Why US Democrats are expected to keep Schumer and Jeffries in power",
+      "description": "The prospect of keeping the Congressional leaders in power is exposing long-running tensions in the party.",
+      "mainLocation": null,
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af71576-1794577782.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news-analysis/2026/11/14/why-us-democrats-are-expected-to-keep-schumer-and-jeffries-in-power",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af7329927488-1794585241.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Crumpsall murder investigation after man's 'shocking' stabbing",
+      "description": "Police say a 27-year-old man died after being stabbed in the \"shocking and tragic attack\" in Crumpsall.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gn7pp5r85o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b5d0/live/97d14980-e035-11f1-9ca9-b3b288fceb81.png"
     },
     {
       "id": 5,
-      "headline": "Nvidia scandal: What’s next for the US tech company?",
-      "description": "What happens next at one of the world’s most valuable companies will have repercussions far beyond Silicon Valley.",
+      "headline": "When tech founders leave, what happens to their companies?",
+      "description": "Nvidia could lose 30 percent of its value following cofounder Jensen Huang’s decision to step down, analysts warns.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af0e9130e-1794173203.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 6,
-      "headline": "Kenyan building collapse near Nairobi kills six people",
-      "description": "Five people reportedly survive as emergency crews search for anyone still trapped in the rubble.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/13/kenyan-building-collapse-near-nairobi-kills-six-people",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-13T120621Z_1056672438_RC2ZMOAYNZUB_RTRMADP_3_KENYA-ACCIDENT-1794572788.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/economy/2026/11/14/when-tech-founders-leave-what-happens-to-their-companies",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af734a59c7e2-1794585765.jpg?resize=1920%2C1440"
     }
   ]
 }
