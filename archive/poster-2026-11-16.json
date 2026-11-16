@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-16",
+  "displayDate": "NOV 16, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Estonia to close border crossings with Russia after attack on drone maker",
+      "description": "Eight arrests made in connection with an attempted arson, which Tallinn says was ordered by Russian intelligence.",
+      "mainLocation": {
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
+      },
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af9e9dedd-1794763230.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+      "description": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8bb5/live/938b6e20-e114-11f1-a7db-d90284d21c62.jpg"
+    },
+    {
+      "id": 3,
+      "headline": "Yemeni government forces redeploy from Bab al-Mandeb to defend Aden",
+      "description": "Spokesman for the Southern Armed Forces says group is repositioning from Dhubab airport and areas around Bab al-Mandeb.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/15/yemeni-government-forces-redeploy-from-bab-al-mandeb-to-defend-aden",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af7a35f-1794614111.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Trident submarine returns home after record-breaking undersea patrol",
+      "description": "Defence Secretary Wes Streeting was at HM Naval Base Clyde to welcome the crew after the longest dep...",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/c32l5ny1r7x9o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a00d/live/58f964c0-e118-11f1-a7db-d90284d21c62.jpg"
+    },
+    {
+      "id": 5,
+      "headline": "LIVE: Spain vs England – UEFA Nations League",
+      "description": "Previews, team news and live text commentary as England and Spain vie for top spot in final Nations League group game.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/15/live-spain-vs-england-uefa-nations-league",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-29T202118Z_1872935176_UP1EM9T1KJHBT_RTRMADP_3_SOCCER-UEFANATIONS-ESP-CRO-1791304372.jpg?resize=1200%2C630"
+    }
+  ]
+}
