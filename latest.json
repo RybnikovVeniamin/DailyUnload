@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-16",
-  "displayDate": "NOV 16, 2026",
+  "date": "2026-11-17",
+  "displayDate": "NOV 17, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "Estonia to close border crossings with Russia after attack on drone maker",
-      "description": "Eight arrests made in connection with an attempted arson, which Tallinn says was ordered by Russian intelligence.",
+      "headline": "LIVE: Germany vs Netherlands – UEFA Nations League",
+      "description": "Previews, team news and live text commentary as Germany host the Netherlands in league’s final Group A2 football match.",
       "mainLocation": {
-        "name": "MOSCOW, RUSSIA",
-        "lat": 55.625578,
-        "lng": 37.6063916
+        "name": "BERLIN, GERMANY",
+        "lat": 52.5173885,
+        "lng": 13.3951309
       },
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af9e9dedd-1794763230.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/16/live-germany-vs-netherlands-uefa-nations-league",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-2297563240-1790888552.jpg?resize=1200%2C675"
     },
     {
       "id": 2,
-      "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
-      "description": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks.",
+      "headline": "Iran braces for natural gas shortages during winter energy imbalance",
+      "description": "The gas infrastructure in Iran has suffered from underdevelopment and sanctions, and now damage from the war.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8bb5/live/938b6e20-e114-11f1-a7db-d90284d21c62.jpg"
+      "url": "https://www.aljazeera.com/news/2026/11/16/iran-braces-for-natural-gas-shortages-during-winter-energy-imbalance",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afb20d010cdd-1794842832.jpg?resize=1920%2C1440"
     },
     {
       "id": 3,
-      "headline": "Yemeni government forces redeploy from Bab al-Mandeb to defend Aden",
-      "description": "Spokesman for the Southern Armed Forces says group is repositioning from Dhubab airport and areas around Bab al-Mandeb.",
+      "headline": "At least 17 killed in two South Africa mass shootings",
+      "description": "Eight men killed in shooting near Pietermaritzburg while six men and three women shot dead near Pretoria.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/11/15/yemeni-government-forces-redeploy-from-bab-al-mandeb-to-defend-aden",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af7a35f-1794614111.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/16/at-least-17-killed-in-two-south-africa-mass-shootings",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afb113f006a-1794838847.jpg?resize=1920%2C1440"
     },
     {
       "id": 4,
-      "headline": "Trident submarine returns home after record-breaking undersea patrol",
-      "description": "Defence Secretary Wes Streeting was at HM Naval Base Clyde to welcome the crew after the longest dep...",
+      "headline": "Lindsay Clancy to face retrial for deaths of her three children in March 2027",
+      "description": "Lindsay Clancy faced a weekslong trial on those charges over the summer. It fell apart in early Sept...",
       "mainLocation": null,
       "intensity": 60,
       "color": "#34c759",
-      "url": "https://www.bbc.co.uk/news/articles/c32l5ny1r7x9o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a00d/live/58f964c0-e118-11f1-a7db-d90284d21c62.jpg"
+      "url": "https://www.bbc.co.uk/news/articles/cw5y1v8de35go",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/782a/live/1a7d5840-e1d2-11f1-b8c8-67fa35f5afdb.jpg"
     },
     {
       "id": 5,
-      "headline": "LIVE: Spain vs England – UEFA Nations League",
-      "description": "Previews, team news and live text commentary as England and Spain vie for top spot in final Nations League group game.",
+      "headline": "Trump blames old technology and Biden administration for plane grounding",
+      "description": "President Donald Trump is laying the blame for the nationwide grounding of all planes last week on o...",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/15/live-spain-vs-england-uefa-nations-league",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-29T202118Z_1872935176_UP1EM9T1KJHBT_RTRMADP_3_SOCCER-UEFANATIONS-ESP-CRO-1791304372.jpg?resize=1200%2C630"
+      "url": "https://apnews.com/article/nationwide-ground-stop-trump-air-travel-faa-6f58e64d9ced2543aaaf7317ec389d06",
+      "imageUrl": "https://dims.apnews.com/dims4/default/625991b/2147483647/strip/false/crop/4000x2666+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2a%2F31%2Ff3e21694ab861887d07dfb6f5dfa%2F20e132dc0ae3499695b38e3025623a31"
     }
   ]
 }

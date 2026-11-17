@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-17",
+  "displayDate": "NOV 17, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "LIVE: Germany vs Netherlands – UEFA Nations League",
+      "description": "Previews, team news and live text commentary as Germany host the Netherlands in league’s final Group A2 football match.",
+      "mainLocation": {
+        "name": "BERLIN, GERMANY",
+        "lat": 52.5173885,
+        "lng": 13.3951309
+      },
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/16/live-germany-vs-netherlands-uefa-nations-league",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-2297563240-1790888552.jpg?resize=1200%2C675"
+    },
+    {
+      "id": 2,
+      "headline": "Iran braces for natural gas shortages during winter energy imbalance",
+      "description": "The gas infrastructure in Iran has suffered from underdevelopment and sanctions, and now damage from the war.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/11/16/iran-braces-for-natural-gas-shortages-during-winter-energy-imbalance",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6afb20d010cdd-1794842832.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "At least 17 killed in two South Africa mass shootings",
+      "description": "Eight men killed in shooting near Pietermaritzburg while six men and three women shot dead near Pretoria.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/16/at-least-17-killed-in-two-south-africa-mass-shootings",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afb113f006a-1794838847.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Lindsay Clancy to face retrial for deaths of her three children in March 2027",
+      "description": "Lindsay Clancy faced a weekslong trial on those charges over the summer. It fell apart in early Sept...",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.bbc.co.uk/news/articles/cw5y1v8de35go",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/782a/live/1a7d5840-e1d2-11f1-b8c8-67fa35f5afdb.jpg"
+    },
+    {
+      "id": 5,
+      "headline": "Trump blames old technology and Biden administration for plane grounding",
+      "description": "President Donald Trump is laying the blame for the nationwide grounding of all planes last week on o...",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://apnews.com/article/nationwide-ground-stop-trump-air-travel-faa-6f58e64d9ced2543aaaf7317ec389d06",
+      "imageUrl": "https://dims.apnews.com/dims4/default/625991b/2147483647/strip/false/crop/4000x2666+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2a%2F31%2Ff3e21694ab861887d07dfb6f5dfa%2F20e132dc0ae3499695b38e3025623a31"
+    }
+  ]
+}
