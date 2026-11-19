@@ -1,57 +1,73 @@
 {
-  "date": "2026-11-18",
-  "displayDate": "NOV 18, 2026",
+  "date": "2026-11-19",
+  "displayDate": "NOV 19, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "Mullin defends flight to football game after ground stop",
-      "description": "Homeland Security Secretary Markwayne Mullin defends using a government plane to attend a college fo...",
-      "mainLocation": null,
+      "headline": "What has happened to the $18bn pledged to Trump’s Board of Peace for Gaza?",
+      "description": "Billions have been pledged for Gaza since a 2025 ‘ceasefire’, but rebuilding hasn’t begun and Israeli attacks continue.",
+      "mainLocation": {
+        "name": "GAZA CITY, PALESTINE",
+        "lat": 31.5220547,
+        "lng": 34.451318
+      },
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://apnews.com/article/markwayne-mullin-nationwide-ground-stop-lsu-1155f7fe532f55b272d3b9fefcd68d2b",
-      "imageUrl": "https://dims.apnews.com/dims4/default/6e5af25/2147483647/strip/false/crop/4896x3264+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F5d%2F5b%2F64353d36ff65ed5a0d01f623077e%2F6eacfacceb154677b71908769171b995"
+      "url": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/Interactive_Baord-of-Peace_Members_Nov17_2026_Cover-1795003885.png?resize=1200%2C630"
     },
     {
       "id": 2,
-      "headline": "CAIR defends civil rights work against Trump’s ‘smear’",
-      "description": "The country’s largest Muslim advocacy group urges Trump to address rising hate crimes against Muslims.",
-      "mainLocation": null,
+      "headline": "Inside the old gas pipeline where Ukraine is fighting an underground war",
+      "description": "Ukrainian forces are fighting Russian troops in an old Soviet tunnel in the Kharkiv region.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/17/cair-defends-civil-rights-work-against-trumps-smear",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6afc8abd5e-1794935485.jpg?resize=1920%2C1440"
+      "url": "https://www.bbc.co.uk/news/articles/c32l507ev4v4o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b0a9/live/16401180-e337-11f1-9479-d17d3e98c29d.jpg"
     },
     {
       "id": 3,
-      "headline": "How the Trump administration has responded to measles outbreaks",
-      "description": "International health experts have decided that the U.S. has lost its status as a country that elimin...",
-      "mainLocation": null,
+      "headline": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+      "description": "Iranian attacks on the Gulf countries draw condemnation from across the region.",
+      "mainLocation": {
+        "name": "TEHRAN, IRAN",
+        "lat": 35.6892523,
+        "lng": 51.3896004
+      },
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://apnews.com/article/health-measles-vaccine-trump-rfk-jr-e11d845ff206957fb568f52d71383a41",
-      "imageUrl": "https://dims.apnews.com/dims4/default/a4ff023/2147483647/strip/false/crop/6723x4482+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F28%2Fec%2Fb4e46532f10e96360cd274a18700%2F93c5dd35911e4259aed9e883120c1089"
+      "url": "https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-18T071442Z_913088351_RC27QOA8QSRZ_RTRMADP_3_IRAN-CRISIS-1795018749.jpg?resize=1200%2C630"
     },
     {
       "id": 4,
-      "headline": "Yemeni parliament approves law designating Houthis as ‘terrorists’",
-      "description": "The law targets the group’s financing and activities as Houthis make advances in southwestern Yemen.",
-      "mainLocation": null,
+      "headline": "World Bank official says Lebanon reconstruction making slow progress",
+      "description": "Beirut blames Israel’s occupation and attacks on southern Lebanon for reconstruction delays.",
+      "mainLocation": {
+        "name": "TEL AVIV, ISRAEL",
+        "lat": 32.0852997,
+        "lng": 34.7818064
+      },
       "intensity": 60,
       "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/11/17/yemeni-parliament-approves-law-designating-houthis-as-terrorists",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/HXQmoXHXMAAKpMH-1794927673.jpeg?resize=1200%2C675"
+      "url": "https://www.aljazeera.com/news/2026/11/18/world-bank-official-says-lebanon-reconstruction-making-slow-progress",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afdb420046d-1795011616.jpg?resize=1920%2C1440"
     },
     {
       "id": 5,
-      "headline": "Thousands demand cancellation of Nathan Cofnas talk at Oxford University",
-      "description": "Online petition with more than 32,000 signatures demands the university ‘cancel Nathan Cofnas’s invitation to speak’.",
+      "headline": "Birmingham City Council wins legal fight over flags on lamp-posts",
+      "description": "The decision has been made this afternoon by the High Court in Birmingham.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/17/thousands-demand-cancellation-of-nathan-cofnas-talk-at-oxford-university",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afc6197-1794924951.jpg?resize=1920%2C1440"
+      "url": "https://www.bbc.co.uk/news/articles/ckq5vg81805qo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2b62/live/877c24c0-a17d-11f1-9619-edac4fa7937f.jpg"
     }
   ]
 }
