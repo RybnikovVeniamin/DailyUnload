@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-20",
+  "displayDate": "NOV 20, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "‘Not an acquittal’: After impeachment vote, Hegseth still under microscope",
+      "description": "A week after a fizzled impeachment bid, analysts say Hegseth continues to face backlash for his leadership at Pentagon.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/19/not-an-acquittal-after-impeachment-vote-hegseth-still-under-microscope",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afd67b86b20-1794992056.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Yemen’s besieged city of Taiz faces a deepening water crisis",
+      "description": "Fuel shortages and the loss of access to wells have left residents dependent on unsafe water.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/11/19/yemens-besieged-city-of-taiz-faces-a-deepening-water-crisis",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aff1b9b-1795103643.jpg?resize=1200%2C675"
+    },
+    {
+      "id": 3,
+      "headline": "Anthropic starts trading in the US after blockbuster IPO",
+      "description": "Anthropic’s IPO surpasses SpaceX, marking the largest initial public offering in US history at $81bn",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afeffb8-1795096504.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Takeaways from the 1st ever China-US-Russia summit",
+      "description": "The meeting between U.S. President Donald Trump, China’s Xi Jinping and Russia’s Vladimir Putin was ...",
+      "mainLocation": {
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
+      },
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://apnews.com/article/trump-xi-putin-china-apec-25e17ec8d9c55fbff960d5631eaba71d",
+      "imageUrl": "https://dims.apnews.com/dims4/default/1429bf4/2147483647/strip/false/crop/3964x2643+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F26%2F37%2F587f4c4cccbdba0a64b0a2ff1912%2Fd7cef7047f7f43949ca4ca0d7d917886"
+    },
+    {
+      "id": 5,
+      "headline": "Men guilty of abusing woman drugged and advertised for sex by husband",
+      "description": "Philip Young, 50, drugged and sexually abused his wife, Joanne Young, over a 13-year period.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/crq5n5pe935no",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1a2d/live/537ff930-6139-11ee-b101-6f93d6dfbcc2.png"
+    }
+  ]
+}
