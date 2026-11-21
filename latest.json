@@ -1,61 +1,65 @@
 {
-  "date": "2026-11-20",
-  "displayDate": "NOV 20, 2026",
+  "date": "2026-11-21",
+  "displayDate": "NOV 21, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "‘Not an acquittal’: After impeachment vote, Hegseth still under microscope",
-      "description": "A week after a fizzled impeachment bid, analysts say Hegseth continues to face backlash for his leadership at Pentagon.",
-      "mainLocation": null,
+      "headline": "Qatar and Germany deepen strategic ties during emir’s Berlin visit",
+      "description": "German chancellor says Qatar pledged $16.5bn in new investments as the two countries deepen defence and technology ties.",
+      "mainLocation": {
+        "name": "BERLIN, GERMANY",
+        "lat": 52.5173885,
+        "lng": 13.3951309
+      },
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/19/not-an-acquittal-after-impeachment-vote-hegseth-still-under-microscope",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afd67b86b20-1794992056.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/20/qatar-and-germany-deepen-strategic-ties-during-emirs-berlin-visit",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-20T145442Z_797258609_RC2QROACJ71P_RTRMADP_3_GERMANY-QATAR-STATEMENT-1795187864.jpg?resize=1920%2C1440"
     },
     {
       "id": 2,
-      "headline": "Yemen’s besieged city of Taiz faces a deepening water crisis",
-      "description": "Fuel shortages and the loss of access to wells have left residents dependent on unsafe water.",
+      "headline": "US Senate passes bill to speed up energy project approvals",
+      "description": "The legislation aims to lower energy bills by making energy project approvals faster and limiting court challenges.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/19/yemens-besieged-city-of-taiz-faces-a-deepening-water-crisis",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aff1b9b-1795103643.jpg?resize=1200%2C675"
+      "url": "https://www.aljazeera.com/news/2026/11/20/us-senate-passes-bill-to-speed-up-energy-project-approvals",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b006722d46b5-1795188514.jpg?resize=1920%2C1440"
     },
     {
       "id": 3,
-      "headline": "Anthropic starts trading in the US after blockbuster IPO",
-      "description": "Anthropic’s IPO surpasses SpaceX, marking the largest initial public offering in US history at $81bn",
+      "headline": "What is Vox, and how did Spain’s far-right party rise to prominence?",
+      "description": "As Spain prepares to vote, Vox is campaigning on mass deportations and ‘national priority’.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afeffb8-1795096504.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/20/what-is-vox-and-how-did-spains-far-right-party-rise-to-prominence",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2023/07/2023-07-06T191310Z_1131641346_RC2UX1AFCIMG_RTRMADP_3_SPAIN-ELECTION-VOX-1689598559.jpg?resize=1920%2C1440"
     },
     {
       "id": 4,
-      "headline": "Takeaways from the 1st ever China-US-Russia summit",
-      "description": "The meeting between U.S. President Donald Trump, China’s Xi Jinping and Russia’s Vladimir Putin was ...",
+      "headline": "Poland condemns Russian ‘provocation’ after airspace violations",
+      "description": "The incidents came as European troops were taking part in a Ukraine post-war military exercise.",
       "mainLocation": {
-        "name": "MOSCOW, RUSSIA",
-        "lat": 55.625578,
-        "lng": 37.6063916
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
       },
       "intensity": 60,
       "color": "#34c759",
-      "url": "https://apnews.com/article/trump-xi-putin-china-apec-25e17ec8d9c55fbff960d5631eaba71d",
-      "imageUrl": "https://dims.apnews.com/dims4/default/1429bf4/2147483647/strip/false/crop/3964x2643+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F26%2F37%2F587f4c4cccbdba0a64b0a2ff1912%2Fd7cef7047f7f43949ca4ca0d7d917886"
+      "url": "https://www.aljazeera.com/news/2026/11/20/poland-condemns-russian-provocation-after-airspace-violations",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b0057c1ee50-1795184577.jpg?resize=1800%2C1013"
     },
     {
       "id": 5,
-      "headline": "Men guilty of abusing woman drugged and advertised for sex by husband",
-      "description": "Philip Young, 50, drugged and sexually abused his wife, Joanne Young, over a 13-year period.",
+      "headline": "Saudi coalition and Houthis exchange threats to bomb key ports",
+      "description": "Yemen’s Houthis have warned airlines of military activity in Saudi airspace in the coming hours.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://www.bbc.co.uk/news/articles/crq5n5pe935no",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1a2d/live/537ff930-6139-11ee-b101-6f93d6dfbcc2.png"
+      "url": "https://www.aljazeera.com/news/2026/11/20/saudi-coalition-and-houthis-exchange-threats-to-bomb-key-ports",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b003d8ba895-1795177867.jpg?resize=1200%2C675"
     }
   ]
 }

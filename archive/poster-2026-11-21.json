@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-21",
+  "displayDate": "NOV 21, 2026",
+  "bottomWord": "GLOBAL",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Qatar and Germany deepen strategic ties during emir’s Berlin visit",
+      "description": "German chancellor says Qatar pledged $16.5bn in new investments as the two countries deepen defence and technology ties.",
+      "mainLocation": {
+        "name": "BERLIN, GERMANY",
+        "lat": 52.5173885,
+        "lng": 13.3951309
+      },
+      "intensity": 60,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/20/qatar-and-germany-deepen-strategic-ties-during-emirs-berlin-visit",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-20T145442Z_797258609_RC2QROACJ71P_RTRMADP_3_GERMANY-QATAR-STATEMENT-1795187864.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "US Senate passes bill to speed up energy project approvals",
+      "description": "The legislation aims to lower energy bills by making energy project approvals faster and limiting court challenges.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/11/20/us-senate-passes-bill-to-speed-up-energy-project-approvals",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b006722d46b5-1795188514.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 3,
+      "headline": "What is Vox, and how did Spain’s far-right party rise to prominence?",
+      "description": "As Spain prepares to vote, Vox is campaigning on mass deportations and ‘national priority’.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/20/what-is-vox-and-how-did-spains-far-right-party-rise-to-prominence",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2023/07/2023-07-06T191310Z_1131641346_RC2UX1AFCIMG_RTRMADP_3_SPAIN-ELECTION-VOX-1689598559.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Poland condemns Russian ‘provocation’ after airspace violations",
+      "description": "The incidents came as European troops were taking part in a Ukraine post-war military exercise.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
+      "intensity": 60,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/11/20/poland-condemns-russian-provocation-after-airspace-violations",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b0057c1ee50-1795184577.jpg?resize=1800%2C1013"
+    },
+    {
+      "id": 5,
+      "headline": "Saudi coalition and Houthis exchange threats to bomb key ports",
+      "description": "Yemen’s Houthis have warned airlines of military activity in Saudi airspace in the coming hours.",
+      "mainLocation": null,
+      "intensity": 60,
+      "color": "#5ac8fa",
+      "url": "https://www.aljazeera.com/news/2026/11/20/saudi-coalition-and-houthis-exchange-threats-to-bomb-key-ports",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b003d8ba895-1795177867.jpg?resize=1200%2C675"
+    }
+  ]
+}
