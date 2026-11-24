@@ -1,57 +1,65 @@
 {
-  "date": "2026-11-23",
-  "displayDate": "NOV 23, 2026",
+  "date": "2026-11-24",
+  "displayDate": "NOV 24, 2026",
   "bottomWord": "GLOBAL",
   "stories": [
     {
       "id": 1,
-      "headline": "Liverpool 4-0 Manchester United: Five key takeaways for Pochettino",
-      "description": "United suffer their worst result under a new manager in 100 years as Liverpool cruise past Mauricio Pochettino’s side.",
-      "mainLocation": null,
+      "headline": "Russia threatens ‘hostile’ Estonia with ‘open war’",
+      "description": "Moscow accuses Tallinn of ‘hostile actions’ citing border closure and claiming it is allowing Ukraine to launch attacks.",
+      "mainLocation": {
+        "name": "KYIV, UKRAINE",
+        "lat": 50.4500336,
+        "lng": 30.5241361
+      },
       "intensity": 60,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/sports/2026/11/22/liverpool-4-0-manchester-united-the-key-takeaways-for-pochettino",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2306375717-1795375030.jpg?resize=1200%2C675"
+      "url": "https://www.aljazeera.com/news/2026/11/23/russia-threatens-hostile-estonia-with-open-war",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b00a388-1795203976.jpg?resize=1920%2C1440"
     },
     {
       "id": 2,
-      "headline": "Aber Kawas becomes first Palestinian in New York state Senate history",
-      "description": "Kawas, a democratic socialist, won with 74.5 percent of the vote, championing progressive politics.",
+      "headline": "Trump orders the Army not to detonate bomb-making chemicals in Iowa without court approval",
+      "description": "President Donald Trump says he will defer to a federal appeals court on whether to proceed with deto...",
       "mainLocation": null,
       "intensity": 60,
       "color": "#ff6b35",
-      "url": "https://www.aljazeera.com/news/2026/11/22/aber-kawas-becomes-first-palestinian-in-new-york-state-senate-history",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/aber-1-1794942045.jpg?resize=1920%2C1333"
+      "url": "https://apnews.com/article/iowa-army-lead-detonation-trump-3844c3f93affd3ea9a91fa98199bc14a",
+      "imageUrl": "https://dims.apnews.com/dims4/default/3f86055/2147483647/strip/false/crop/1448x1086+0+0/resize/1200x900!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fe9%2F46%2F31f7b4a04f9b6283014d548013c7%2F8b2c36e9269d4d75b6c76a9a78ff60f6"
     },
     {
       "id": 3,
-      "headline": "‘Horrific’ and ‘chilling’: Officials condemn ICE arrests at Seattle airport",
-      "description": "Video shows masked immigration agents forcibly detaining two people at Seattle airport, raising concerns over tactics.",
-      "mainLocation": null,
+      "headline": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
+      "description": "Nepal’s Prime Minister Balendra Shah is in New Delhi for a two-day visit — his first since coming to power in March.",
+      "mainLocation": {
+        "name": "NEW DELHI, INDIA",
+        "lat": 28.6138954,
+        "lng": 77.2090057
+      },
       "intensity": 60,
       "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/11/22/horrific-and-chilling-officials-condemn-ice-arrests-at-seattle-airport",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26325789842711-1795363362.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/23/india-pledges-1-6bn-in-flood-relief-for-nepal",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-23T092817Z_1123569228_RC2KTOAJTMT8_RTRMADP_3_INDIA-NEPAL-1795445216.jpg?resize=1920%2C1440"
     },
     {
       "id": 4,
-      "headline": "Sonny Dykes fired by TCU just four years after making CFP national title game, AP sources say",
-      "description": "TCU has fired coach Sonny Dykes after a disappointing 5-6 season, according to sources speaking to T...",
+      "headline": "Danish top court’s ‘ghetto law’ ruling supports hardline immigration policy",
+      "description": "The country’s top court said eviction of ‘non-Western’ families did not constitute discrimination.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#34c759",
-      "url": "https://apnews.com/article/sonny-dykes-tcu-f28905ef4c04359cf69663d6037356ad",
-      "imageUrl": "https://dims.apnews.com/dims4/default/a6da89d/2147483647/strip/false/crop/6000x4000+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F54%2Fd4%2Fd28aeb2b72c498989c300306e750%2F959a73d4734049999ca4ab296e98c98f"
+      "url": "https://www.aljazeera.com/news/2026/11/23/danish-top-courts-ghetto-law-ruling-supports-hardline-immigration-policy",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2022/10/overview_Vollsmose.jpg?resize=1920%2C1440"
     },
     {
       "id": 5,
-      "headline": "Chuck Hubbard defeats Rep. Virginia Foxx in North Carolina after recount",
-      "description": "Democrat Chuck Hubbard has been elected to the House from North Carolina, defeating Republican Virgi...",
+      "headline": "Tajikistan moves to leave ICC amid US push against court",
+      "description": "The ICC found that Tajikistan failed to comply with its request to arrest Russian President Vladimir Putin.",
       "mainLocation": null,
       "intensity": 60,
       "color": "#5ac8fa",
-      "url": "https://apnews.com/article/chuck-hubbard-virginia-foxx-north-carolina-23732afcd78a853e98acd9b72d0cbd14",
-      "imageUrl": "https://dims.apnews.com/dims4/default/f0f3af2/2147483647/strip/false/crop/5822x3881+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fdd%2F68%2Fe25c1d5790cebc81a74db6e37309%2F5c6367981ed74b408b2cbf8308a33f5f"
+      "url": "https://www.aljazeera.com/news/2026/11/23/tajikistan-moves-to-leave-icc-amid-us-push-against-court",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b04560c429e-1795446284.jpg?resize=1920%2C1440"
     }
   ]
 }
