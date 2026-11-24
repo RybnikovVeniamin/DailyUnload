@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
   "displayDate": "NOV 22, 2026",
-  "bottomWord": "GLOBAL",
+  "bottomWord": "GRIP",
   "stories": [
     {
       "id": 1,
@@ -12,7 +12,7 @@
         "lat": 28.6138954,
         "lng": 77.2090057
       },
-      "intensity": 60,
+      "intensity": 45,
       "color": "#ff2d55",
       "url": "https://www.aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b01aa96-1795271318.jpg?resize=1200%2C675"
@@ -21,8 +21,12 @@
       "id": 2,
       "headline": "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?",
       "description": "Mexican forces arrested Chapo Isidro in Sinaloa. He was on the FBI’s most wanted list and faces US drug charges.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "CULIACÁN, MEXICO",
+        "lat": 24.7978965,
+        "lng": -107.393395
+      },
+      "intensity": 55,
       "color": "#ff6b35",
       "url": "https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b01ba7ee1af-1795275390.jpg?resize=1920%2C1440"
@@ -32,11 +36,11 @@
       "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
       "description": "British maritime agency reports two incidents near Oman, while Iran says a tanker caught fire due to naval mine.",
       "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
+        "name": "BANDAR ABBAS, IRAN",
+        "lat": 27.1842023,
+        "lng": 56.2892533
       },
-      "intensity": 60,
+      "intensity": 82,
       "color": "#ffb800",
       "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261013__D3722EZ__v1__HighRes__UaeIranUsIsraelWarHormuzShipping-1795270231.jpg?resize=1920%2C1440"
@@ -46,7 +50,7 @@
       "headline": "Newcastle United vs Arsenal LIVE: Premier League",
       "description": "Follow updates from the Premier League clash, including the build-up, analysis and live text commentary of the game.",
       "mainLocation": null,
-      "intensity": 60,
+      "intensity": 42,
       "color": "#34c759",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/11/21/newcastle-united-vs-arsenal-live-premier-league",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b01c52c-1795278124.jpg?resize=1920%2C1440"
@@ -54,9 +58,13 @@
     {
       "id": 5,
       "headline": "13 incoming Democratic senators face an early test: Schumer or Van Hollen?",
-      "description": "The Democratic Party’s incoming senators face an early test of their campaign promises to shake up W...",
-      "mainLocation": null,
-      "intensity": 60,
+      "description": "New Democratic senators must choose between Schumer and Van Hollen, testing their reform promises.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 45,
       "color": "#5ac8fa",
       "url": "https://apnews.com/article/schumer-vanhollen-majority-leader-progressives-new-senators-b7785d0b6aee5f4844f55b650a231f5d",
       "imageUrl": "https://dims.apnews.com/dims4/default/d30bad0/2147483647/strip/false/crop/3000x2000+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F6d%2F1d%2Fe627d8ad214adc767cd661619b2a%2F78f0e1ba27254458818f8d5da9922585"
