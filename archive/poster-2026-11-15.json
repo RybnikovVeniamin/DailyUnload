@@ -1,14 +1,18 @@
 {
   "date": "2026-11-15",
   "displayDate": "NOV 15, 2026",
-  "bottomWord": "GLOBAL",
+  "bottomWord": "LEGACY",
   "stories": [
     {
       "id": 1,
       "headline": "NASA’s Voyager 1 to hit new space distance record of one light-day",
       "description": "The probe was launched in 1977 but it continues to relay space-related data back to a team of NASA scientists daily.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 58,
       "color": "#ff2d55",
       "url": "https://www.aljazeera.com/news/2026/11/14/nasas-voyager-1-to-hit-new-space-distance-record-of-one-light-day",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2013-09-12T120000Z_2135594600_GM1E99D08R201_RTRMADP_3_SPACE-VOYAGER-1794666602.jpg?resize=1920%2C1440"
@@ -18,7 +22,7 @@
       "headline": "Noel Fielding 'appalled' by jokes he made with Russell Brand",
       "description": "The Great British Bake Off presenter says he has not been in contact with the convicted rapist \"for many years\".",
       "mainLocation": null,
-      "intensity": 60,
+      "intensity": 42,
       "color": "#ff6b35",
       "url": "https://www.bbc.co.uk/news/articles/cw808ll7x093o",
       "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e601/live/a305b450-e033-11f1-9ca9-b3b288fceb81.jpg"
@@ -27,8 +31,12 @@
       "id": 3,
       "headline": "Why US Democrats are expected to keep Schumer and Jeffries in power",
       "description": "The prospect of keeping the Congressional leaders in power is exposing long-running tensions in the party.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "WASHINGTON, D.C., UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 45,
       "color": "#ffb800",
       "url": "https://www.aljazeera.com/news-analysis/2026/11/14/why-us-democrats-are-expected-to-keep-schumer-and-jeffries-in-power",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af7329927488-1794585241.jpg?resize=1920%2C1440"
@@ -38,7 +46,7 @@
       "headline": "Crumpsall murder investigation after man's 'shocking' stabbing",
       "description": "Police say a 27-year-old man died after being stabbed in the \"shocking and tragic attack\" in Crumpsall.",
       "mainLocation": null,
-      "intensity": 60,
+      "intensity": 40,
       "color": "#34c759",
       "url": "https://www.bbc.co.uk/news/articles/cm4gn7pp5r85o",
       "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b5d0/live/97d14980-e035-11f1-9ca9-b3b288fceb81.png"
@@ -47,8 +55,12 @@
       "id": 5,
       "headline": "When tech founders leave, what happens to their companies?",
       "description": "Nvidia could lose 30 percent of its value following cofounder Jensen Huang’s decision to step down, analysts warns.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "SANTA CLARA, UNITED STATES",
+        "lat": 37.2333253,
+        "lng": -121.6846349
+      },
+      "intensity": 72,
       "color": "#5ac8fa",
       "url": "https://www.aljazeera.com/economy/2026/11/14/when-tech-founders-leave-what-happens-to-their-companies",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af734a59c7e2-1794585765.jpg?resize=1920%2C1440"

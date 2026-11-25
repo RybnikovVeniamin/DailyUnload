@@ -1,65 +1,77 @@
 {
   "date": "2026-11-24",
   "displayDate": "NOV 24, 2026",
-  "bottomWord": "GLOBAL",
+  "bottomWord": "SPILLOVER",
   "stories": [
     {
       "id": 1,
+      "headline": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
+      "description": "US Treasury sanctions over two dozen Iranian entities, citing efforts to disrupt Tehran’s global financial activities.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 58,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/08/2025-06-23T163901Z_2116085940_RC2G8FAM4IDS_RTRMADP_3_IRAN-NUCLEAR-ENERGY-1755798951.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 6,
+      "headline": "What strike on Russian ship in Libya says about spread of Ukraine war",
+      "description": "Ukraine's sinking of a Russian battleship at a port in Libya raises the stakes of the war a notch, writes Frank Gardner.",
+      "mainLocation": {
+        "name": "BENGHAZI, LIBYA",
+        "lat": 32.1200168,
+        "lng": 20.0812174
+      },
+      "intensity": 72,
+      "color": "#ff2d55",
+      "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/363b/live/dab0da20-e771-11f1-99a1-253766e7ad8b.jpg"
+    },
+    {
+      "id": 8,
+      "headline": "Protesting Bangladesh garment workers reject pay offer",
+      "description": "Bangladesh’s garment industry brings in about $38bn a year. The minimum wage is around 12,500 taka ($100) per month.",
+      "mainLocation": {
+        "name": "DHAKA, BANGLADESH",
+        "lat": 23.7643863,
+        "lng": 90.3890144
+      },
+      "intensity": 55,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/23/protesting-bangladesh-garment-workers-reject-pay-offer",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261117__D7PB4T3__v1__HighRes__BangladeshPoliticsTextileLabourProtest-1794907389.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 10,
+      "headline": "Andrew received £750,000 from Turkish millionaire, court told",
+      "description": "The former Duke of York is expected to give evidence in the complex court case next month.",
+      "mainLocation": {
+        "name": "LONDON, UNITED KINGDOM",
+        "lat": 51.5074456,
+        "lng": -0.1277653
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/c9gkldn06l87o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6623/live/1aecace0-e759-11f1-b407-33329b1ec67a.jpg"
+    },
+    {
+      "id": 11,
       "headline": "Russia threatens ‘hostile’ Estonia with ‘open war’",
       "description": "Moscow accuses Tallinn of ‘hostile actions’ citing border closure and claiming it is allowing Ukraine to launch attacks.",
       "mainLocation": {
-        "name": "KYIV, UKRAINE",
-        "lat": 50.4500336,
-        "lng": 30.5241361
+        "name": "MOSCOW, RUSSIA",
+        "lat": 55.625578,
+        "lng": 37.6063916
       },
-      "intensity": 60,
+      "intensity": 85,
       "color": "#ff2d55",
       "url": "https://www.aljazeera.com/news/2026/11/23/russia-threatens-hostile-estonia-with-open-war",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b00a388-1795203976.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 2,
-      "headline": "Trump orders the Army not to detonate bomb-making chemicals in Iowa without court approval",
-      "description": "President Donald Trump says he will defer to a federal appeals court on whether to proceed with deto...",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#ff6b35",
-      "url": "https://apnews.com/article/iowa-army-lead-detonation-trump-3844c3f93affd3ea9a91fa98199bc14a",
-      "imageUrl": "https://dims.apnews.com/dims4/default/3f86055/2147483647/strip/false/crop/1448x1086+0+0/resize/1200x900!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fe9%2F46%2F31f7b4a04f9b6283014d548013c7%2F8b2c36e9269d4d75b6c76a9a78ff60f6"
-    },
-    {
-      "id": 3,
-      "headline": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
-      "description": "Nepal’s Prime Minister Balendra Shah is in New Delhi for a two-day visit — his first since coming to power in March.",
-      "mainLocation": {
-        "name": "NEW DELHI, INDIA",
-        "lat": 28.6138954,
-        "lng": 77.2090057
-      },
-      "intensity": 60,
-      "color": "#ffb800",
-      "url": "https://www.aljazeera.com/news/2026/11/23/india-pledges-1-6bn-in-flood-relief-for-nepal",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-23T092817Z_1123569228_RC2KTOAJTMT8_RTRMADP_3_INDIA-NEPAL-1795445216.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 4,
-      "headline": "Danish top court’s ‘ghetto law’ ruling supports hardline immigration policy",
-      "description": "The country’s top court said eviction of ‘non-Western’ families did not constitute discrimination.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/11/23/danish-top-courts-ghetto-law-ruling-supports-hardline-immigration-policy",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2022/10/overview_Vollsmose.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 5,
-      "headline": "Tajikistan moves to leave ICC amid US push against court",
-      "description": "The ICC found that Tajikistan failed to comply with its request to arrest Russian President Vladimir Putin.",
-      "mainLocation": null,
-      "intensity": 60,
-      "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/23/tajikistan-moves-to-leave-icc-amid-us-push-against-court",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b04560c429e-1795446284.jpg?resize=1920%2C1440"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
   "displayDate": "NOV 19, 2026",
-  "bottomWord": "GLOBAL",
+  "bottomWord": "STALLED",
   "stories": [
     {
       "id": 1,
@@ -12,7 +12,7 @@
         "lat": 31.5220547,
         "lng": 34.451318
       },
-      "intensity": 60,
+      "intensity": 62,
       "color": "#ff2d55",
       "url": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/Interactive_Baord-of-Peace_Members_Nov17_2026_Cover-1795003885.png?resize=1200%2C630"
@@ -22,11 +22,11 @@
       "headline": "Inside the old gas pipeline where Ukraine is fighting an underground war",
       "description": "Ukrainian forces are fighting Russian troops in an old Soviet tunnel in the Kharkiv region.",
       "mainLocation": {
-        "name": "KYIV, UKRAINE",
-        "lat": 50.4500336,
-        "lng": 30.5241361
+        "name": "KHARKIV, UKRAINE",
+        "lat": 49.9923181,
+        "lng": 36.2310146
       },
-      "intensity": 60,
+      "intensity": 55,
       "color": "#ff6b35",
       "url": "https://www.bbc.co.uk/news/articles/c32l507ev4v4o",
       "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b0a9/live/16401180-e337-11f1-9479-d17d3e98c29d.jpg"
@@ -36,11 +36,11 @@
       "headline": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
       "description": "Iranian attacks on the Gulf countries draw condemnation from across the region.",
       "mainLocation": {
-        "name": "TEHRAN, IRAN",
-        "lat": 35.6892523,
-        "lng": 51.3896004
+        "name": "KUWAIT CITY, KUWAIT",
+        "lat": 29.3796532,
+        "lng": 47.9734174
       },
-      "intensity": 60,
+      "intensity": 85,
       "color": "#ffb800",
       "url": "https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-18T071442Z_913088351_RC27QOA8QSRZ_RTRMADP_3_IRAN-CRISIS-1795018749.jpg?resize=1200%2C630"
@@ -50,11 +50,11 @@
       "headline": "World Bank official says Lebanon reconstruction making slow progress",
       "description": "Beirut blames Israel’s occupation and attacks on southern Lebanon for reconstruction delays.",
       "mainLocation": {
-        "name": "TEL AVIV, ISRAEL",
-        "lat": 32.0852997,
-        "lng": 34.7818064
+        "name": "BEIRUT, LEBANON",
+        "lat": 33.8892265,
+        "lng": 35.5025585
       },
-      "intensity": 60,
+      "intensity": 45,
       "color": "#34c759",
       "url": "https://www.aljazeera.com/news/2026/11/18/world-bank-official-says-lebanon-reconstruction-making-slow-progress",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afdb420046d-1795011616.jpg?resize=1920%2C1440"
@@ -63,8 +63,12 @@
       "id": 5,
       "headline": "Birmingham City Council wins legal fight over flags on lamp-posts",
       "description": "The decision has been made this afternoon by the High Court in Birmingham.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "BIRMINGHAM, UNITED KINGDOM",
+        "lat": 52.4948994,
+        "lng": -1.8518439
+      },
+      "intensity": 40,
       "color": "#5ac8fa",
       "url": "https://www.bbc.co.uk/news/articles/ckq5vg81805qo",
       "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2b62/live/877c24c0-a17d-11f1-9619-edac4fa7937f.jpg"
