@@ -1,77 +1,77 @@
 {
-  "date": "2026-11-25",
-  "displayDate": "NOV 25, 2026",
-  "bottomWord": "PROVOCATION",
+  "date": "2026-11-26",
+  "displayDate": "NOV 26, 2026",
+  "bottomWord": "SOVEREIGNTY",
   "stories": [
     {
       "id": 1,
-      "headline": "Israel’s Ben-Gvir accused of seeking ‘religious war’ over mosque raids",
-      "description": "Israeli police have confiscated mosque loudspeakers as far-right lawmakers push legislation to restrict call to prayer.",
+      "headline": "Nigeria’s Tinubu pledges to bring peace to rebellion-hit border region",
+      "description": "Tinubu is under pressure to convince voters that military operations in the country’s northeast will deliver security.",
       "mainLocation": {
-        "name": "JERUSALEM, ISRAEL",
-        "lat": 31.7788472,
-        "lng": 35.2257856
+        "name": "ABUJA, NIGERIA",
+        "lat": 9.0643305,
+        "lng": 7.4892974
       },
-      "intensity": 52,
+      "intensity": 45,
       "color": "#ff2d55",
-      "url": "https://www.aljazeera.com/news/2026/11/24/israels-ben-gvir-accused-of-seeking-religious-war-over-mosque-raids",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b05d7d4e2386-1795545044.jpg?resize=1920%2C1440"
+      "url": "https://www.aljazeera.com/news/2026/11/25/nigerias-tinubu-pledges-to-bring-peace-to-insurgency-hit-northeast-region",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b0719bca5cf-1795627452.jpg?resize=1920%2C1440"
     },
     {
       "id": 2,
-      "headline": "Democrats clinch historic House majority, largest since 1990",
-      "description": "House Democrats won 259 seats, their best general election result in decades.",
+      "headline": "Iraq’s top court rules government can take over Kurdish borders, oil fields",
+      "description": "The ruling comes a day after Kurdish authorities accused Baghdad of an ‘assault’ on the region’s constitutional rights.",
       "mainLocation": {
-        "name": "WASHINGTON, UNITED STATES",
-        "lat": 38.8950982,
-        "lng": -77.0363849
+        "name": "BAGHDAD, IRAQ",
+        "lat": 33.3061701,
+        "lng": 44.3872213
       },
-      "intensity": 72,
+      "intensity": 55,
       "color": "#ff6b35",
-      "url": "https://apnews.com/article/democrats-house-majority-election-2026-congress-07b3ccbe60db7c1d3d3f3087d8fca721",
-      "imageUrl": "https://dims.apnews.com/dims4/default/34c8b56/2147483647/strip/false/crop/8618x5746+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9b%2F20%2F1d6d53f93817c62c4fee7da5f3ff%2F1ad70702c20644e09bc3bf19132fd05f"
+      "url": "https://www.aljazeera.com/news/2026/11/25/iraqs-top-court-rules-government-can-take-over-kurdish-borders-oil-fields",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b0090b5-1795199157.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Switzerland forced to close office in North Korea over sanctions feud",
+      "description": "The closure came after North Korea condemned Switzerland for adding a children’s camp to its sanctions list.",
+      "mainLocation": {
+        "name": "PYONGYANG, NORTH KOREA",
+        "lat": 39.0196585,
+        "lng": 125.7526222
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/11/25/switzerland-regrets-closure-of-north-korea-office-over-sanctions-feud",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b070a9173b4c-1795623569.jpg?resize=1920%2C1440"
     },
     {
       "id": 5,
-      "headline": "US sanctions on Lebanon’s Hezbollah-affiliates may have limited impact",
-      "description": "Analysts say US sanctions unlikely to weaken Hezbollah significantly, but risk hurting everyday Lebanese.",
+      "headline": "Poundland collapses putting 11,000 jobs at risk",
+      "description": "The discount chain has collapsed into administration after its owners failed to find a buyer.",
       "mainLocation": {
-        "name": "BEIRUT, LEBANON",
-        "lat": 33.8892265,
-        "lng": 35.5025585
-      },
-      "intensity": 52,
-      "color": "#5ac8fa",
-      "url": "https://www.aljazeera.com/news/2026/11/24/us-sanctions-on-lebanons-hezbollah-affiliates-may-have-limited-impact",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6ab9d4e1ea0d-1790563553.jpg?resize=1920%2C1440"
-    },
-    {
-      "id": 7,
-      "headline": "French ex-President Nicolas Sarkozy and wife Carla Bruni to be tried next year",
-      "description": "It is the latest case involving Nicolas Sarkozy who became the first French ex-president to go to jail last year.",
-      "mainLocation": {
-        "name": "PARIS, FRANCE",
-        "lat": 48.8534951,
-        "lng": 2.3483915
+        "name": "WALSALL, UNITED KINGDOM",
+        "lat": 52.5847949,
+        "lng": -1.9822687
       },
       "intensity": 45,
-      "color": "#ff6b35",
-      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o",
-      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/84cb/live/68cc7a10-e81e-11f1-ab42-55d8d8278025.jpg"
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6eda/live/616fb5d0-e8bd-11f1-ac76-db9e97f93d67.jpg"
     },
     {
-      "id": 9,
-      "headline": "Palestine Weekly: A night of arson sees Israel ‘Jewish terrorism’ reckoning",
-      "description": "Israeli settler pogroms have continued in the occupied West Bank.",
+      "id": 8,
+      "headline": "South Africa court repeals ‘farmgate’ impeachment threat against Ramaphosa",
+      "description": "The ruling hands the president a political reprieve by removing a finding that had exposed him to possible impeachment.",
       "mainLocation": {
-        "name": "RAMALLAH, PALESTINE",
-        "lat": 31.9231906,
-        "lng": 35.2108501
+        "name": "JOHANNESBURG, SOUTH AFRICA",
+        "lat": -26.205,
+        "lng": 28.049722
       },
-      "intensity": 55,
-      "color": "#34c759",
-      "url": "https://www.aljazeera.com/news/2026/11/24/palestine-weekly-a-night-of-arson-sees-israel-jewish-terrorism-reckoning",
-      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b030e4d0bc8-1795362381.jpg?resize=1920%2C1440"
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/25/south-africa-court-repeals-farmgate-impeachment-threat-against-ramaphosa",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b06efb2-1795616690.jpg?resize=1920%2C1440"
     }
   ]
 }
