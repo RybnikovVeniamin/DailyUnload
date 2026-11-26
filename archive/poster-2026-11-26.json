@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-26",
+  "displayDate": "NOV 26, 2026",
+  "bottomWord": "SOVEREIGNTY",
+  "stories": [
+    {
+      "id": 1,
+      "headline": "Nigeria’s Tinubu pledges to bring peace to rebellion-hit border region",
+      "description": "Tinubu is under pressure to convince voters that military operations in the country’s northeast will deliver security.",
+      "mainLocation": {
+        "name": "ABUJA, NIGERIA",
+        "lat": 9.0643305,
+        "lng": 7.4892974
+      },
+      "intensity": 45,
+      "color": "#ff2d55",
+      "url": "https://www.aljazeera.com/news/2026/11/25/nigerias-tinubu-pledges-to-bring-peace-to-insurgency-hit-northeast-region",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b0719bca5cf-1795627452.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 2,
+      "headline": "Iraq’s top court rules government can take over Kurdish borders, oil fields",
+      "description": "The ruling comes a day after Kurdish authorities accused Baghdad of an ‘assault’ on the region’s constitutional rights.",
+      "mainLocation": {
+        "name": "BAGHDAD, IRAQ",
+        "lat": 33.3061701,
+        "lng": 44.3872213
+      },
+      "intensity": 55,
+      "color": "#ff6b35",
+      "url": "https://www.aljazeera.com/news/2026/11/25/iraqs-top-court-rules-government-can-take-over-kurdish-borders-oil-fields",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b0090b5-1795199157.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 4,
+      "headline": "Switzerland forced to close office in North Korea over sanctions feud",
+      "description": "The closure came after North Korea condemned Switzerland for adding a children’s camp to its sanctions list.",
+      "mainLocation": {
+        "name": "PYONGYANG, NORTH KOREA",
+        "lat": 39.0196585,
+        "lng": 125.7526222
+      },
+      "intensity": 45,
+      "color": "#34c759",
+      "url": "https://www.aljazeera.com/news/2026/11/25/switzerland-regrets-closure-of-north-korea-office-over-sanctions-feud",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b070a9173b4c-1795623569.jpg?resize=1920%2C1440"
+    },
+    {
+      "id": 5,
+      "headline": "Poundland collapses putting 11,000 jobs at risk",
+      "description": "The discount chain has collapsed into administration after its owners failed to find a buyer.",
+      "mainLocation": {
+        "name": "WALSALL, UNITED KINGDOM",
+        "lat": 52.5847949,
+        "lng": -1.9822687
+      },
+      "intensity": 45,
+      "color": "#5ac8fa",
+      "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6eda/live/616fb5d0-e8bd-11f1-ac76-db9e97f93d67.jpg"
+    },
+    {
+      "id": 8,
+      "headline": "South Africa court repeals ‘farmgate’ impeachment threat against Ramaphosa",
+      "description": "The ruling hands the president a political reprieve by removing a finding that had exposed him to possible impeachment.",
+      "mainLocation": {
+        "name": "JOHANNESBURG, SOUTH AFRICA",
+        "lat": -26.205,
+        "lng": 28.049722
+      },
+      "intensity": 45,
+      "color": "#ffb800",
+      "url": "https://www.aljazeera.com/news/2026/11/25/south-africa-court-repeals-farmgate-impeachment-threat-against-ramaphosa",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b06efb2-1795616690.jpg?resize=1920%2C1440"
+    }
+  ]
+}
