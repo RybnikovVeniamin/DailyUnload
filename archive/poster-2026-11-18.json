@@ -1,14 +1,18 @@
 {
   "date": "2026-11-18",
   "displayDate": "NOV 18, 2026",
-  "bottomWord": "GLOBAL",
+  "bottomWord": "BACKLASH",
   "stories": [
     {
       "id": 1,
       "headline": "Mullin defends flight to football game after ground stop",
-      "description": "Homeland Security Secretary Markwayne Mullin defends using a government plane to attend a college fo...",
-      "mainLocation": null,
-      "intensity": 60,
+      "description": "DHS Secretary Markwayne Mullin defends using a government plane to attend a college football game.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 40,
       "color": "#ff2d55",
       "url": "https://apnews.com/article/markwayne-mullin-nationwide-ground-stop-lsu-1155f7fe532f55b272d3b9fefcd68d2b",
       "imageUrl": "https://dims.apnews.com/dims4/default/6e5af25/2147483647/strip/false/crop/4896x3264+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F5d%2F5b%2F64353d36ff65ed5a0d01f623077e%2F6eacfacceb154677b71908769171b995"
@@ -17,8 +21,12 @@
       "id": 2,
       "headline": "CAIR defends civil rights work against Trump’s ‘smear’",
       "description": "The country’s largest Muslim advocacy group urges Trump to address rising hate crimes against Muslims.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 45,
       "color": "#ff6b35",
       "url": "https://www.aljazeera.com/news/2026/11/17/cair-defends-civil-rights-work-against-trumps-smear",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6afc8abd5e-1794935485.jpg?resize=1920%2C1440"
@@ -26,9 +34,13 @@
     {
       "id": 3,
       "headline": "How the Trump administration has responded to measles outbreaks",
-      "description": "International health experts have decided that the U.S. has lost its status as a country that elimin...",
-      "mainLocation": null,
-      "intensity": 60,
+      "description": "Health experts say the U.S. has lost its measles elimination status amid ongoing outbreaks.",
+      "mainLocation": {
+        "name": "WASHINGTON, UNITED STATES",
+        "lat": 38.8950982,
+        "lng": -77.0363849
+      },
+      "intensity": 62,
       "color": "#ffb800",
       "url": "https://apnews.com/article/health-measles-vaccine-trump-rfk-jr-e11d845ff206957fb568f52d71383a41",
       "imageUrl": "https://dims.apnews.com/dims4/default/a4ff023/2147483647/strip/false/crop/6723x4482+0+0/resize/1200x800!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F28%2Fec%2Fb4e46532f10e96360cd274a18700%2F93c5dd35911e4259aed9e883120c1089"
@@ -37,8 +49,12 @@
       "id": 4,
       "headline": "Yemeni parliament approves law designating Houthis as ‘terrorists’",
       "description": "The law targets the group’s financing and activities as Houthis make advances in southwestern Yemen.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "ADEN, YEMEN",
+        "lat": 12.789585,
+        "lng": 45.028504
+      },
+      "intensity": 48,
       "color": "#34c759",
       "url": "https://www.aljazeera.com/news/2026/11/17/yemeni-parliament-approves-law-designating-houthis-as-terrorists",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/HXQmoXHXMAAKpMH-1794927673.jpeg?resize=1200%2C675"
@@ -47,8 +63,12 @@
       "id": 5,
       "headline": "Thousands demand cancellation of Nathan Cofnas talk at Oxford University",
       "description": "Online petition with more than 32,000 signatures demands the university ‘cancel Nathan Cofnas’s invitation to speak’.",
-      "mainLocation": null,
-      "intensity": 60,
+      "mainLocation": {
+        "name": "OXFORD, UNITED KINGDOM",
+        "lat": 51.7520131,
+        "lng": -1.2578499
+      },
+      "intensity": 42,
       "color": "#5ac8fa",
       "url": "https://www.aljazeera.com/news/2026/11/17/thousands-demand-cancellation-of-nathan-cofnas-talk-at-oxford-university",
       "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afc6197-1794924951.jpg?resize=1920%2C1440"
